@@ -1,0 +1,17 @@
+services:
+  php-apache:
+    build: .
+    container_name: compiladorPHP
+    ports:
+      - "8282:80"
+    volumes:
+      - ./my-apache-config.conf:/etc/apache2/conf-available/my-apache-config.conf
+      - .:/var/www/html
+    networks:
+      - app-network
+    command: >
+      /bin/bash -c "a2enmod rewrite && a2enconf my-apache-config && apache2-foreground"
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,40 @@
+/* Global Mixins
+========================================================================== */
+
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+@mixin keyframes($name) {
+	@if #{$name} != '' {
+		@keyframes #{$name} {
+			@content;
+		}
+		@-moz-keyframes #{$name} {
+			@content;
+		}
+		@-webkit-keyframes #{$name} {
+			@content;
+		}
+		@-ms-keyframes #{$name} {
+			@content;
+		}
+		@-o-keyframes #{$name} {
+			@content;
+		}
+	}
+}

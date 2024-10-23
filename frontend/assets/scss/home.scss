@@ -1,0 +1,147 @@
+.home{
+    z-index: 9;
+    .al-container{
+        >.row{
+            padding: 40px 0px;
+            display: flex;
+            justify-content: left;
+            align-items: baseline;
+            gap: 32px;
+            .left{
+                width: calc(33% - 16px);
+                max-height: calc(100vh - 120px);
+                overflow: scroll;
+            }
+            .right{
+                max-height: calc(100vh - 120px);
+                overflow: scroll;
+                width: calc(66% - 16px);
+                >div:not(:last-child){
+                    border-bottom: 1px solid #333333;
+                    padding-bottom: 20px;
+                }
+                .programminblock{
+                    border-radius: 8px;
+                    padding: 12px;
+                    background: #AAA;
+                    font-family: monospace;
+                    color: #333;
+                    margin: 10px 0px;
+                }
+            }
+        }
+        h2{
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-family: "Roboto";
+            padding: 20px 0px;
+        }
+        h3{
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-family: "Roboto";
+            padding-bottom: 10px;
+        }
+    }
+}
+.pd0{
+    padding: 0;
+}
+form{
+    textarea{
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+        padding: 12px;
+        background: #AAA;
+        font-family: monospace;
+        outline: none!important;
+        border: none!important;
+        color: #333;
+        min-height: 86px;
+        font-size: 12px;
+    }
+    .flex{
+        display: flex;
+        gap: 16px;
+        button, a{
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            padding: 9px 19px;
+            appearance: none;
+            text-transform: uppercase;
+            color: #FFF;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                background-color: #FFF;
+                color: $primary-color;
+            }
+            transition: all .3s;
+            &.red{
+                border: 1px solid $danger;
+                background-color: $danger;
+                svg{
+                    fill: $danger!important;
+                    transition: all .3s;
+                    *{
+                        transition: all .3s;
+                        fill: $danger!important;
+                    }
+                }
+                &:hover{
+                    background-color: #FFF;
+                    svg{
+                        fill: #FFF!important;
+                        stroke: $danger!important;
+                        *{
+                            fill: #FFF!important;
+                            stroke: $danger!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.table-lex-result{
+    padding-top: 30px;
+}
+.tokens{
+    border-spacing: 10px;
+    .token{
+        >td{
+            border-radius: 14px;
+            padding: 6px 10px;
+        }
+        font-family: monospace;
+        text-transform: uppercase;
+        .name{
+            background-color: $primary-color;
+            &.OPERADORES{
+                background-color: $secondary-color;
+            }
+            &.IDENTIFICADORES{
+                background-color: #000;
+                color: #FFF;
+            }
+            &.reconhecido,
+            &.CONSTANTES{
+                background-color: $danger;
+            }
+        }
+        .lexeme{
+            background-color: purple;
+        }
+        .pos{
+            background-color: yellowgreen;
+        }
+    }
+}
+.pd-top-100{
+    padding-top: 100px;
+}

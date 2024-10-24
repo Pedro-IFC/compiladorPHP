@@ -1,5 +1,7 @@
 <?php
 class Automato {
+    private static string $prefix = "Erro no analisador léxico: ";
+
     public static function parseTokens($string, $Lexical, $serialize) : array {
         $state = 0;
         $lexeme = '';
@@ -33,13 +35,13 @@ class Automato {
                 } else if(!ctype_space($char)) {
                     $newToken = new Token("Não reconhecido", $char, $startCol, $line);
                     $tokens[] = $serialize ? serialize($newToken) : $newToken;
-                    $errorList[] = "Não reconhecido ($char), col: $startCol, line: $line";
+                    $errorList[] = self::$prefix."Símbolo Não reconhecido ($char), col: $startCol, line: $line";
                     break;
                 }
                 $lexeme = '';
                 $state = 0;
             } else {
-                $errorList[] = "Não reconhecido ($char), col: $startCol, line: $line";
+                $errorList[] = self::$prefix."Símbolo Não reconhecido ($char), col: $startCol, line: $line";
             }
             if ($index== $totalChars && !in_array($Lexical[$state]['token'], [":", "?"])) {
                 $tokens[] = new Token($Lexical[$state]['token'], $lexeme, $startCol, $line);

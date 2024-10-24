@@ -624,6 +624,9 @@ div#diagrama {
   align-items: baseline;
   gap: 32px;
 }
+.home .al-container > .row.dif .left, .home .al-container > .row.dif .right {
+  width: calc(50% - 32px);
+}
 .home .al-container > .row .left {
   width: calc(33% - 16px);
   max-height: calc(100vh - 120px);
@@ -682,7 +685,23 @@ form .flex {
   display: flex;
   gap: 16px;
 }
+form .flex select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #164777;
+  padding: 9px 19px;
+  text-transform: uppercase;
+  color: #164777;
+  font-weight: 700;
+  outline: none !important;
+  cursor: pointer;
+}
 form .flex button, form .flex a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
   margin-top: 10px;
   border: 1px solid #164777;

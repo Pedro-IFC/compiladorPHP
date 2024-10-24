@@ -40,7 +40,7 @@
     <h3 class="pd0">POST</h3>
     <h3>domain/lexical/validate/</h3>
     <div class="programminblock">
-        curl --location 'http://localhost:8181/validate/' \ <br>
+        curl --location 'http://localhost:8181/lexical/validate' \ <br>
         --form 'string="se (a==b){escreva(c)}"'
     </div>
     <p>Assim obtemos o retorno: </p>

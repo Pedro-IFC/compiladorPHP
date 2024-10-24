@@ -1,196 +1,287 @@
 <?php
+require_once "NoArvore.php";
 
 class AnalisadorSintaticoDescenteRecursive {
-    private $cont = 0;
-    public $lexico;
+    private int $cont = 0;
+    private Lexical $lexico;
+    private ?NoArvore $arvore = null;
+    private array $erros = [];
 
+    public function imprimirArvore() {
+        if ($this->arvore !== null) {
+            $this->arvore->imprimir();
+        } else {
+            echo "Árvore de derivação vazia ou não gerada.<br>";
+        }
+    }
+    public function getArvore() : string{
+        return $this->arvore->toString();
+    }
+    public function getErros():array{
+        return $this->erros;
+    }
     public function __construct(Lexical $lexico) {
         $this->lexico = $lexico;
     }
+    public function analisar($inicio="programa"):bool{
+        if($inicio=="programa"){
+            return $this->Programa();
+        }else{
+            $no = new NoArvore("Lista de comandos");
+            $r= $this->Lista_comandos($no);
+            $this->arvore = $no; // Armazena a árvore completa
+            return $r;
 
+        }
+    }
     public function Programa() {
-        if ($this->term('PROGRAM') &&
-            $this->term('IDENTIFICADORES') && 
-            $this->term('ABREPAREN') && 
-            $this->term('FECHAPAREN') && 
-            $this->term('ABRECHAVES') && 
-            $this->Lista_comandos() && 
-            $this->term('FECHACHAVES')) {
-            $this->erros = [];
+        $no = new NoArvore("Programa");
+        if ($this->term('PROGRAM', $no) &&
+            $this->term('IDENTIFICADORES', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('ABRECHAVES', $no) && 
+            $this->Lista_comandos($no) && 
+            $this->term('FECHACHAVES', $no)) {
+            
+            $this->arvore = $no; // Armazena a árvore completa
             return true;
         }
         return false;
     }
 
-    public function Lista_var() {
-        if ($this->Var()) {
-            return $this->Lista_var(); 
+    public function Lista_var(NoArvore $pai) {
+        $no = new NoArvore("Lista_var");
+        if ($this->Var($no)) {
+            $pai->adicionarFilho($no);
+            return $this->Lista_var($pai); 
         }
         return $this->vazio(); 
     }
 
-    public function Var() {
-        return $this->Tipo() && $this->term('IDENTIFICADORES') && $this->term('PONTOVIRGULA');
-    }
-
-    public function Tipo() {
-        return $this->term('INT') || $this->term('CHAR') || $this->term('FLOAT') || $this->term('ARRAY');
-    }
-
-    public function Lista_comandos() {
-        if ($this->Comando()) {
-            return $this->Lista_comandos();
-        }
-        return $this->vazio(); // Retorna true se vazio
-    }
-
-    public function Comando() {
-        return $this->Atribuicao() || 
-               $this->Leitura() || 
-               $this->Impressao() || 
-               $this->Retorno() || 
-               $this->ChamadaFuncao() || 
-               $this->If() || 
-               $this->For() || 
-               $this->While();
-    }
-
-    public function Atribuicao() {
-        return $this->term('IDENTIFICADORES') && 
-               $this->term('IGUAL') && 
-               $this->Expressao() && 
-               $this->term('PONTOVIRGULA');
-    }
-
-    public function Leitura() {
-        return $this->term('READ') && 
-               $this->term('ABREPAREN') && 
-               $this->term('IDENTIFICADORES') && 
-               $this->term('FECHAPAREN') && 
-               $this->term('PONTOVIRGULA');
-    }
-
-    public function Impressao() {
-        return $this->term('PRINT') && 
-               $this->term('ABREPAREN') && 
-               $this->Expressao() && 
-               $this->term('FECHAPAREN') && 
-               $this->term('PONTOVIRGULA');
-    }
-
-    public function Retorno() {
-        return $this->term('RETURN') && 
-               $this->Expressao() && 
-               $this->term('PONTOVIRGULA');
-    }
-
-    public function ChamadaFuncao() {
-        return $this->term('IDENTIFICADORES') && 
-               $this->term('ABREPAREN') && 
-               $this->Expressao() && 
-               $this->term('FECHAPAREN') &&
-               $this->term('ABRECHAVES') &&
-               $this->Comando() &&
-               $this->term('FECHACHAVES');
-    }
-
-    public function If() {
-        return $this->term('IF') && 
-               $this->term('ABREPAREN') && 
-               $this->Expressao() && 
-               $this->term('FECHAPAREN') && 
-               $this->term('ABRECHAVES') && 
-               $this->Comando() && 
-               $this->term('FECHACHAVES');
-    }
-
-    public function For() {
-        return $this->term('FOR') && 
-               $this->term('ABREPAREN') && 
-               $this->Atribuicao() &&  
-               $this->Expressao() && 
-               $this->term('PONTOVIRGULA') && 
-               $this->Atribuicao() && 
-               $this->term('FECHAPAREN') && 
-               $this->term('ABRECHAVES') && 
-               $this->Comando() && 
-               $this->term('FECHACHAVES');
-    }
-
-    public function While() {
-        return $this->term('WHILE') && 
-               $this->term('ABREPAREN') && 
-               $this->Expressao() && 
-               $this->term('FECHAPAREN') && 
-               $this->term('ABRECHAVES') && 
-               $this->Comando() && 
-               $this->term('FECHACHAVES');
-    }
-
-    public function Expressao() {
-        if ($this->Termo()) {
-            while ($this->term('MAIS') || 
-                $this->term('MENOS') || 
-                $this->OperadorLogico()) {
-                $this->Termo();
-            }
-            $this->erros = [];
+    public function Var(NoArvore $pai) {
+        $no = new NoArvore("Var");
+        if ($this->Tipo($no) && $this->term('IDENTIFICADORES', $no) && $this->term('PONTOVIRGULA', $no)) {
+            $pai->adicionarFilho($no);
             return true;
         }
         return false;
     }
 
-    public function OperadorLogico() {
-        return $this->term('IGUAL') || 
-            $this->term('DIFERENTE') || 
-            $this->term('MENOR_QUE') || 
-            $this->term('MAIOR_QUE') || 
-            $this->term('MENOR_OU_IGUAL') || 
-            $this->term('MAIOR_OU_IGUAL') || 
-            $this->term('EXCLA');
-    }
-
-    public function Termo() {
-        if ($this->Fator()) {
-            while ($this->term('ASTERISTICO') || $this->term('DIVISAO')) {
-                $this->Fator();
-            }
-            $this->erros = [];
+    public function Tipo(NoArvore $pai) {
+        $no = new NoArvore("Tipo");
+        if ($this->term('INT', $no) || $this->term('CHAR', $no) || $this->term('FLOAT', $no) || $this->term('ARRAY', $no)) {
+            $pai->adicionarFilho($no);
             return true;
         }
         return false;
     }
 
-    public function Fator() {
-        return $this->term('IDENTIFICADORES') || 
-               $this->term('CONSTANTE') || 
-               ($this->term('ABREPAREN') && $this->Expressao() && $this->term('FECHAPAREN'));
+    public function Lista_comandos(NoArvore $pai) {
+        $no = new NoArvore("Lista_comandos");
+        if ($this->Comando($no)) {
+            $pai->adicionarFilho($no);
+            return $this->Lista_comandos($pai);
+        }
+        return $this->vazio(); 
     }
 
-    private $erros = [];
+    public function Comando(NoArvore $pai) {
+        $no = new NoArvore("Comando");
+        if ($this->Atribuicao($no) || 
+            $this->Leitura($no) || 
+            $this->Impressao($no) || 
+            $this->Retorno($no) || 
+            $this->ChamadaFuncao($no) || 
+            $this->If($no) || 
+            $this->For($no) || 
+            $this->While($no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
 
-    public function term($tk) {
-        $tokens = $this->lexico->validate(false)['resp']['tokens'];
-        if(isset($tokens[$this->cont])){
+    public function Atribuicao(NoArvore $pai) {
+        $no = new NoArvore("Atribuicao");
+        if ($this->term('IDENTIFICADORES', $no) && 
+            $this->term('IGUAL', $no) && 
+            ($this->Expressao($no) || $this->term("CONSTINTEIRAS", $no) || $this->term("CONSTFLUTUANTE", $no)) && 
+            $this->term('PONTOVIRGULA', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function Leitura(NoArvore $pai) {
+        $no = new NoArvore("Leitura");
+        if ($this->term('READ', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            $this->term('IDENTIFICADORES', $no) && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('PONTOVIRGULA', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function Impressao(NoArvore $pai) {
+        $no = new NoArvore("Impressao");
+        if ($this->term('WRITE', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            ($this->Expressao($no) || $this->term('IDENTIFICADORES', $no)) && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('PONTOVIRGULA', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function Retorno(NoArvore $pai) {
+        $no = new NoArvore("Retorno");
+        if ($this->term('RETURN', $no) && 
+            $this->Expressao($no) && 
+            $this->term('PONTOVIRGULA', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function ChamadaFuncao(NoArvore $pai) {
+        $no = new NoArvore("ChamadaFuncao");
+        if ($this->term('IDENTIFICADORES', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            $this->Expressao($no) && 
+            $this->term('FECHAPAREN', $no) &&
+            $this->term('ABRECHAVES', $no) &&
+            $this->Comando($no) &&
+            $this->term('FECHACHAVES', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function If(NoArvore $pai) {
+        $no = new NoArvore("If");
+        if ($this->term('IF', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            ($this->Expressao($no) || $this->term('IDENTIFICADORES', $no)) && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('ABRECHAVES', $no) && 
+            $this->Comando($no) && 
+            $this->term('FECHACHAVES', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function For(NoArvore $pai) {
+        $no = new NoArvore("For");
+        if ($this->term('FOR', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            $this->Atribuicao($no) &&  
+            $this->Expressao($no) && 
+            $this->term('PONTOVIRGULA', $no) && 
+            $this->Atribuicao($no) && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('ABRECHAVES', $no) && 
+            $this->Comando($no) && 
+            $this->term('FECHACHAVES', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function While(NoArvore $pai) {
+        $no = new NoArvore("While");
+        if ($this->term('WHILE', $no) && 
+            $this->term('ABREPAREN', $no) && 
+            ($this->Expressao($no) || $this->term('IDENTIFICADORES', $no))  && 
+            $this->term('FECHAPAREN', $no) && 
+            $this->term('ABRECHAVES', $no) && 
+            $this->Comando($no) && 
+            $this->term('FECHACHAVES', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function Expressao(NoArvore $pai) {
+        $no = new NoArvore("Expressao");
+        if ($this->Termo($no)) {
+            while ($this->term('MAIS', $no) || 
+                   $this->term('MENOS', $no) || 
+                   $this->OperadorLogico($no)) {
+                if(!$this->Termo($no)){
+                    $this->erros[] = "Erro no analisador sintático: Esperado 'identificador/constante', encontrado 'vazio'.";
+                    return false;
+                }
+            }
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function OperadorLogico(NoArvore $pai) {
+        $no = new NoArvore("OperadorLogico");
+        if ($this->term('DUPLAIGUAL', $no) || 
+            $this->term('DIFERENTE', $no) || 
+            $this->term('MENOR_QUE', $no) || 
+            $this->term('MAIOR_QUE', $no)|| 
+            $this->term('MENOR_OU_IGUAL', $no) || 
+            $this->term('MAIOR_OU_IGUAL', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        $this->erros[] = "Erro no analisador sintático: Esperado 'operadorLogico', encontrado 'vazio'.";
+        return false;
+    }
+
+    public function Termo(NoArvore $pai) {
+        $no = new NoArvore("Termo");
+        if ($this->term('IDENTIFICADORES', $no) || 
+            $this->term('CONSTINTEIRAS', $no) || 
+            $this->term('CONSTFLUTUANTE', $no)) {
+            $pai->adicionarFilho($no);
+            return true;
+        }
+        return false;
+    }
+
+    public function term($tk, NoArvore $pai) {
+        $resp = $this->lexico->validate(false)['resp'];
+        if (!empty($resp['errors'])) {
+            $this->erros = $resp['errors'];
+            return false;
+        }
+        $tokens = $resp['tokens'];
+        if (isset($tokens[$this->cont])) {
             if (strtolower($tk) == $tokens[$this->cont]->getName(true)) {
+                // Cria um nó para o token reconhecido e o adiciona ao nó pai
+                $noToken = new NoArvore($tokens[$this->cont]->getName(true));
+                $pai->adicionarFilho($noToken);
+
                 $this->cont++;
-                $erros[]=[];
                 return true;
-            }else{
-                $this->erros[] = "Erro: Esperado '$tk', encontrado '{$tokens[$this->cont]->getName(true)}'";
             }
-        }else{
-            $this->erros[] = "Erro: Esperado '$tk', encontrado 'vazio'";
+        } else {
+            $this->erros[] = "Erro no analisador sintático: Esperado '$tk', encontrado 'vazio'.";
         }
         return false;
-    }
-
-    public function getErros() {
-        return $this->erros;
     }
 
     public function vazio() {
-        return true; 
+        return true;
     }
 }
+
 ?>

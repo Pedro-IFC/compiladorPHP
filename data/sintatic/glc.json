@@ -1,0 +1,63 @@
+{
+    "programa": {
+        "sequencia": ["PROGRAM", "IDENTIFICADORES", "ABREPAREN", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES"]
+    },
+    "lista_var": {
+        "sequencia": ["var", "lista_var"],
+        "vazio": true
+    },
+    "var": {
+        "sequencia": ["tipo", "IDENTIFICADORES", "PONTOVIRGULA"]
+    },
+    "tipo": {
+        "opcoes": ["INT", "CHAR", "FLOAT", "ARRAY"]
+    },
+    "lista_comandos": {
+        "sequencia": ["comando", "lista_comandos"],
+        "vazio": true
+    },
+    "comando": {
+        "opcoes": ["atribuicao", "leitura", "impressao", "retorno", "chamada_funcao", "if", "for", "while"]
+    },
+    "atribuicao": {
+        "sequencia": ["IDENTIFICADORES", "IGUAL", ["expressao", "CONSTINTEIRAS", "CONSTFLUTUANTE"], "PONTOVIRGULA"]
+    },
+    "leitura": {
+        "sequencia": ["READ", "ABREPAREN", "IDENTIFICADORES", "FECHAPAREN", "PONTOVIRGULA"]
+    },
+    "impressao": {
+        "sequencia": ["WRITE", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "PONTOVIRGULA"]
+    },
+    "retorno": {
+        "sequencia": ["RETURN", "expressao", "PONTOVIRGULA"]
+    },
+    "chamada_funcao": {
+        "sequencia": ["IDENTIFICADORES", "ABREPAREN", "expressao", "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    },
+    "if": {
+        "sequencia": ["IF", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    },
+    "for": {
+        "sequencia": ["FOR", "ABREPAREN", "atribuicao", "expressao", "PONTOVIRGULA", "atribuicao", "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    },
+    "while": {
+        "sequencia": ["WHILE", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    },
+    "expressao": {
+        "sequencia": ["termo", "operador_logico", "termo"],
+        "repeticao": true
+    },
+    "operador_logico": {
+        "opcoes": ["IGUAL", "DIFERENTE", "MENOR_QUE", "MAIOR_QUE", "MENOR_OU_IGUAL", "MAIOR_OU_IGUAL", "EXCLA", "DUPLAIGUAL"]
+    },
+    "termo": {
+        "sequencia": ["fator", "operador_aritmetico", "fator"],
+        "repeticao": true
+    },
+    "fator": {
+        "opcoes": ["IDENTIFICADORES", "CONSTANTE", ["ABREPAREN", "expressao", "FECHAPAREN"]]
+    },
+    "operador_aritmetico": {
+        "opcoes": ["ASTERISTICO", "DIVISAO"]
+    }
+}

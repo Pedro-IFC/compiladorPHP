@@ -7,6 +7,11 @@
             justify-content: left;
             align-items: baseline;
             gap: 32px;
+            &.dif{
+                .left, .right{
+                    width: calc(50% - 32px);
+                }
+            }
             .left{
                 width: calc(33% - 16px);
                 max-height: calc(100vh - 120px);
@@ -66,7 +71,23 @@ form{
     .flex{
         display: flex;
         gap: 16px;
+        select{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px solid $primary-color;
+            padding: 9px 19px;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: 700;
+            outline: none!important;
+            cursor: pointer;
+        }
         button, a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 8px;
             margin-top: 10px;
             border: 1px solid $primary-color;

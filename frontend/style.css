@@ -548,6 +548,15 @@ div#diagrama {
   background-color: #45a049;
 }
 
+.disc {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.disc li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 /* Pages
 ========================================================================== */
 .main-header {
@@ -617,6 +626,9 @@ div#diagrama {
 .home {
   z-index: 9;
 }
+.home .al-container {
+  padding: 0px 20px;
+}
 .home .al-container > .row {
   padding: 40px 0px;
   display: flex;
@@ -626,6 +638,18 @@ div#diagrama {
 }
 .home .al-container > .row.dif .left, .home .al-container > .row.dif .right {
   width: calc(50% - 32px);
+}
+.home .al-container > .row.noscroll .left, .home .al-container > .row.noscroll .right {
+  overflow: inherit;
+}
+.home .al-container > .row .small {
+  width: 20%;
+}
+.home .al-container > .row .medium {
+  width: 35%;
+}
+.home .al-container > .row .big {
+  width: 60%;
 }
 .home .al-container > .row .left {
   width: calc(33% - 16px);
@@ -640,14 +664,6 @@ div#diagrama {
 .home .al-container > .row .right > div:not(:last-child) {
   border-bottom: 1px solid #333333;
   padding-bottom: 20px;
-}
-.home .al-container > .row .right .programminblock {
-  border-radius: 8px;
-  padding: 12px;
-  background: #AAA;
-  font-family: monospace;
-  color: #333;
-  margin: 10px 0px;
 }
 .home .al-container h2 {
   color: #164777;
@@ -781,4 +797,13 @@ form .flex button.red:hover svg *, form .flex a.red:hover svg * {
 
 .pd-top-100 {
   padding-top: 100px;
+}
+
+.programminblock {
+  border-radius: 8px;
+  padding: 12px;
+  background: #AAA;
+  font-family: monospace;
+  color: #333;
+  margin: 10px 0px;
 }

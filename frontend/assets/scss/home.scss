@@ -1,6 +1,7 @@
 .home{
     z-index: 9;
     .al-container{
+        padding: 0px 20px;
         >.row{
             padding: 40px 0px;
             display: flex;
@@ -11,6 +12,20 @@
                 .left, .right{
                     width: calc(50% - 32px);
                 }
+            }
+            &.noscroll{
+                .left, .right{
+                    overflow: inherit;
+                }
+            }
+            .small{
+                width: 20%;
+            }
+            .medium{
+                width: 35%;
+            }
+            .big{
+                width: 60%;
             }
             .left{
                 width: calc(33% - 16px);
@@ -24,14 +39,6 @@
                 >div:not(:last-child){
                     border-bottom: 1px solid #333333;
                     padding-bottom: 20px;
-                }
-                .programminblock{
-                    border-radius: 8px;
-                    padding: 12px;
-                    background: #AAA;
-                    font-family: monospace;
-                    color: #333;
-                    margin: 10px 0px;
                 }
             }
         }
@@ -165,4 +172,12 @@ form{
 }
 .pd-top-100{
     padding-top: 100px;
+}
+.programminblock{
+    border-radius: 8px;
+    padding: 12px;
+    background: #AAA;
+    font-family: monospace;
+    color: #333;
+    margin: 10px 0px;
 }

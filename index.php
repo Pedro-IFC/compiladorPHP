@@ -60,6 +60,11 @@ $app->get('/sintaticRecursiveDescentSyntax/home', function (Request $request, Re
     include './frontend/sintaticRecursiveDescentSyntax.php';
     return $response;
 });
+$app->get('/sintaticRecursiveDescentSyntax/gramatica', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sintático";
+    include './frontend/sintaticRDSDescricao.php';
+    return $response;
+});
 $app->post('/sintaticRecursiveDescentSyntax/validate/', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Sinstático";
     $parsedBody = $request->getParsedBody();

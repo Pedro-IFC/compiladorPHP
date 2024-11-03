@@ -25,14 +25,14 @@
     <h3 class="pd0">POST</h3>
     <h3>domain/lexical/validate/</h3>
     <div class="programminblock">
-        curl --location 'http://localhost:8282/sintaticRecursiveDescentSyntax/validate/' \ <br>
+        curl --location 'domain/sintaticRecursiveDescentSyntax/validate/' \ <br>
         --form 'string="programa a(){se(a>=2){escreva(a);}}"'
     </div>
     <p>Assim obtemos o retorno: </p>
     <div class="programminblock">
     {<br>
         "result": true,<br>
-        "tree": "Programa\n--program\n--identificadores\n--abreparen\n--fechaparen\n--abrechaves\n--Lista_comandos\n----Comando\n------If\n--------if\n--------abreparen\n--------Expressao\n----------Termo\n------------identificadores\n----------OperadorLogico\n------------maior_ou_igual\n----------Termo\n------------constinteiras\n--------fechaparen\n--------abrechaves\n--------Comando\n----------Impressao\n------------write\n------------abreparen\n------------Expressao\n--------------Termo\n----------------identificadores\n------------fechaparen\n------------pontovirgula\n--------fechachaves\n--fechachaves\n"
+        "tree": "Programa<br>--program<br>--identificadores<br>--abreparen<br>--fechaparen<br>--abrechaves<br>--Lista_comandos<br>----Comando<br>------If<br>--------if<br>--------abreparen<br>--------Expressao<br>----------Termo<br>------------identificadores<br>----------OperadorLogico<br>------------maior_ou_igual<br>----------Termo<br>------------constinteiras<br>--------fechaparen<br>--------abrechaves<br>--------Comando<br>----------Impressao<br>------------write<br>------------abreparen<br>------------Expressao<br>--------------Termo<br>----------------identificadores<br>------------fechaparen<br>------------pontovirgula<br>--------fechachaves<br>--fechachaves"
     <br>}<br>
     </div>
 </div>

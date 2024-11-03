@@ -529,7 +529,14 @@ div#diagrama{
 .cookie-banner button:hover {
     background-color: #45a049;
 }
-
+.disc{
+	list-style-type: disc;
+	list-style-position: inside;
+	li{
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
 /* Pages
 ========================================================================== */
 @import 'header';

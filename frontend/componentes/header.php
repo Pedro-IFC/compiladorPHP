@@ -24,6 +24,7 @@
                     <strong>Analizador Sintatico</strong>
                     <ul class="submenu">
                         <li><a href="/sintaticRecursiveDescentSyntax/home">Analizador Sintatico De Descida Recursiva</a></li>
+                        <li><a href="/sintaticRecursiveDescentSyntax/gramatica">Gramática</a></li>
                     </ul>
                 </li>
             </ul>

@@ -1,5 +1,5 @@
 <?php
-require_once "NoArvore.php";
+require_once "./tree/NoArvore.php";
 
 class AnalisadorSintaticoDescenteRecursive {
     private int $cont = 0;
@@ -238,6 +238,7 @@ class AnalisadorSintaticoDescenteRecursive {
             $this->term('MENOR_QUE', $no) || 
             $this->term('MAIOR_QUE', $no)|| 
             $this->term('MENOR_OU_IGUAL', $no) || 
+            $this->term('AND', $no) || 
             $this->term('MAIOR_OU_IGUAL', $no)) {
             $pai->adicionarFilho($no);
             return true;

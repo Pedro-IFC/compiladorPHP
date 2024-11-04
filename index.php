@@ -6,9 +6,9 @@ use Slim\Factory\AppFactory;
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/lexical/Lexical.php';
 require __DIR__ . '/sintaticoDescentRecursive/sintaticoDescenteRecursive.php';
+require __DIR__ . '/sintaticPredictive/AnalisadorSintaticoPreditivo.php';
 
 $app = AppFactory::create();
-
 
 $app->get('/', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Trabalho de Compiladores";
@@ -49,12 +49,7 @@ $app->post('/lexical/validate/', function (Request $request, Response $response,
     }
     return $response->withHeader('Content-Type', 'application/json');
 });
-// Analizador Sintático
-$app->get('/sintaticRecursiveDescentSyntax/', function (Request $request, Response $response, $args) {
-    $_SERVER['title'] = "Analisador Sintático";
-    include './frontend/sintaticRecursiveDescentSyntax.php';
-    return $response;
-});
+// Analizador Sintático Descida recursiva
 $app->get('/sintaticRecursiveDescentSyntax/home', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Sintático";
     include './frontend/sintaticRecursiveDescentSyntax.php';
@@ -83,4 +78,36 @@ $app->post('/sintaticRecursiveDescentSyntax/validate/', function (Request $reque
     }
     return $response->withHeader('Content-Type', 'application/json');
 });
+
+
+// Analizador Sintático Preditivo
+$app->get('/sintaticPredictive/home', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sintático";
+    include './frontend/sintaticPredictive.php';
+    return $response;
+});
+$app->get('/sintaticPredictive/gramatica', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sintático";
+    include './frontend/sintaticPredictiveGramatica.php';
+    return $response;
+});
+$app->post('/sintaticPredictive/validate/', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sinstático";
+    $parsedBody = $request->getParsedBody();
+    if (isset($parsedBody['string'])) {
+        $lexicalC = new Lexical($parsedBody['string']);
+        $AnalisadorDR = New AnalisadorSintaticoDescenteRecursive($lexicalC);
+        $result = json_encode([
+            "result" => $AnalisadorDR->analisar(),
+            "tree" => $AnalisadorDR->getArvore()
+        ]);
+        $response->getBody()->write($result);
+    } else {
+        $response->getBody()->write(json_encode(["error" => "Parâmetro 'string' não fornecido."]));
+        return $response->withStatus(400)
+            ->withHeader('Content-Type', 'application/json');
+    }
+    return $response->withHeader('Content-Type', 'application/json');
+});
+
 $app->run();

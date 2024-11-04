@@ -21,10 +21,17 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Analizador Sintatico</strong>
+                    <strong>Sintatico De Descida Recursiva</strong>
                     <ul class="submenu">
-                        <li><a href="/sintaticRecursiveDescentSyntax/home">Analizador Sintatico De Descida Recursiva</a></li>
+                        <li><a href="/sintaticRecursiveDescentSyntax/home">Analizador</a></li>
                         <li><a href="/sintaticRecursiveDescentSyntax/gramatica">Gramática</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Sintático Preditivo</strong>
+                    <ul class="submenu">
+                        <li><a href="/sintaticPredictive/home">Analizador</a></li>
+                        <li><a href="/sintaticPredictive/gramatica">Gramática</a></li>
                     </ul>
                 </li>
             </ul>

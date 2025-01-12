@@ -8,5 +8,10 @@
         "psr-4": {
             "App\\": "src/"
         }
+    },
+    "scripts": {
+        "compilador:generateLexicalTable": "php cli/generateLexicalTable.php",
+        "compilador:generateLexicalAutomato": "php cli/generateLexicalAutomato.php"
     }
+
 }

@@ -1,6 +1,8 @@
 <?php
-class Automato {
+class AnalisadorLexico {
     private static string $prefix = "Erro no analisador léxico: ";
+    public static array $tokens;
+    public static array $errors;
 
     public static function parseTokens($string, $Lexical, $serialize) : array {
         $state = 0;
@@ -48,6 +50,8 @@ class Automato {
             }
             $col++;
         }
+        self::$tokens = $tokens;
+        self::$errors = $errorList;
         return [
             'tokens'=>$tokens,
             'errors' => $errorList

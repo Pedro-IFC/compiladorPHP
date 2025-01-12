@@ -1,63 +1,116 @@
 {
     "programa": {
-        "sequencia": ["PROGRAM", "IDENTIFICADORES", "ABREPAREN", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES"]
+        "sequencia": ["inicio", "lista_funcoes", "fim"]
     },
-    "lista_var": {
-        "sequencia": ["var", "lista_var"],
+    "lista_funcoes": {
+        "sequencia": ["funcao", "lista_funcoes"],
         "vazio": true
     },
-    "var": {
-        "sequencia": ["tipo", "IDENTIFICADORES", "PONTOVIRGULA"]
+    "funcao": {
+        "sequencia": ["def", "tipo", "identificador", "ABREPAREN", "parametros", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES"]
+    },
+    "parametros": {
+        "sequencia": ["tipo", "identificador", "parametros_lista"],
+        "vazio": true
+    },
+    "parametros_lista": {
+        "sequencia": ["VIRGULA", "tipo", "identificador", "parametros_lista"],
+        "vazio": true
     },
     "tipo": {
-        "opcoes": ["INT", "CHAR", "FLOAT", "ARRAY"]
+        "opcoes": ["char", "int", "float", "array"]
     },
     "lista_comandos": {
         "sequencia": ["comando", "lista_comandos"],
         "vazio": true
     },
     "comando": {
-        "opcoes": ["atribuicao", "leitura", "impressao", "retorno", "chamada_funcao", "if", "for", "while"]
+        "opcoes": [
+            "declaracao_variavel",
+            "atribuicao",
+            "leitura",
+            "impressao",
+            "retorno",
+            "chamada_funcao",
+            "selecao",
+            "repeticao"
+        ]
+    },
+    "declaracao_variavel": {
+        "sequencia": ["tipo", "identificador", "PONTOVIRGULA"]
     },
     "atribuicao": {
-        "sequencia": ["IDENTIFICADORES", "IGUAL", ["expressao", "CONSTINTEIRAS", "CONSTFLUTUANTE"], "PONTOVIRGULA"]
+        "sequencia": ["identificador", "IGUAL", "expressao", "PONTOVIRGULA"]
     },
     "leitura": {
-        "sequencia": ["READ", "ABREPAREN", "IDENTIFICADORES", "FECHAPAREN", "PONTOVIRGULA"]
+        "sequencia": ["leia", "ABREPAREN", "identificador", "FECHAPAREN", "PONTOVIRGULA"]
     },
     "impressao": {
-        "sequencia": ["WRITE", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "PONTOVIRGULA"]
+        "sequencia": ["imprima", "ABREPAREN", "expressao", "FECHAPAREN", "PONTOVIRGULA"]
     },
     "retorno": {
-        "sequencia": ["RETURN", "expressao", "PONTOVIRGULA"]
+        "sequencia": ["retorne", "expressao", "PONTOVIRGULA"]
     },
     "chamada_funcao": {
-        "sequencia": ["IDENTIFICADORES", "ABREPAREN", "expressao", "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+        "sequencia": ["identificador", "ABREPAREN", "argumentos", "FECHAPAREN", "PONTOVIRGULA"]
     },
-    "if": {
-        "sequencia": ["IF", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    "argumentos": {
+        "sequencia": ["expressao", "argumentos_lista"],
+        "vazio": true
     },
-    "for": {
-        "sequencia": ["FOR", "ABREPAREN", "atribuicao", "expressao", "PONTOVIRGULA", "atribuicao", "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    "argumentos_lista": {
+        "sequencia": ["VIRGULA", "expressao", "argumentos_lista"],
+        "vazio": true
     },
-    "while": {
-        "sequencia": ["WHILE", "ABREPAREN", ["expressao", "IDENTIFICADORES"], "FECHAPAREN", "ABRECHAVES", "comando", "FECHACHAVES"]
+    "selecao": {
+        "sequencia": ["se", "ABREPAREN", "condicao", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES", "selecao_senao"]
+    },
+    "selecao_senao": {
+        "sequencia": ["senao", "ABRECHAVES", "lista_comandos", "FECHACHAVES"],
+        "vazio": true
+    },
+    "repeticao": {
+        "opcoes": [
+            {
+                "sequencia": ["para", "ABREPAREN", "atribuicao", "condicao", "PONTOVIRGULA", "atribuicao", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES"]
+            },
+            {
+                "sequencia": ["enquanto", "ABREPAREN", "condicao", "FECHAPAREN", "ABRECHAVES", "lista_comandos", "FECHACHAVES"]
+            }
+        ]
+    },
+    "condicao": {
+        "sequencia": ["expressao", "operador_relacional", "expressao"]
+    },
+    "operador_relacional": {
+        "opcoes": ["==", "!=", "<", ">", "<=", ">="]
     },
     "expressao": {
-        "sequencia": ["termo", "operador_logico", "termo"],
+        "sequencia": ["termo", "expressao_opcional"],
         "repeticao": true
     },
-    "operador_logico": {
-        "opcoes": ["IGUAL", "DIFERENTE", "MENOR_QUE", "MAIOR_QUE", "MENOR_OU_IGUAL", "MAIOR_OU_IGUAL", "EXCLA", "DUPLAIGUAL"]
+    "expressao_opcional": {
+        "sequencia": ["operador_aritmetico", "termo", "expressao_opcional"],
+        "vazio": true
     },
     "termo": {
-        "sequencia": ["fator", "operador_aritmetico", "fator"],
+        "sequencia": ["fator", "termo_opcional"],
         "repeticao": true
     },
+    "termo_opcional": {
+        "sequencia": ["operador_aritmetico", "fator", "termo_opcional"],
+        "vazio": true
+    },
     "fator": {
-        "opcoes": ["IDENTIFICADORES", "CONSTANTE", ["ABREPAREN", "expressao", "FECHAPAREN"]]
+        "opcoes": ["ABREPAREN", "expressao", "FECHAPAREN", "identificador", "constante"]
     },
     "operador_aritmetico": {
-        "opcoes": ["ASTERISTICO", "DIVISAO"]
+        "opcoes": ["+", "-", "*", "/"]
+    },
+    "identificador": {
+        "padrao": "[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    "constante": {
+        "opcoes": ["número", "caractere", "string"]
     }
 }

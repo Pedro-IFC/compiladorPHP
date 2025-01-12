@@ -49,3 +49,7 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Ignorar arquivos específicos dentro da pasta lexical
+lexical/automato.jff
+lexical/tabelalexica.html
+lexical/tabelalexica.json

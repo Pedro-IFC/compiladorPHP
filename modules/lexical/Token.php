@@ -4,6 +4,8 @@ class Token{
     private string $lexeme;
     private int $inicio;
     private int $line;
+
+    
     function __construct(string $name, string $lexeme, int $inicio, int $line) {
         $this->name = $name;
         $this->lexeme = $lexeme;

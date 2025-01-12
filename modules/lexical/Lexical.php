@@ -1,6 +1,6 @@
 <?php
 require_once "Token.php";
-require_once "Automato.php";
+require_once "AnalisadorLexico.php";
 
 class Lexical {
     private string $string = "";
@@ -9,6 +9,7 @@ class Lexical {
     private array $constantes = [];
     private array $palavrasReservadas = [];
     private array $operadores = [];
+    private array $tokenList = [];
     public function __construct(string $string){
         $this->setString($string);
         if(!file_exists($this->json)){
@@ -31,10 +32,13 @@ class Lexical {
     public function setOperador(string $lexeme, int $inicio, int $fim, $line) : void{
         $this->operadores[] = new Token("Operador", $lexeme, $inicio, $fim, $line);
     }
+    public function getTokenList(){
+        return $this->tokenList;
+    }
     public function validate(bool $serialize) : array{
         $Lexical = json_decode(file_get_contents($this->json), true);
-        return [
-            'resp' =>  Automato::parseTokens($this->string, $Lexical, $serialize),
-        ];
+        $response = AnalisadorLexico::parseTokens($this->string, $Lexical, $serialize);
+        $this->tokenList = AnalisadorLexico::$tokens;
+        return $response;
     }
 } 

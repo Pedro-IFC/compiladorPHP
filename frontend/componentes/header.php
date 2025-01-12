@@ -20,20 +20,6 @@
                         <li><a download href="/data/lexical/automato.jff">Baixar Automato</a></li>
                     </ul>
                 </li>
-                <li>
-                    <strong>Sintatico De Descida Recursiva</strong>
-                    <ul class="submenu">
-                        <li><a href="/sintaticRecursiveDescentSyntax/home">Analizador</a></li>
-                        <li><a href="/sintaticRecursiveDescentSyntax/gramatica">Gramática</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Sintático Preditivo</strong>
-                    <ul class="submenu">
-                        <li><a href="/sintaticPredictive/home">Analizador</a></li>
-                        <li><a href="/sintaticPredictive/gramatica">Gramática</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </header>

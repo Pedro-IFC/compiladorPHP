@@ -1,0 +1,80 @@
+<programa> ::= INICIO <lista_de_declaracoes> FIM 
+
+<lista_de_declaracoes> ::= <declaracao> <lista_de_declaracoes>
+                         | ε
+
+<declaracao> ::= <declaracao_variavel>
+               | <declaracao_funcao>
+
+<declaracao_variavel> ::= <tipo> IDENTIFICADORES PONTOVIRGULA
+
+<tipo> ::= INT
+         | CHAR
+         | FLOAT
+         | ARRAY ABRECONCHETES CONSTINTEIRAS FECHACONCHETES DE <tipo>
+
+<declaracao_funcao> ::= FUNCTION IDENTIFICADORES ABREPAREN <parametros> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES
+
+<parametros> ::= <parametro> VIRGULA <parametros>
+               | <parametro>
+               | ε
+
+<parametro> ::= <tipo> IDENTIFICADORES
+
+<lista_de_comandos> ::= <comando> <lista_de_comandos>
+                      | ε
+
+<comando> ::= <comando_atribuicao>
+            | <comando_leitura>
+            | <comando_impressao>
+            | <comando_retorno>
+            | <comando_selecao>
+            | <comando_repeticao>
+            | <chamada_funcao> PONTOVIRGULA
+
+<comando_atribuicao> ::= IDENTIFICADORES IGUAL <expressao> PONTOVIRGULA
+
+<comando_leitura> ::= READ ABREPAREN IDENTIFICADORES FECHAPAREN PONTOVIRGULA
+
+<comando_impressao> ::= WRITE ABREPAREN <expressao> FECHAPAREN PONTOVIRGULA
+
+<comando_retorno> ::= RETURN <expressao> PONTOVIRGULA
+
+<comando_selecao> ::= IF ABREPAREN <expressao_logica> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES <comando_senao>
+<comando_senao> ::= ELSE ABRECHAVES <lista_de_comandos> FECHACHAVES
+                  | ε
+
+<comando_repeticao> ::= WHILE ABREPAREN <expressao_logica> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES
+                      | DO ABRECHAVES <lista_de_comandos> FECHACHAVES WHILE ABREPAREN <expressao_logica> FECHAPAREN PONTOVIRGULA
+
+<chamada_funcao> ::= IDENTIFICADORES ABREPAREN <lista_de_argumentos> FECHAPAREN
+
+<lista_de_argumentos> ::= <expressao> VIRGULA <lista_de_argumentos>
+                        | <expressao>
+                        | ε
+
+<expressao> ::= <expressao> MAIS <termo>
+              | <expressao> MENOS <termo>
+              | <termo>
+
+<termo> ::= <termo> ASTERISTICO <fator>
+          | <termo> DIVISAO <fator>
+          | <termo> MODULODADIVISAO <fator>
+          | <fator>
+
+<fator> ::= ABREPAREN <expressao> FECHAPAREN
+          | CONSTINTEIRAS
+          | CONSTFLUTUANTE
+          | IDENTIFICADORES
+
+<expressao_logica> ::= <expressao> <operador_relacional> <expressao>
+                     | <expressao_logica> AND <expressao_logica>
+                     | EXCLA <expressao_logica>
+                     | ABREPAREN <expressao_logica> FECHAPAREN
+
+<operador_relacional> ::= MENOR_QUE
+                        | MAIOR_QUE
+                        | MENOR_OU_IGUAL
+                        | MAIOR_OU_IGUAL
+                        | DUPLAIGUAL
+                        | DIFERENTE

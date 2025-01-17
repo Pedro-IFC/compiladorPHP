@@ -25,8 +25,8 @@ fim<?php } ?></textarea>
                     ?>
                         <h3 style="color: green">Análise Léxica com sucesso!</h3>
                     <?php
-                    $SDR = new AnalisadorLRSimples();
-                    if($SDR->parse($lexicalC->getTokenList())){
+                    $SDR = new AnalisadorRSL("./data/sintatic/tabelagoto.json");
+                    if($SDR->analisar($lexicalC->getTokenList())){
                         ?>
                             <h3 style="color: green">Análise sintática concluída sem erros</h3>
                         <?php

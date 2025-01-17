@@ -1,8 +1,10 @@
 {
     "require": {
+        "php": "^8.3",
         "slim/slim": "^4.0",
         "slim/psr7": "^1.4",
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^6.0",
+        "phpoffice/phpspreadsheet": "^1.29"
     },
     "autoload": {
         "psr-4": {
@@ -11,7 +13,7 @@
     },
     "scripts": {
         "compilador:generateLexicalTable": "php cli/generateLexicalTable.php",
-        "compilador:generateLexicalAutomato": "php cli/generateLexicalAutomato.php"
+        "compilador:generateLexicalAutomato": "php cli/generateLexicalAutomato.php",
+        "compilador:generateGotoJson": "php cli/generateGotoJson.php"
     }
-
 }

@@ -1,80 +1,37 @@
-<programa> ::= INICIO <lista_de_declaracoes> FIM 
+<Programa>::= MAIN AP <ListaParametros> FP AC <ListaComandos> FC | î;
 
-<lista_de_declaracoes> ::= <declaracao> <lista_de_declaracoes>
-                         | ε
+<ListaParametros>::= ID <ListaParametrosRest> | î;
 
-<declaracao> ::= <declaracao_variavel>
-               | <declaracao_funcao>
+<ListaParametrosRest> ::= VIR ID <ListaParametrosRest> | î;
 
-<declaracao_variavel> ::= <tipo> IDENTIFICADORES PONTOVIRGULA
+<ListaComandos> ::= <Comando> <ListaComandosRest> | î;
 
-<tipo> ::= INT
-         | CHAR
-         | FLOAT
-         | ARRAY ABRECONCHETES CONSTINTEIRAS FECHACONCHETES DE <tipo>
+<ListaComandosRest> ::= <Comando> <ListaComandosRest> | î;
 
-<declaracao_funcao> ::= FUNCTION IDENTIFICADORES ABREPAREN <parametros> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES
+<Comando> ::= <Declaracao> | <Atribuicao> | <ChamadaFuncao> | <ControleFluxo>;
 
-<parametros> ::= <parametro> VIRGULA <parametros>
-               | <parametro>
-               | ε
+<Declaracao> ::= <Tipo> ID;
 
-<parametro> ::= <tipo> IDENTIFICADORES
+<Atribuicao> ::= ID EQ <Expressao> PV;
 
-<lista_de_comandos> ::= <comando> <lista_de_comandos>
-                      | ε
+<ChamadaFuncao> ::= ID AP <ListaArgumentos> FP PV;
 
-<comando> ::= <comando_atribuicao>
-            | <comando_leitura>
-            | <comando_impressao>
-            | <comando_retorno>
-            | <comando_selecao>
-            | <comando_repeticao>
-            | <chamada_funcao> PONTOVIRGULA
+<ControleFluxo> ::= SE AP <Expressao> FP AC <ListaComandos> FC SENAO AC <ListaComandos> FC
+               | ENQUANTO AP <Expressao> FP AC <ListaComandos> FC
+               | PARA AP ID EQ <Expressao> PV <Expressao> PV <Expressao> FP AC <ListaComandos> FC;
 
-<comando_atribuicao> ::= IDENTIFICADORES IGUAL <expressao> PONTOVIRGULA
+<Expressao> ::= <Termo> <ExpressaoRest>;
 
-<comando_leitura> ::= READ ABREPAREN IDENTIFICADORES FECHAPAREN PONTOVIRGULA
+<ExpressaoRest> ::= MAI <Termo> <ExpressaoRest> | MEN <Termo> <ExpressaoRest> | î;
 
-<comando_impressao> ::= WRITE ABREPAREN <expressao> FECHAPAREN PONTOVIRGULA
+<Termo> ::= <Fator> <TermoRest>;
 
-<comando_retorno> ::= RETURN <expressao> PONTOVIRGULA
+<TermoRest> ::= MUL<Fator> <TermoRest> | DIV <Fator> <TermoRest> | MOD <Fator> <TermoRest> | î;
 
-<comando_selecao> ::= IF ABREPAREN <expressao_logica> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES <comando_senao>
-<comando_senao> ::= ELSE ABRECHAVES <lista_de_comandos> FECHACHAVES
-                  | ε
+<Fator> ::= ID | CONSTANTESINTEIRAS | CONSTANTESPONTOFLUTUANTE | AP <Expressao> FP;
 
-<comando_repeticao> ::= WHILE ABREPAREN <expressao_logica> FECHAPAREN ABRECHAVES <lista_de_comandos> FECHACHAVES
-                      | DO ABRECHAVES <lista_de_comandos> FECHACHAVES WHILE ABREPAREN <expressao_logica> FECHAPAREN PONTOVIRGULA
+<Tipo> ::= INT | CHAR | FLOAT ;
 
-<chamada_funcao> ::= IDENTIFICADORES ABREPAREN <lista_de_argumentos> FECHAPAREN
+<ListaArgumentos> ::= <Expressao> <ListaArgumentosRest> | î;
 
-<lista_de_argumentos> ::= <expressao> VIRGULA <lista_de_argumentos>
-                        | <expressao>
-                        | ε
-
-<expressao> ::= <expressao> MAIS <termo>
-              | <expressao> MENOS <termo>
-              | <termo>
-
-<termo> ::= <termo> ASTERISTICO <fator>
-          | <termo> DIVISAO <fator>
-          | <termo> MODULODADIVISAO <fator>
-          | <fator>
-
-<fator> ::= ABREPAREN <expressao> FECHAPAREN
-          | CONSTINTEIRAS
-          | CONSTFLUTUANTE
-          | IDENTIFICADORES
-
-<expressao_logica> ::= <expressao> <operador_relacional> <expressao>
-                     | <expressao_logica> AND <expressao_logica>
-                     | EXCLA <expressao_logica>
-                     | ABREPAREN <expressao_logica> FECHAPAREN
-
-<operador_relacional> ::= MENOR_QUE
-                        | MAIOR_QUE
-                        | MENOR_OU_IGUAL
-                        | MAIOR_OU_IGUAL
-                        | DUPLAIGUAL
-                        | DIFERENTE
+<ListaArgumentosRest> ::= VIR <Expressao> <ListaArgumentosRest> | î ;

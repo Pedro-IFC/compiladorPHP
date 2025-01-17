@@ -72,18 +72,34 @@ class SLRParser {
                 $ruleCount = $action['rule'];
                 $removedCount = 0;
 
+                // Verificar se o valor já existe na pilha antes de removê-lo
+                $foundInStack = false;
                 foreach ($stack as $key => $value) {
-                    if ($removedCount >= $ruleCount) {
-                        unset($stack[$key]); // Remove os elementos excedentes
-                    } else {
-                        $removedCount++;
+                    if ($value == $ruleCount) {
+                        $foundInStack = true;
+                        break;
+                    }
+                }
+
+                if (!$foundInStack) {
+                    // Se não encontrado, inseri na pilha, mas não remove
+                    $stack[] = $ruleCount;
+                } else {
+                    // Caso contrário, continue removendo os elementos conforme a lógica original
+                    foreach ($stack as $key => $value) {
+                        if ($removedCount >= $ruleCount) {
+                            unset($stack[$key]); // Remove os elementos excedentes
+                        } else {
+                            $removedCount++;
+                        }
                     }
                 }
 
                 $state = end($stack);
-                $lhs = array_keys($this->gotoTable[$state])[0]; // Assume one LHS per reduce
-                $stack[] = $this->gotoTable[$state][$lhs];
-
+                if(isset($this->gotoTable[$state])){
+                    $lhs = array_keys($this->gotoTable[$state])[0]; // Assume one LHS per reduce
+                    $stack[] = $this->gotoTable[$state][$lhs];
+                }
             } elseif ($action['type'] === 'ACCEPT') {
                 return true;
             }

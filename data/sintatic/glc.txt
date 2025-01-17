@@ -10,7 +10,7 @@
 
 <Comando> ::= <Declaracao> | <Atribuicao> | <ChamadaFuncao> | <ControleFluxo>;
 
-<Declaracao> ::= <Tipo> ID;
+<Declaracao> ::= <Tipo> ID PV;
 
 <Atribuicao> ::= ID EQ <Expressao> PV;
 

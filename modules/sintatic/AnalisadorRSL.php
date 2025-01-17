@@ -1,63 +1,100 @@
 <?php
 
-class AnalisadorRSL {
-    private array $tabelaGoto;
-    private array $tabelaAcao;
+class SLRParser {
+    private array $gotoTable;
+    private array $actionTable;
 
     public function __construct(string $jsonFilePath) {
-        $jsonData = file_get_contents($jsonFilePath);
-        $parsedData = json_decode($jsonData, true);
-
-        $this->tabelaAcao = $parsedData['acao'] ?? [];
-        $this->tabelaGoto = $parsedData['desvio'] ?? [];
+        $this->loadParsingTable($jsonFilePath);
     }
 
-    public function analisar(array $tokens): bool {
-        $pilha = [0]; // Pilha de estados
-        $indice = 0;  // Índice atual na lista de tokens
+    private function loadParsingTable(string $filePath): void {
+        $data = json_decode(file_get_contents($filePath), true);
+        if ($data === null) {
+            throw new Exception("Invalid JSON file");
+        }
+
+        $this->gotoTable = [];
+        $this->actionTable = [];
+
+        foreach ($data as $state => $transitions) {
+            foreach ($transitions as $symbol => $action) {
+                if (str_starts_with($action, 'SHIFT')) {
+                    $nextState = (int) filter_var($action, FILTER_SANITIZE_NUMBER_INT);
+                    $this->actionTable[$state][$symbol] = ['type' => 'SHIFT', 'state' => $nextState, 'raw' => $action];
+                } elseif (str_starts_with($action, 'REDUCE')) {
+                    $ruleIndex = (int) filter_var($action, FILTER_SANITIZE_NUMBER_INT);
+                    $this->actionTable[$state][$symbol] = ['type' => 'REDUCE', 'rule' => $ruleIndex, 'raw' => $action];
+                } elseif ($action === 'ACCEPT') {
+                    $this->actionTable[$state][$symbol] = ['type' => 'ACCEPT', 'raw' => $action];
+                } else {
+                    $this->gotoTable[$state][$symbol] = (int) $action;
+                }
+            }
+        }
+    }
+
+    public function parse(array $tokens): bool {
+        $stack = [0]; // Stack starts with state 0
+        $index = 0; // Token pointer
 
         while (true) {
-            $estadoAtual = end($pilha); // Último estado da pilha
-            $tokenAtual = $tokens[$indice] ?? null;
+            $state = end($stack);
+            $currentToken = $tokens[$index] ?? null;
+            $tokenName = $currentToken ? $currentToken->getName() : '$'; // Use '$' for end of input
 
-            $simbolo = $tokenAtual ? $tokenAtual->getName() : '$'; // Nome do token atual ou $
-            var_dump("Estado " . $estadoAtual);
-            var_dump("Token " . $tokenAtual->getName());
-            var_dump($this->tabelaAcao[$estadoAtual][$simbolo]);
-            $acao = $this->tabelaAcao[$estadoAtual][$simbolo] ?? '-';
+            $action = $this->actionTable[$state][$tokenName] ?? null;
 
-            if ($acao === '-') {
-                throw new Exception("Erro de análise no estado $estadoAtual com o símbolo '$simbolo'.");
+            if ($action === null) {
+                $this->syntaxError($currentToken);
+                return false;
             }
 
-            if (strpos($acao, 'SHIFT') === 0) {
-                // Transição SHIFT
-                $novoEstado = (int) filter_var($acao, FILTER_SANITIZE_NUMBER_INT);
-                array_push($pilha, $novoEstado);
-                $indice++; // Avança para o próximo token
-            } elseif (strpos($acao, 'REDUCE') === 0) {
-                // Transição REDUCE
-                $producao = (int) filter_var($acao, FILTER_SANITIZE_NUMBER_INT);
-                // Aqui você pode ajustar a lógica para reduzir com base em uma gramática específica
-                // Por exemplo, você poderia usar um array que define o tamanho de cada produção
-                $tamanhoReducao = 1; // Supondo que REDUCE(X) remove X elementos (exemplo)
-                for ($i = 0; $i < $tamanhoReducao; $i++) {
-                    array_pop($pilha); // Remove estados da pilha
-                }
-                $estadoAnterior = end($pilha);
-                $simboloGoto = "<simbolo_produzido>"; // Ajuste para o símbolo produzido
-                $novoEstado = $this->tabelaGoto[$estadoAnterior][$simboloGoto] ?? null;
+            echo "<hr>";
+            echo "Estado: ";
+            var_dump($state);
+            echo "<br>";
+            echo "Token: ";
+            var_dump($tokenName);
+            echo "<br>";
+            echo "Acao: ";
+            var_dump($action['raw']);
+            echo "<br>";
+            echo "Pilha: ";
+            var_dump($stack);
 
-                if ($novoEstado === null || $novoEstado === '-') {
-                    throw new Exception("Erro de GOTO no estado $estadoAnterior para o símbolo '$simboloGoto'.");
+            if ($action['type'] === 'SHIFT') {
+                $stack[] = $action['state'];
+                $index++;
+            } elseif ($action['type'] === 'REDUCE') {
+                var_dump($action['rule']);
+
+                $ruleCount = $action['rule'];
+                $removedCount = 0;
+
+                foreach ($stack as $key => $value) {
+                    if ($removedCount >= $ruleCount) {
+                        unset($stack[$key]); // Remove os elementos excedentes
+                    } else {
+                        $removedCount++;
+                    }
                 }
 
-                array_push($pilha, $novoEstado);
-            } elseif ($acao === 'ACCEPT') {
-                return true; // Aceitação bem-sucedida
-            } else {
-                throw new Exception("Ação inválida encontrada: $acao.");
+                $state = end($stack);
+                $lhs = array_keys($this->gotoTable[$state])[0]; // Assume one LHS per reduce
+                $stack[] = $this->gotoTable[$state][$lhs];
+
+            } elseif ($action['type'] === 'ACCEPT') {
+                return true;
             }
+        }
+    }
+
+    private function syntaxError(?Token $token): void {
+        if ($token) {
+            echo "Syntax error at line {$token->getLine()}, near '{$token->getLexeme()}'.\n";
+        } else {
+            echo "Syntax error at end of input.\n";
         }
     }
 }

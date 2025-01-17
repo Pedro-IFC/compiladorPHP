@@ -10,53 +10,40 @@ if ($tabelas->length == 0) {
 }
 
 // Extrai cabeçalhos e dados das tabelas
-$jsonArray = [
-    "acao" => [],
-    "desvio" => []
-];
+$jsonArray = [];
+$tabela = $tabelas[0]; // Assume que a primeira tabela é a relevante
+$linhas = $tabela->getElementsByTagName('tr');
 
-// Processa a tabela
-foreach ($tabelas as $tabela) {
-    $linhas = $tabela->getElementsByTagName('tr');
-    $headersAcao = [];
-    $headersDesvio = [];
-    $isHeader = true;
+// Obtém os cabeçalhos (primeiras linhas)
+$colunasHeader = [];
+foreach ($linhas as $index => $linha) {
+    $colunas = $linha->getElementsByTagName('td');
+    if ($index == 0) { // Pulando as linhas de títulos
+        continue;
+    }
 
-    foreach ($linhas as $linha) {
-        $celulas = $linha->getElementsByTagName('td');
-        $dadosLinha = [];
-        $estado = null;
+    if ($index == 1) {
+        foreach ($colunas as $col) {
+            $colunasHeader[] = trim($col->textContent);
+        }
+        continue;
+    }
 
-        foreach ($celulas as $index => $celula) {
-            $conteudo = trim($celula->textContent);
-
-            if ($isHeader) {
-                // Processa cabeçalhos
-                if ($index == 0) {
-                    $headersAcao[] = "ESTADO";
-                } elseif ($index < 41) {
-                    $headersAcao[] = $conteudo;
-                } else {
-                    $headersDesvio[] = $conteudo;
-                }
-            } else {
-                // Processa dados
-                if ($index == 0) {
-                    $estado = $conteudo;
-                } elseif ($index < 41) {
-                    $dadosLinha["acao"][$headersAcao[$index]] = $conteudo;
-                } else {
-                    $dadosLinha["desvio"][$headersDesvio[$index - 41]] = $conteudo;
-                }
+    $estado = null;
+    $dadosLinha = [];
+    foreach ($colunas as $colIndex => $col) {
+        if ($colIndex == 0) { // Primeira coluna é o estado
+            $estado = trim($col->textContent);
+        } else {
+            $token = $colunasHeader[$colIndex-1];
+            $valor = trim($col->textContent);
+            if ($valor !== '-' && $valor !== '') {
+                $dadosLinha[$token] = $valor;
             }
         }
-
-        if (!$isHeader && $estado !== null) {
-            $jsonArray["acao"][$estado] = $dadosLinha["acao"];
-            $jsonArray["desvio"][$estado] = $dadosLinha["desvio"];
-        }
-
-        $isHeader = false;
+    }
+    if ($estado !== null && !empty($dadosLinha)) {
+        $jsonArray[$estado] = $dadosLinha;
     }
 }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require '/vendor/autoload.php';
 
 $commands = [
     'generateLexicalTable' => './cli/generateLexicalTable.php',
@@ -18,4 +18,4 @@ if (!$command || !isset($commands[$command])) {
     exit(1);
 }
 
-require __DIR__ . '/' . $commands[$command];
+require '/' . $commands[$command];

@@ -3,9 +3,9 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
-require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/modules/lexical/Lexical.php';
-require __DIR__ . '/modules/sintatic/AnalisadorRSL.php';
+require './vendor/autoload.php';
+require './modules/lexical/Lexical.php';
+require './modules/sintatic/AnalisadorRSL.php';
 
 $app = AppFactory::create();
 
@@ -35,12 +35,6 @@ $app->get('/lexical/automato', function (Request $request, Response $response, $
     return $response;
 });
 
-// Analizador Sintático
-$app->get('/sintatic/home', function (Request $request, Response $response, $args) {
-    $_SERVER['title'] = "Analisador Léxico";
-    include './frontend/sintatic.php';
-    return $response;
-});
 $app->get('/sintatic/slr', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Sintático";
     include './frontend/componentes/header.php';

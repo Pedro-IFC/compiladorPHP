@@ -1,1086 +1,987 @@
-{
-    "acao": {
-        "$": {
-            "A\u00c7\u00c3O": "MAIN",
-            "DESVIO": "FUNCAO",
-            "": "StrLiteral"
-        },
-        "0": {
-            "A\u00c7\u00c3O": "REDUCE(1)",
-            "DESVIO": "SHIFT(2)",
-            "": "-"
-        },
-        "1": {
-            "A\u00c7\u00c3O": "ACCEPT",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "2": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "3": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "4": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "5": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(10)"
-        },
-        "6": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(49)"
-        },
-        "7": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(50)"
-        },
-        "8": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(51)"
-        },
-        "9": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "10": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "11": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "12": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "13": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "14": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "15": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "16": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(10)"
-        },
-        "17": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(11)"
-        },
-        "18": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(12)"
-        },
-        "19": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(13)"
-        },
-        "20": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(14)"
-        },
-        "21": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(31)"
-        },
-        "22": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "23": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "24": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "25": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "26": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "27": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(38)"
-        },
-        "28": {
-            "A\u00c7\u00c3O": "REDUCE(0)",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "29": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "30": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "31": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "32": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "33": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "34": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "35": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "36": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(53)"
-        },
-        "37": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(55)"
-        },
-        "38": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "39": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "40": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(15)"
-        },
-        "41": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "42": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "43": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "44": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "45": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "46": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "47": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "48": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "49": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "50": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "51": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "52": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "53": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "54": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "55": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "56": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "57": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(83)"
-        },
-        "58": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "59": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(16)"
-        },
-        "60": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "61": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "62": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "63": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "64": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "65": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "66": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "67": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "68": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "69": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "70": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "71": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "72": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "73": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "74": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "75": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "76": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "77": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "78": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "79": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "80": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "81": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "82": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "83": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "84": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "85": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "86": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "87": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "88": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "89": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "90": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "91": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "92": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "93": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "94": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "95": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "96": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "97": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "98": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(17)"
-        },
-        "99": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "100": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "101": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "102": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "103": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(22)"
-        },
-        "104": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "105": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "106": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "107": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "108": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "109": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "110": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "111": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "112": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "113": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "114": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "115": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "116": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "117": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "118": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "119": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "120": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "121": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(21)"
-        },
-        "122": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(19)"
-        },
-        "123": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "124": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "125": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(45)"
-        },
-        "126": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "127": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "128": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "129": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "130": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(18)"
-        },
-        "131": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "SHIFT(22)"
-        },
-        "132": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "-"
-        },
-        "133": {
-            "A\u00c7\u00c3O": "-",
-            "DESVIO": "-",
-            "": "REDUCE(20)"
-        }
+[
+    {
+        "$": "REDUCE(1)",
+        "MAIN": "SHIFT(2)",
+        "<Programa>": "1"
     },
-    "desvio": {
-        "$": {
-            "": "<ArgumentoImpressao>"
-        },
-        "0": {
-            "": "-"
-        },
-        "1": {
-            "": "-"
-        },
-        "2": {
-            "": "-"
-        },
-        "3": {
-            "": "-"
-        },
-        "4": {
-            "": "-"
-        },
-        "5": {
-            "": "-"
-        },
-        "6": {
-            "": "-"
-        },
-        "7": {
-            "": "-"
-        },
-        "8": {
-            "": "-"
-        },
-        "9": {
-            "": "-"
-        },
-        "10": {
-            "": "-"
-        },
-        "11": {
-            "": "-"
-        },
-        "12": {
-            "": "-"
-        },
-        "13": {
-            "": "-"
-        },
-        "14": {
-            "": "-"
-        },
-        "15": {
-            "": "-"
-        },
-        "16": {
-            "": "-"
-        },
-        "17": {
-            "": "-"
-        },
-        "18": {
-            "": "-"
-        },
-        "19": {
-            "": "-"
-        },
-        "20": {
-            "": "-"
-        },
-        "21": {
-            "": "-"
-        },
-        "22": {
-            "": "-"
-        },
-        "23": {
-            "": "-"
-        },
-        "24": {
-            "": "-"
-        },
-        "25": {
-            "": "-"
-        },
-        "26": {
-            "": "-"
-        },
-        "27": {
-            "": "-"
-        },
-        "28": {
-            "": "-"
-        },
-        "29": {
-            "": "-"
-        },
-        "30": {
-            "": "-"
-        },
-        "31": {
-            "": "-"
-        },
-        "32": {
-            "": "-"
-        },
-        "33": {
-            "": "-"
-        },
-        "34": {
-            "": "-"
-        },
-        "35": {
-            "": "-"
-        },
-        "36": {
-            "": "-"
-        },
-        "37": {
-            "": "54"
-        },
-        "38": {
-            "": "-"
-        },
-        "39": {
-            "": "-"
-        },
-        "40": {
-            "": "-"
-        },
-        "41": {
-            "": "-"
-        },
-        "42": {
-            "": "-"
-        },
-        "43": {
-            "": "-"
-        },
-        "44": {
-            "": "-"
-        },
-        "45": {
-            "": "-"
-        },
-        "46": {
-            "": "-"
-        },
-        "47": {
-            "": "-"
-        },
-        "48": {
-            "": "-"
-        },
-        "49": {
-            "": "-"
-        },
-        "50": {
-            "": "-"
-        },
-        "51": {
-            "": "-"
-        },
-        "52": {
-            "": "-"
-        },
-        "53": {
-            "": "-"
-        },
-        "54": {
-            "": "-"
-        },
-        "55": {
-            "": "-"
-        },
-        "56": {
-            "": "-"
-        },
-        "57": {
-            "": "-"
-        },
-        "58": {
-            "": "-"
-        },
-        "59": {
-            "": "-"
-        },
-        "60": {
-            "": "-"
-        },
-        "61": {
-            "": "-"
-        },
-        "62": {
-            "": "-"
-        },
-        "63": {
-            "": "-"
-        },
-        "64": {
-            "": "-"
-        },
-        "65": {
-            "": "-"
-        },
-        "66": {
-            "": "-"
-        },
-        "67": {
-            "": "-"
-        },
-        "68": {
-            "": "-"
-        },
-        "69": {
-            "": "-"
-        },
-        "70": {
-            "": "-"
-        },
-        "71": {
-            "": "-"
-        },
-        "72": {
-            "": "-"
-        },
-        "73": {
-            "": "-"
-        },
-        "74": {
-            "": "-"
-        },
-        "75": {
-            "": "-"
-        },
-        "76": {
-            "": "-"
-        },
-        "77": {
-            "": "-"
-        },
-        "78": {
-            "": "-"
-        },
-        "79": {
-            "": "-"
-        },
-        "80": {
-            "": "-"
-        },
-        "81": {
-            "": "-"
-        },
-        "82": {
-            "": "-"
-        },
-        "83": {
-            "": "-"
-        },
-        "84": {
-            "": "-"
-        },
-        "85": {
-            "": "-"
-        },
-        "86": {
-            "": "-"
-        },
-        "87": {
-            "": "-"
-        },
-        "88": {
-            "": "-"
-        },
-        "89": {
-            "": "-"
-        },
-        "90": {
-            "": "-"
-        },
-        "91": {
-            "": "-"
-        },
-        "92": {
-            "": "-"
-        },
-        "93": {
-            "": "-"
-        },
-        "94": {
-            "": "-"
-        },
-        "95": {
-            "": "-"
-        },
-        "96": {
-            "": "-"
-        },
-        "97": {
-            "": "-"
-        },
-        "98": {
-            "": "-"
-        },
-        "99": {
-            "": "-"
-        },
-        "100": {
-            "": "-"
-        },
-        "101": {
-            "": "-"
-        },
-        "102": {
-            "": "-"
-        },
-        "103": {
-            "": "-"
-        },
-        "104": {
-            "": "-"
-        },
-        "105": {
-            "": "-"
-        },
-        "106": {
-            "": "-"
-        },
-        "107": {
-            "": "-"
-        },
-        "108": {
-            "": "-"
-        },
-        "109": {
-            "": "-"
-        },
-        "110": {
-            "": "-"
-        },
-        "111": {
-            "": "-"
-        },
-        "112": {
-            "": "-"
-        },
-        "113": {
-            "": "-"
-        },
-        "114": {
-            "": "-"
-        },
-        "115": {
-            "": "-"
-        },
-        "116": {
-            "": "-"
-        },
-        "117": {
-            "": "-"
-        },
-        "118": {
-            "": "-"
-        },
-        "119": {
-            "": "-"
-        },
-        "120": {
-            "": "-"
-        },
-        "121": {
-            "": "-"
-        },
-        "122": {
-            "": "-"
-        },
-        "123": {
-            "": "-"
-        },
-        "124": {
-            "": "-"
-        },
-        "125": {
-            "": "-"
-        },
-        "126": {
-            "": "-"
-        },
-        "127": {
-            "": "-"
-        },
-        "128": {
-            "": "-"
-        },
-        "129": {
-            "": "-"
-        },
-        "130": {
-            "": "-"
-        },
-        "131": {
-            "": "-"
-        },
-        "132": {
-            "": "-"
-        },
-        "133": {
-            "": "-"
-        }
+    {
+        "$": "ACCEPT"
+    },
+    {
+        "AP": "SHIFT(3)"
+    },
+    {
+        "FP": "REDUCE(3)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "<ListaParametros>": "4",
+        "<Tipo>": "5"
+    },
+    {
+        "FP": "SHIFT(9)"
+    },
+    {
+        "ID": "SHIFT(10)"
+    },
+    {
+        "ID": "REDUCE(49)"
+    },
+    {
+        "ID": "REDUCE(50)"
+    },
+    {
+        "ID": "REDUCE(51)"
+    },
+    {
+        "AC": "SHIFT(11)"
+    },
+    {
+        "FP": "REDUCE(5)",
+        "VIR": "SHIFT(13)",
+        "<ListaParametrosRest>": "12"
+    },
+    {
+        "FC": "REDUCE(7)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandos>": "14",
+        "<Comando>": "15",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "FP": "REDUCE(2)"
+    },
+    {
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "<Tipo>": "27"
+    },
+    {
+        "FC": "SHIFT(28)"
+    },
+    {
+        "FC": "REDUCE(9)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandosRest>": "29",
+        "<Comando>": "30",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "FC": "REDUCE(10)",
+        "IMPRIMA": "REDUCE(10)",
+        "SE": "REDUCE(10)",
+        "ENQUANTO": "REDUCE(10)",
+        "PARA": "REDUCE(10)",
+        "INT": "REDUCE(10)",
+        "CHAR": "REDUCE(10)",
+        "FLOAT": "REDUCE(10)",
+        "ID": "REDUCE(10)"
+    },
+    {
+        "FC": "REDUCE(11)",
+        "IMPRIMA": "REDUCE(11)",
+        "SE": "REDUCE(11)",
+        "ENQUANTO": "REDUCE(11)",
+        "PARA": "REDUCE(11)",
+        "INT": "REDUCE(11)",
+        "CHAR": "REDUCE(11)",
+        "FLOAT": "REDUCE(11)",
+        "ID": "REDUCE(11)"
+    },
+    {
+        "FC": "REDUCE(12)",
+        "IMPRIMA": "REDUCE(12)",
+        "SE": "REDUCE(12)",
+        "ENQUANTO": "REDUCE(12)",
+        "PARA": "REDUCE(12)",
+        "INT": "REDUCE(12)",
+        "CHAR": "REDUCE(12)",
+        "FLOAT": "REDUCE(12)",
+        "ID": "REDUCE(12)"
+    },
+    {
+        "FC": "REDUCE(13)",
+        "IMPRIMA": "REDUCE(13)",
+        "SE": "REDUCE(13)",
+        "ENQUANTO": "REDUCE(13)",
+        "PARA": "REDUCE(13)",
+        "INT": "REDUCE(13)",
+        "CHAR": "REDUCE(13)",
+        "FLOAT": "REDUCE(13)",
+        "ID": "REDUCE(13)"
+    },
+    {
+        "FC": "REDUCE(14)",
+        "IMPRIMA": "REDUCE(14)",
+        "SE": "REDUCE(14)",
+        "ENQUANTO": "REDUCE(14)",
+        "PARA": "REDUCE(14)",
+        "INT": "REDUCE(14)",
+        "CHAR": "REDUCE(14)",
+        "FLOAT": "REDUCE(14)",
+        "ID": "REDUCE(14)"
+    },
+    {
+        "ID": "SHIFT(31)"
+    },
+    {
+        "AP": "SHIFT(33)",
+        "EQ": "SHIFT(32)"
+    },
+    {
+        "AP": "SHIFT(34)"
+    },
+    {
+        "AP": "SHIFT(35)"
+    },
+    {
+        "AP": "SHIFT(36)"
+    },
+    {
+        "AP": "SHIFT(37)"
+    },
+    {
+        "ID": "SHIFT(38)"
+    },
+    {
+        "$": "REDUCE(0)"
+    },
+    {
+        "FC": "REDUCE(6)"
+    },
+    {
+        "FC": "REDUCE(9)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandosRest>": "39",
+        "<Comando>": "30",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "PV": "SHIFT(40)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "41",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "FP": "REDUCE(53)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "50",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ListaArgumentos>": "49",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "51",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "52",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "ID": "SHIFT(53)"
+    },
+    {
+        "AS": "SHIFT(57)",
+        "ID": "SHIFT(55)",
+        "StrLiteral": "SHIFT(56)",
+        "<ArgumentoImpressao>": "54"
+    },
+    {
+        "FP": "REDUCE(5)",
+        "VIR": "SHIFT(13)",
+        "<ListaParametrosRest>": "58"
+    },
+    {
+        "FC": "REDUCE(8)"
+    },
+    {
+        "FC": "REDUCE(15)",
+        "IMPRIMA": "REDUCE(15)",
+        "SE": "REDUCE(15)",
+        "ENQUANTO": "REDUCE(15)",
+        "PARA": "REDUCE(15)",
+        "INT": "REDUCE(15)",
+        "CHAR": "REDUCE(15)",
+        "FLOAT": "REDUCE(15)",
+        "ID": "REDUCE(15)"
+    },
+    {
+        "PV": "SHIFT(59)"
+    },
+    {
+        "FP": "REDUCE(30)",
+        "VIR": "REDUCE(30)",
+        "PV": "REDUCE(30)",
+        "MAI": "SHIFT(61)",
+        "MEN": "SHIFT(62)",
+        "<ExpressaoRest>": "60"
+    },
+    {
+        "FP": "REDUCE(27)",
+        "VIR": "REDUCE(27)",
+        "PV": "REDUCE(27)"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(44)",
+        "MUL": "SHIFT(65)",
+        "MAI": "REDUCE(44)",
+        "MEN": "REDUCE(44)",
+        "DIV": "SHIFT(66)",
+        "MOD": "SHIFT(67)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<TermoRest>": "63",
+        "<ExpressaoLogicaRest>": "64"
+    },
+    {
+        "FP": "REDUCE(45)",
+        "VIR": "REDUCE(45)",
+        "PV": "REDUCE(45)",
+        "MUL": "REDUCE(45)",
+        "MAI": "REDUCE(45)",
+        "MEN": "REDUCE(45)",
+        "DIV": "REDUCE(45)",
+        "MOD": "REDUCE(45)",
+        "DEQ": "REDUCE(45)",
+        "AND": "REDUCE(45)",
+        "DIF": "REDUCE(45)",
+        "MENORQ": "REDUCE(45)",
+        "MAIORQ": "REDUCE(45)",
+        "MENORI": "REDUCE(45)",
+        "MAIORI": "REDUCE(45)"
+    },
+    {
+        "FP": "REDUCE(46)",
+        "VIR": "REDUCE(46)",
+        "PV": "REDUCE(46)",
+        "MUL": "REDUCE(46)",
+        "MAI": "REDUCE(46)",
+        "MEN": "REDUCE(46)",
+        "DIV": "REDUCE(46)",
+        "MOD": "REDUCE(46)",
+        "DEQ": "REDUCE(46)",
+        "AND": "REDUCE(46)",
+        "DIF": "REDUCE(46)",
+        "MENORQ": "REDUCE(46)",
+        "MAIORQ": "REDUCE(46)",
+        "MENORI": "REDUCE(46)",
+        "MAIORI": "REDUCE(46)"
+    },
+    {
+        "FP": "REDUCE(47)",
+        "VIR": "REDUCE(47)",
+        "PV": "REDUCE(47)",
+        "MUL": "REDUCE(47)",
+        "MAI": "REDUCE(47)",
+        "MEN": "REDUCE(47)",
+        "DIV": "REDUCE(47)",
+        "MOD": "REDUCE(47)",
+        "DEQ": "REDUCE(47)",
+        "AND": "REDUCE(47)",
+        "DIF": "REDUCE(47)",
+        "MENORQ": "REDUCE(47)",
+        "MAIORQ": "REDUCE(47)",
+        "MENORI": "REDUCE(47)",
+        "MAIORI": "REDUCE(47)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "75",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "FP": "SHIFT(76)"
+    },
+    {
+        "FP": "REDUCE(55)",
+        "VIR": "SHIFT(78)",
+        "<ListaArgumentosRest>": "77"
+    },
+    {
+        "FP": "SHIFT(79)"
+    },
+    {
+        "FP": "SHIFT(80)"
+    },
+    {
+        "EQ": "SHIFT(81)"
+    },
+    {
+        "FP": "SHIFT(82)"
+    },
+    {
+        "FP": "REDUCE(23)"
+    },
+    {
+        "FP": "REDUCE(24)"
+    },
+    {
+        "ID": "SHIFT(83)"
+    },
+    {
+        "FP": "REDUCE(4)"
+    },
+    {
+        "FC": "REDUCE(16)",
+        "IMPRIMA": "REDUCE(16)",
+        "SE": "REDUCE(16)",
+        "ENQUANTO": "REDUCE(16)",
+        "PARA": "REDUCE(16)",
+        "INT": "REDUCE(16)",
+        "CHAR": "REDUCE(16)",
+        "FLOAT": "REDUCE(16)",
+        "ID": "REDUCE(16)"
+    },
+    {
+        "FP": "REDUCE(26)",
+        "VIR": "REDUCE(26)",
+        "PV": "REDUCE(26)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Termo>": "84",
+        "<Fator>": "85"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Termo>": "86",
+        "<Fator>": "85"
+    },
+    {
+        "FP": "REDUCE(40)",
+        "VIR": "REDUCE(40)",
+        "PV": "REDUCE(40)",
+        "MAI": "REDUCE(40)",
+        "MEN": "REDUCE(40)"
+    },
+    {
+        "FP": "REDUCE(31)",
+        "VIR": "REDUCE(31)",
+        "PV": "REDUCE(31)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "87"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "88"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "89"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "90"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "91"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "92"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "93"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "94"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "95"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Fator>": "96"
+    },
+    {
+        "FP": "SHIFT(97)"
+    },
+    {
+        "PV": "SHIFT(98)"
+    },
+    {
+        "FP": "REDUCE(52)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "99",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "AC": "SHIFT(100)"
+    },
+    {
+        "AC": "SHIFT(101)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "102",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "PV": "SHIFT(103)"
+    },
+    {
+        "AS": "SHIFT(104)"
+    },
+    {
+        "FP": "REDUCE(30)",
+        "VIR": "REDUCE(30)",
+        "PV": "REDUCE(30)",
+        "MAI": "SHIFT(61)",
+        "MEN": "SHIFT(62)",
+        "<ExpressaoRest>": "105"
+    },
+    {
+        "FP": "REDUCE(44)",
+        "VIR": "REDUCE(44)",
+        "PV": "REDUCE(44)",
+        "MUL": "SHIFT(65)",
+        "MAI": "REDUCE(44)",
+        "MEN": "REDUCE(44)",
+        "DIV": "SHIFT(66)",
+        "MOD": "SHIFT(67)",
+        "<TermoRest>": "63"
+    },
+    {
+        "FP": "REDUCE(30)",
+        "VIR": "REDUCE(30)",
+        "PV": "REDUCE(30)",
+        "MAI": "SHIFT(61)",
+        "MEN": "SHIFT(62)",
+        "<ExpressaoRest>": "106"
+    },
+    {
+        "FP": "REDUCE(44)",
+        "VIR": "REDUCE(44)",
+        "PV": "REDUCE(44)",
+        "MUL": "SHIFT(65)",
+        "MAI": "REDUCE(44)",
+        "MEN": "REDUCE(44)",
+        "DIV": "SHIFT(66)",
+        "MOD": "SHIFT(67)",
+        "<TermoRest>": "107"
+    },
+    {
+        "FP": "REDUCE(44)",
+        "VIR": "REDUCE(44)",
+        "PV": "REDUCE(44)",
+        "MUL": "SHIFT(65)",
+        "MAI": "REDUCE(44)",
+        "MEN": "REDUCE(44)",
+        "DIV": "SHIFT(66)",
+        "MOD": "SHIFT(67)",
+        "<TermoRest>": "108"
+    },
+    {
+        "FP": "REDUCE(44)",
+        "VIR": "REDUCE(44)",
+        "PV": "REDUCE(44)",
+        "MUL": "SHIFT(65)",
+        "MAI": "REDUCE(44)",
+        "MEN": "REDUCE(44)",
+        "DIV": "SHIFT(66)",
+        "MOD": "SHIFT(67)",
+        "<TermoRest>": "109"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "110"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "111"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "112"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "113"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "114"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "115"
+    },
+    {
+        "FP": "REDUCE(39)",
+        "VIR": "REDUCE(39)",
+        "PV": "REDUCE(39)",
+        "DEQ": "SHIFT(70)",
+        "AND": "SHIFT(68)",
+        "DIF": "SHIFT(69)",
+        "MENORQ": "SHIFT(71)",
+        "MAIORQ": "SHIFT(72)",
+        "MENORI": "SHIFT(73)",
+        "MAIORI": "SHIFT(74)",
+        "<ExpressaoLogicaRest>": "116"
+    },
+    {
+        "FP": "REDUCE(48)",
+        "VIR": "REDUCE(48)",
+        "PV": "REDUCE(48)",
+        "MUL": "REDUCE(48)",
+        "MAI": "REDUCE(48)",
+        "MEN": "REDUCE(48)",
+        "DIV": "REDUCE(48)",
+        "MOD": "REDUCE(48)",
+        "DEQ": "REDUCE(48)",
+        "AND": "REDUCE(48)",
+        "DIF": "REDUCE(48)",
+        "MENORQ": "REDUCE(48)",
+        "MAIORQ": "REDUCE(48)",
+        "MENORI": "REDUCE(48)",
+        "MAIORI": "REDUCE(48)"
+    },
+    {
+        "FC": "REDUCE(17)",
+        "IMPRIMA": "REDUCE(17)",
+        "SE": "REDUCE(17)",
+        "ENQUANTO": "REDUCE(17)",
+        "PARA": "REDUCE(17)",
+        "INT": "REDUCE(17)",
+        "CHAR": "REDUCE(17)",
+        "FLOAT": "REDUCE(17)",
+        "ID": "REDUCE(17)"
+    },
+    {
+        "FP": "REDUCE(55)",
+        "VIR": "SHIFT(78)",
+        "<ListaArgumentosRest>": "117"
+    },
+    {
+        "FC": "REDUCE(7)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandos>": "118",
+        "<Comando>": "15",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "FC": "REDUCE(7)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandos>": "119",
+        "<Comando>": "15",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "PV": "SHIFT(120)"
+    },
+    {
+        "FC": "REDUCE(22)",
+        "IMPRIMA": "REDUCE(22)",
+        "SE": "REDUCE(22)",
+        "ENQUANTO": "REDUCE(22)",
+        "PARA": "REDUCE(22)",
+        "INT": "REDUCE(22)",
+        "CHAR": "REDUCE(22)",
+        "FLOAT": "REDUCE(22)",
+        "ID": "REDUCE(22)"
+    },
+    {
+        "FP": "REDUCE(25)"
+    },
+    {
+        "FP": "REDUCE(28)",
+        "VIR": "REDUCE(28)",
+        "PV": "REDUCE(28)"
+    },
+    {
+        "FP": "REDUCE(29)",
+        "VIR": "REDUCE(29)",
+        "PV": "REDUCE(29)"
+    },
+    {
+        "FP": "REDUCE(41)",
+        "VIR": "REDUCE(41)",
+        "PV": "REDUCE(41)",
+        "MAI": "REDUCE(41)",
+        "MEN": "REDUCE(41)"
+    },
+    {
+        "FP": "REDUCE(42)",
+        "VIR": "REDUCE(42)",
+        "PV": "REDUCE(42)",
+        "MAI": "REDUCE(42)",
+        "MEN": "REDUCE(42)"
+    },
+    {
+        "FP": "REDUCE(43)",
+        "VIR": "REDUCE(43)",
+        "PV": "REDUCE(43)",
+        "MAI": "REDUCE(43)",
+        "MEN": "REDUCE(43)"
+    },
+    {
+        "FP": "REDUCE(32)",
+        "VIR": "REDUCE(32)",
+        "PV": "REDUCE(32)"
+    },
+    {
+        "FP": "REDUCE(33)",
+        "VIR": "REDUCE(33)",
+        "PV": "REDUCE(33)"
+    },
+    {
+        "FP": "REDUCE(34)",
+        "VIR": "REDUCE(34)",
+        "PV": "REDUCE(34)"
+    },
+    {
+        "FP": "REDUCE(35)",
+        "VIR": "REDUCE(35)",
+        "PV": "REDUCE(35)"
+    },
+    {
+        "FP": "REDUCE(36)",
+        "VIR": "REDUCE(36)",
+        "PV": "REDUCE(36)"
+    },
+    {
+        "FP": "REDUCE(37)",
+        "VIR": "REDUCE(37)",
+        "PV": "REDUCE(37)"
+    },
+    {
+        "FP": "REDUCE(38)",
+        "VIR": "REDUCE(38)",
+        "PV": "REDUCE(38)"
+    },
+    {
+        "FP": "REDUCE(54)"
+    },
+    {
+        "FC": "SHIFT(121)"
+    },
+    {
+        "FC": "SHIFT(122)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "123",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "FC": "REDUCE(21)",
+        "IMPRIMA": "REDUCE(21)",
+        "SE": "REDUCE(21)",
+        "SENAO": "SHIFT(124)",
+        "ENQUANTO": "REDUCE(21)",
+        "PARA": "REDUCE(21)",
+        "INT": "REDUCE(21)",
+        "CHAR": "REDUCE(21)",
+        "FLOAT": "REDUCE(21)",
+        "ID": "REDUCE(21)"
+    },
+    {
+        "FC": "REDUCE(19)",
+        "IMPRIMA": "REDUCE(19)",
+        "SE": "REDUCE(19)",
+        "ENQUANTO": "REDUCE(19)",
+        "PARA": "REDUCE(19)",
+        "INT": "REDUCE(19)",
+        "CHAR": "REDUCE(19)",
+        "FLOAT": "REDUCE(19)",
+        "ID": "REDUCE(19)"
+    },
+    {
+        "PV": "SHIFT(125)"
+    },
+    {
+        "AC": "SHIFT(126)"
+    },
+    {
+        "AP": "SHIFT(48)",
+        "CONSTANTESINTEIRAS": "SHIFT(46)",
+        "CONSTANTESPONTOFLUTUANTE": "SHIFT(47)",
+        "ID": "SHIFT(45)",
+        "<Expressao>": "127",
+        "<Termo>": "42",
+        "<Fator>": "44",
+        "<ExpressaoLogica>": "43"
+    },
+    {
+        "FC": "REDUCE(7)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandos>": "128",
+        "<Comando>": "15",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "FP": "SHIFT(129)"
+    },
+    {
+        "FC": "SHIFT(130)"
+    },
+    {
+        "AC": "SHIFT(131)"
+    },
+    {
+        "FC": "REDUCE(18)",
+        "IMPRIMA": "REDUCE(18)",
+        "SE": "REDUCE(18)",
+        "ENQUANTO": "REDUCE(18)",
+        "PARA": "REDUCE(18)",
+        "INT": "REDUCE(18)",
+        "CHAR": "REDUCE(18)",
+        "FLOAT": "REDUCE(18)",
+        "ID": "REDUCE(18)"
+    },
+    {
+        "FC": "REDUCE(7)",
+        "IMPRIMA": "SHIFT(26)",
+        "SE": "SHIFT(23)",
+        "ENQUANTO": "SHIFT(24)",
+        "PARA": "SHIFT(25)",
+        "INT": "SHIFT(6)",
+        "CHAR": "SHIFT(7)",
+        "FLOAT": "SHIFT(8)",
+        "ID": "SHIFT(22)",
+        "<ListaComandos>": "132",
+        "<Comando>": "15",
+        "<Declaracao>": "16",
+        "<Atribuicao>": "17",
+        "<ChamadaFuncao>": "18",
+        "<ControleFluxo>": "19",
+        "<Tipo>": "21",
+        "<Imprime>": "20"
+    },
+    {
+        "FC": "SHIFT(133)"
+    },
+    {
+        "FC": "REDUCE(20)",
+        "IMPRIMA": "REDUCE(20)",
+        "SE": "REDUCE(20)",
+        "ENQUANTO": "REDUCE(20)",
+        "PARA": "REDUCE(20)",
+        "INT": "REDUCE(20)",
+        "CHAR": "REDUCE(20)",
+        "FLOAT": "REDUCE(20)",
+        "ID": "REDUCE(20)"
     }
-}
+]

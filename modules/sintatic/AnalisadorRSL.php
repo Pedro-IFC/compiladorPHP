@@ -4,67 +4,16 @@ class SLRParser {
     private array $gotoTable;
     private array $actionTable;
     private $productions = [
-        [42, 6],
-        [42, 0],
-        [43, 3],
-        [43, 0],
-        [44, 4],
-        [44, 0],
-        [45, 2],
-        [45, 0],
-        [46, 2],
-        [46, 0],
-        [47, 1],
-        [47, 1],
-        [47, 1],
-        [47, 1],
-        [47, 1],
-        [48, 3],
-        [49, 4],
-        [50, 5],
-        [51, 11],
-        [51, 7],
-        [51, 13],
-        [51, 7],
-        [62, 5],
-        [63, 1],
-        [63, 1],
-        [63, 3],
-        [52, 2],
-        [52, 1],
-        [53, 3],
-        [53, 3],
-        [53, 0],
-        [60, 2],
-        [61, 3],
-        [61, 3],
-        [61, 3],
-        [61, 3],
-        [61, 3],
-        [61, 3],
-        [61, 3],
-        [61, 0],
-        [54, 2],
-        [55, 3],
-        [55, 3],
-        [55, 3],
-        [55, 0],
-        [56, 1],
-        [56, 1],
-        [56, 1],
-        [56, 3],
-        [57, 1],
-        [57, 1],
-        [57, 1],
-        [58, 2],
-        [58, 0],
-        [59, 3],
-        [59, 0],
-        [64, 1],
-        [64, 1],
-        [64, 1],
+        [42, 6], [42, 0], [43, 3], [43, 0], [44, 4], [44, 0], [45, 2], [45, 0],
+        [46, 2], [46, 0], [47, 1], [47, 1], [47, 1], [47, 1], [47, 1], [48, 3],
+        [49, 4], [50, 5], [51, 11], [51, 7], [51, 13], [51, 7], [62, 5], [63, 1],
+        [63, 1], [63, 3], [52, 2], [52, 1], [53, 3], [53, 3], [53, 0], [60, 2],
+        [61, 3], [61, 3], [61, 3], [61, 3], [61, 3], [61, 3], [61, 3], [61, 0],
+        [54, 2], [55, 3], [55, 3], [55, 3], [55, 0], [56, 1], [56, 1], [56, 1],
+        [56, 3], [57, 1], [57, 1], [57, 1], [58, 2], [58, 0], [59, 3], [59, 0],
+        [64, 1], [64, 1], [64, 1],
     ];
-    
+
     public function __construct(string $jsonFilePath) {
         $this->loadParsingTable($jsonFilePath);
     }
@@ -77,77 +26,50 @@ class SLRParser {
 
         $this->gotoTable = $data['goto'];
         $this->actionTable = $data['actionTable'];
-
     }
 
     public function parse(array $tokens): bool {
-        $stack = [0]; // Stack starts with state 0
-        $index = 0; // Token pointer
-
+        $stack = [0];
+        $inputPointer = 0;
+    
         while (true) {
             $state = end($stack);
-            $currentToken = $tokens[$index] ?? null;
-            $tokenName = $currentToken ? $currentToken->getName() : '$'; // Use '$' for end of input
-
-            echo "<hr>";
-            echo "Estado: ";
-            var_dump($state);
-            echo "<br>";
-            echo "Token: ";
-            var_dump($tokenName);
-            $action = $this->actionTable[$state][$tokenName] ?? null;
-            echo "<br>";
-            var_dump($this->actionTable[$state]);
-            if ($action === null) {
-                $this->syntaxError($currentToken);
-                return false;
+            $token = $tokens[$inputPointer] ?? new Token('$', '$', 0, 0);
+            $tokenName = $token->getName();
+    
+            echo "Estado atual: $state, Token: $tokenName<br>";
+    
+            if (!isset($this->actionTable[$state][$tokenName])) {
+                throw new Exception("Erro de sintaxe na linha " . $token->getLine() . ", token inesperado: " . $tokenName);
             }
-
-            echo "<br>";
-            echo "Acao: ";
-            var_dump($action);
-            echo "<br>";
-            echo "Pilha: ";
-            var_dump($stack);
-            echo "<br>";
-            echo "<br>";
-
+    
+            $action = $this->actionTable[$state][$tokenName];
+    
             if ($action['type'] === 'SHIFT') {
+                echo "SHIFT para estado: " . $action['state'] . "<br>";
                 $stack[] = $action['state'];
-                $index++;
+                $inputPointer++;
             } elseif ($action['type'] === 'REDUCE') {
-                var_dump($action['rule']);
-                echo "<br>";
-
-                $ruleCount = $action['rule'];
-                $removedCount = 0;
-
-                foreach ($stack as $key => $value) {
-                    if ($removedCount > $ruleCount) {
-                        unset($stack[$key]); // Remove os elementos excedentes
-                    } else {
-                        $removedCount++;
-                    }
+                $rule = $this->productions[$action['rule']];
+                echo "REDUCE usando regra: " . $action['rule'] . "<br>";
+    
+                for ($i = 0; $i < $rule[1]; $i++) {
+                    array_pop($stack);
                 }
-
-                $state = end($stack);
-                if(isset($this->gotoTable[$state])){
-                    $lhs = array_keys($this->gotoTable[$state])[0]; // Assume one LHS per reduce
-                    $stack[] = $this->gotoTable[$state][$lhs];
-                }else{
-                    $index++;
+                $topState = end($stack);
+                $gotoState = $this->gotoTable[$topState][$rule[0]] ?? null;
+    
+                if ($gotoState === null) {
+                    throw new Exception("Erro ao aplicar redução na linha " . $token->getLine());
                 }
+    
+                echo "GOTO para estado: $gotoState<br>";
+                $stack[] = $gotoState;
             } elseif ($action['type'] === 'ACCEPT') {
+                echo "Aceitação bem-sucedida!<br>";
                 return true;
             }
         }
     }
-
-    private function syntaxError(?Token $token): void {
-        if ($token) {
-            echo "Syntax error at line {$token->getLine()}, near '{$token->getLexeme()}'.\n";
-        } else {
-            echo "Syntax error at end of input.\n";
-        }
-    }
+    
 }

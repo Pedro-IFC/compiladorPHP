@@ -121,7 +121,7 @@ StrLiteral: {stringLiteral}&#13;
 &lt;ExpressaoLogica&gt;&#13;
 &lt;ExpressaoLogicaRest&gt;&#13;
 &lt;Imprime&gt;&#13;
-&lt;ArgumentoImpressao&gt;</non_terminals><grammar>&lt;Programa&gt;::= MAIN AP &lt;ListaParametros&gt; FP AC &lt;ListaComandos&gt; FC | î;&#13;
+&lt;ArgumentoImpressao&gt;</non_terminals><grammar>&lt;Programa&gt;::= MAIN AP FP AC &lt;ListaComandos&gt; FC | î;&#13;
 &#13;
 &lt;ListaParametros&gt;::= &lt;Tipo&gt; ID &lt;ListaParametrosRest&gt; | î;&#13;
 &#13;

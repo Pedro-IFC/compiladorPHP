@@ -1,7 +1,7 @@
 <?php
 // Carrega o arquivo HTML
 $dom = new DOMDocument();
-@$dom->loadHTMLFile('./data/sintatic/tabelaslr.html');
+@$dom->loadHTMLFile('data/sintatic/tabelaslr.html');
 
 // Obtém todas as tabelas
 $tabelas = $dom->getElementsByTagName('table');
@@ -27,7 +27,7 @@ foreach ($linhas as $index => $linha) {
             $colunasHeader[] = trim($col->textContent);
         }
         continue;
-    }
+    } 
 
     $estado = null;
     $dadosLinha = [];
@@ -47,9 +47,27 @@ foreach ($linhas as $index => $linha) {
     }
 }
 
-// Salva o JSON em um arquivo
+$data = $jsonArray;
+$actionTable=[];
+$gotoTable=[];
+foreach ($data as $state => $transitions) {
+    $actionTable[$state] = [];
+    foreach ($transitions as $symbol => $action) {
+        if (str_starts_with($action, 'SHIFT')) {
+            $nextState = (int) filter_var($action, FILTER_SANITIZE_NUMBER_INT);
+            $actionTable[$state][$symbol] = ['type' => 'SHIFT', 'state' => $nextState];
+        } elseif (str_starts_with($action, 'REDUCE')) {
+            $ruleIndex = (int) filter_var($action, FILTER_SANITIZE_NUMBER_INT);
+            $actionTable[$state][$symbol] = ['type' => 'REDUCE', 'rule' => $ruleIndex];
+        } elseif ($action === 'ACCEPT') {
+            $actionTable[$state][$symbol] = ['type' => 'ACCEPT'];
+        } else {
+            $gotoTable[$state][$symbol] = (int) $action;
+        }
+    }
+}
 $file = fopen("./data/sintatic/tabelagoto.json", "w");
-fwrite($file, json_encode($jsonArray, JSON_PRETTY_PRINT));
+fwrite($file, json_encode(["goto"=>$gotoTable, "actionTable" => $actionTable], JSON_PRETTY_PRINT));
 fclose($file);
 
 echo "JSON gerado com sucesso!";

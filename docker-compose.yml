@@ -6,6 +6,7 @@ services:
       - "8282:80"
     volumes:
       - ./my-apache-config.conf:/etc/apache2/conf-available/my-apache-config.conf
+      - ./custom-php.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - .:/var/www/html
     networks:
       - app-network

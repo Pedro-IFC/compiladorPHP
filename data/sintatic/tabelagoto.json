@@ -827,15 +827,15 @@
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 44
+                "rule": 39
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 44
+                "rule": 39
             },
             "PV": {
                 "type": "REDUCE",
-                "rule": 39
+                "rule": 44
             },
             "MUL": {
                 "type": "SHIFT",

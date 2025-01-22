@@ -1,12 +1,8 @@
 <div class="form">
     <form method="GET">
-        <textarea name="string" id="string_txt"><?php if(isset($_GET['string'])){echo $_GET['string']; }else{ ?>inicio 
-funcao int teste(){
-se (a==b){
-escreva(c);
-}
-}
-fim<?php } ?></textarea>
+        <textarea name="string" id="string_txt"><?php if(isset($_GET['string'])){echo $_GET['string']; }else{ ?>main(){
+
+}<?php } ?></textarea>
         <div class="flex">
             <button type="submit">Gerar Análise Sintatica</button>
             <a href="./" class="red">
@@ -21,19 +17,23 @@ fim<?php } ?></textarea>
             if(isset($_GET['string'])){
                 $lexicalC = new Lexical($_GET['string']);
                 $lexResp = $lexicalC->validate(false);
-                if(empty($lexResp['resp']['errors'])){
+                if(empty($lexResp['errors'])){
                     ?>
                         <h3 style="color: green">Análise Léxica com sucesso!</h3>
                     <?php
-                    $SDR = new SLRParser("./data/sintatic/tabelagoto.json");
-                    if($SDR->parse($lexicalC->getTokenList())){
+                    $SLR = new AnalisadorSRL("./data/sintatic/tabelagoto.json");
+                    if($SLR->parse($lexicalC->getTokenList())){
                         ?>
-                            <h3 style="color: green">Análise sintática concluída sem erros</h3>
+                            <h3 style="color: green">Análise Sintática gerada com sucesso</h3>
                         <?php
+                            printNode($SLR->getDerivationTree()->getStack()[0]);
                     }else{
                         ?>
                             <h3 style="color: red">Análise sintática com erros</h3>
                         <?php
+                        foreach($SLR->getErrors() as $erro){
+                            echo "<strong>$erro</strong>";
+                        }
                     }
                 }else{
                     ?>
@@ -41,7 +41,6 @@ fim<?php } ?></textarea>
                     <?php
                 }
             }
-            #var_dump($lexResp['resp']['errors'])
         ?>
     </div>
 </div>

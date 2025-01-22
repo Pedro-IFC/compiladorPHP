@@ -1,0 +1,99 @@
+<section id="grammar">
+    <div class="al-container">
+        <h1>Visualização da Gramática</h1>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Programa&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">MAIN AP FP AC</span> <span class="non-terminal">&lt;ListaComandos&gt;</span> <span class="terminal">FC</span> | <span class="optional">î</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Declaracao&gt;</div>
+            <div class="rule-body">
+                ::= <span class="non-terminal">&lt;Tipo&gt;</span> <span class="terminal">ID</span> <span class="terminal">PV</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Atribuicao&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">ID EQ</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">PV</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;ChamadaFuncao&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">ID AP</span> <span class="non-terminal">&lt;ListaArgumentos&gt;</span> <span class="terminal">FP PV</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;ControleFluxo&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">SE AP</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">FP AC</span> <span class="non-terminal">&lt;ListaComandos&gt;</span> <span class="terminal">FC</span> <span class="optional">SENAO AC &lt;ListaComandos&gt; FC</span>
+                | <span class="terminal">ENQUANTO AP</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">FP AC</span> <span class="non-terminal">&lt;ListaComandos&gt;</span> <span class="terminal">FC</span>
+                | <span class="terminal">PARA AP</span> <span class="terminal">ID EQ</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">PV</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">PV</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">FP AC</span> <span class="non-terminal">&lt;ListaComandos&gt;</span> <span class="terminal">FC</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Imprime&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">IMPRIMA AP</span> <span class="non-terminal">&lt;ArgumentoImpressao&gt;</span> <span class="terminal">FP PV</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;ArgumentoImpressao&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">ID</span> | <span class="terminal">StrLiteral</span> | <span class="terminal">AS ID AS</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Expressao&gt;</div>
+            <div class="rule-body">
+                ::= <span class="non-terminal">&lt;Termo&gt;</span> <span class="non-terminal">&lt;ExpressaoRest&gt;</span> | <span class="non-terminal">&lt;ExpressaoLogica&gt;</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Termo&gt;</div>
+            <div class="rule-body">
+                ::= <span class="non-terminal">&lt;Fator&gt;</span> <span class="non-terminal">&lt;TermoRest&gt;</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Fator&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">ID</span> | <span class="terminal">CONSTANTESINTEIRAS</span> | <span class="terminal">CONSTANTESPONTOFLUTUANTE</span> | <span class="terminal">AP</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="terminal">FP</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;Tipo&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">INT</span> | <span class="terminal">CHAR</span> | <span class="terminal">FLOAT</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;ListaArgumentos&gt;</div>
+            <div class="rule-body">
+                ::= <span class="non-terminal">&lt;Expressao&gt;</span> <span class="non-terminal">&lt;ListaArgumentosRest&gt;</span> | <span class="optional">î</span>;
+            </div>
+        </div>
+
+        <div class="rule">
+            <div class="rule-title">&lt;ListaArgumentosRest&gt;</div>
+            <div class="rule-body">
+                ::= <span class="terminal">VIR</span> <span class="non-terminal">&lt;Expressao&gt;</span> <span class="non-terminal">&lt;ListaArgumentosRest&gt;</span> | <span class="optional">î</span>;
+            </div>
+        </div>
+
+    </div>
+</section>

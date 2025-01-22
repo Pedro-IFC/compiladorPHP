@@ -12,7 +12,7 @@
                         <?php include "./frontend/componentes/lexical/installLexical.php" ?>
                     </div>
                     <div class="row">
-                        <?php include "./frontend/componentes/lexical/documentationLexical.php" ?>
+                        <?php include "./frontend/componentes/lexical/documents.php" ?>
                     </div>
                 </div>
             </div>

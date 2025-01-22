@@ -1,8 +1,11 @@
 <?php
 
-class SLRParser {
+class AnalisadorSRL {
     private array $gotoTable;
     private array $actionTable;
+    private DerivationTree $derivationTree;
+    private array $errors = [];
+
     private $productions = [
         ["<Programa>", 6], ["<Programa>", 0], ["<ListaParametros>", 3], ["<ListaParametros>", 0], ["<ListaParametrosRest>", 4], ["<ListaParametrosRest>", 0], ["<ListaComandos>", 2], ["<ListaComandos>", 0],
         ["<ListaComandosRest>", 2], ["<ListaComandosRest>", 0], ["<Comando>", 1], ["<Comando>", 1], ["<Comando>", 1], ["<Comando>", 1], ["<Comando>", 1], ["<Declaracao>", 3],
@@ -16,6 +19,15 @@ class SLRParser {
 
     public function __construct(string $jsonFilePath) {
         $this->loadParsingTable($jsonFilePath);
+        $this->derivationTree = new DerivationTree();
+    }
+
+    public function getDerivationTree(){
+        return $this->derivationTree;
+    }
+
+    public function getErrors(){
+        return $this->errors;
     }
 
     private function loadParsingTable(string $filePath): void {
@@ -31,41 +43,46 @@ class SLRParser {
     public function parse(array $tokens): bool {
         $stack = [0];
         $inputPointer = 0;
-    
         while (true) {
             $state = end($stack);
             $token = $tokens[$inputPointer] ?? new Token('$', '$', 0, 0);
             $tokenName = $token->getName();
-    
+
             if (!isset($this->actionTable[$state][$tokenName])) {
-                throw new Exception("Erro de sintaxe na linha " . $token->getLine() . ", token inesperado: " . $tokenName);
+                $this->errors[] = "Erro de sintaxe na linha " . $token->getLine() . ", token inesperado: " . $token->getLexeme();
+                return false;
             }
-    
+
             $action = $this->actionTable[$state][$tokenName];
-    
+
             if ($action['type'] === 'SHIFT') {
                 $stack[] = $action['state'];
+                
+                $this->derivationTree->pushTerminal($token);
+
                 $inputPointer++;
             } elseif ($action['type'] === 'REDUCE') {
                 $rule = $this->productions[$action['rule']];
-    
-                for ($i = 0; $i < $rule[1]; $i++) {
+                $nonTerminal = $rule[0];
+                $productionLength = $rule[1];
+                for ($i = 0; $i < $productionLength; $i++) {
                     array_pop($stack);
                 }
 
                 $topState = end($stack);
+                $gotoState = $this->gotoTable[$topState][$nonTerminal] ?? null;
 
-                $gotoState = $this->gotoTable[$topState][$rule[0]] ?? null;
-    
                 if ($gotoState === null) {
-                    throw new Exception("Erro ao aplicar redução na linha " . $token->getLine());
+                    $this->errors[] = "Erro ao aplicar redução na linha " . $token->getLine();
+                    return false;
                 }
 
                 $stack[] = $gotoState;
+
+                $this->derivationTree->reduce(str_replace(">","", str_replace("<","", $nonTerminal)), $productionLength);
             } elseif ($action['type'] === 'ACCEPT') {
                 return true;
             }
         }
     }
-    
 }

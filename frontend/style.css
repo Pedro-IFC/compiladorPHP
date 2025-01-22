@@ -561,6 +561,7 @@ div#diagrama {
 ========================================================================== */
 .main-header {
   width: 100%;
+  z-index: 99;
   height: 60px;
   position: fixed;
   border-bottom: 1px solid #000;
@@ -635,6 +636,9 @@ div#diagrama {
   justify-content: left;
   align-items: baseline;
   gap: 32px;
+}
+.home .al-container > .row .w-4 {
+  width: calc(25% - 24px);
 }
 .home .al-container > .row.dif .left, .home .al-container > .row.dif .right {
   width: calc(50% - 32px);
@@ -806,4 +810,95 @@ form .flex button.red:hover svg *, form .flex a.red:hover svg * {
   font-family: monospace;
   color: #333;
   margin: 10px 0px;
+}
+
+.node {
+  margin-left: 20px;
+  padding: 5px;
+  border-left: 2px solid #ccc;
+}
+
+.node.token {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.node.non-terminal {
+  color: #28A745;
+  font-weight: bold;
+}
+
+.node.literal {
+  color: #FFC107;
+  font-style: italic;
+}
+
+.indent-0 {
+  margin-left: 0;
+}
+
+.indent-1 {
+  margin-left: 20px;
+}
+
+.indent-2 {
+  margin-left: 40px;
+}
+
+.token-name, .node-symbol, .token-literal {
+  text-decoration: underline;
+}
+
+.token-lexeme {
+  color: #6C757D;
+}
+
+#grammar {
+  padding: 40px 0px;
+}
+#grammar body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+#grammar h1 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #4CAF50;
+}
+#grammar .rule {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#grammar .rule-title {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+#grammar .rule-body {
+  color: #555;
+  line-height: 1.6;
+}
+#grammar .symbol {
+  color: #d32f2f;
+  font-weight: bold;
+}
+#grammar .non-terminal {
+  color: #1976D2;
+  font-weight: bold;
+}
+#grammar .terminal {
+  color: #388E3C;
+  font-style: italic;
+}
+#grammar .optional {
+  color: #9E9E9E;
+  font-style: italic;
 }

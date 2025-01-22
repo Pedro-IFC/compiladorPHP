@@ -4,8 +4,13 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 require './vendor/autoload.php';
+require './modules/functions.php';
+require './modules/tokens/Token.php';
 require './modules/lexical/Lexical.php';
-require './modules/sintatic/AnalisadorRSL.php';
+require './modules/lexical/AnalisadorLexico.php';
+require './modules/sintatic/AnalisadorSRL.php';
+require './modules/tree/Node.php';
+require './modules/tree/DerivationTree.php';
 
 $app = AppFactory::create();
 
@@ -19,7 +24,7 @@ $app->get('/', function (Request $request, Response $response, $args) {
 // Analizador Léxico
 $app->get('/lexical/home', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Léxico";
-    include './frontend/lexical.php';
+    include './frontend/componentes/lexical/index.php';
     return $response;
 });
 $app->get('/lexical/tabela', function (Request $request, Response $response, $args) {
@@ -31,15 +36,30 @@ $app->get('/lexical/tabela', function (Request $request, Response $response, $ar
 });
 $app->get('/lexical/automato', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Léxico";
-    include './frontend/automatoLexico.php';
+    include './frontend/componentes/lexical/automato.php';
     return $response;
 });
 
-$app->get('/sintatic/slr', function (Request $request, Response $response, $args) {
+// Analizador Sintático
+$app->get('/sintatic/home', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sintático";
+    include './frontend/componentes/sintatic/index.php';
+    return $response;
+});
+$app->get('/sintatic/tabela', function (Request $request, Response $response, $args) {
     $_SERVER['title'] = "Analisador Sintático";
     include './frontend/componentes/header.php';
-    include './frontend/componentes/sintatic/slr/slr.php';
+    include './data/sintatic/tabelaslr.html';
     include './frontend/componentes/footer.php';
     return $response;
 });
+$app->get('/sintatic/grammar', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Sintático";
+    include './frontend/componentes/header.php';
+    include './frontend/componentes/sintatic/grammar.html';
+    include './frontend/componentes/footer.php';
+    return $response;
+});
+
+
 $app->run();

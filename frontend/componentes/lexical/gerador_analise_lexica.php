@@ -15,7 +15,7 @@
             if(isset($_GET['string'])){
                 $lexicalC = new Lexical($_GET['string']);
                 $lexResp = $lexicalC->validate(false);
-                if(empty($lexResp['resp']['errors'])){
+                if(empty($lexResp['errors'])){
                     ?>
                         <h3 style="color: green">Gerado com sucesso!</h3>
                     <?php
@@ -24,25 +24,10 @@
                         <h3 style="color: red">Gerado com erro!</h3>
                     <?php
                 }
-                if(!empty($lexResp['resp']['tokens'])){
-                    ?>
-                    <table class="tokens">
-                        <?php 
-                        foreach($lexResp['resp']['tokens'] as $token){
-                            ?>
-                            <tr class="token">
-                                <td class="name <?= $token->getName() ?>"><?= $token->getName() ?></td>
-                                <td class="lexeme"><?= $token->getLexeme() ?></td>
-                                <td class="pos">L: <?= $token->getLine() ?><br>C:<?= $token->getInicio() ?></td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </table>
-                    <?php
+                if(!empty($lexResp['tokens'])){
+                    generateTokenTable($lexResp['tokens']);
                 }
             }
-            #var_dump($lexResp['resp']['errors'])
         ?>
     </div>
 </div>

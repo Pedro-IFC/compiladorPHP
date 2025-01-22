@@ -1,6 +1,4 @@
 <?php
-require_once "Token.php";
-require_once "AnalisadorLexico.php";
 
 class Lexical {
     private string $string = "";

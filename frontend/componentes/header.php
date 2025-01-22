@@ -20,6 +20,14 @@
                         <li><a download href="/data/lexical/automato.jff">Baixar Automato</a></li>
                     </ul>
                 </li>
+                <li>
+                    <strong>Sintático</strong>
+                    <ul class="submenu">
+                        <li><a href="/sintatic/home">Analizador Sintático</a></li>
+                        <li><a href="/sintatic/tabela">Tabela Sintática</a></li>
+                        <li><a href="/sintatic/grammar">Gramática</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </header>

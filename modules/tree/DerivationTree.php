@@ -1,23 +1,35 @@
-<?php
+<?php 
 
 class DerivationTree {
-    private ?Node $root = null; 
-    private array $stack = []; 
+    private $stack = [];
 
-    public function pushTerminal(Token $terminal): void {
-        $this->stack[] = $terminal;
+    public function pushTerminal(Token $token): void {
+        // Empilha o token como um nó terminal
+        $this->stack[] = [
+            'type' => 'terminal',
+            'value' => $token->getLexeme()
+        ];
     }
 
     public function reduce(string $nonTerminal, int $productionLength): void {
-        $children = array_splice($this->stack, -$productionLength);
-        $newNode = new Node($nonTerminal, $children);
-        if ($this->root === null) {
-            $this->root = $newNode;
+        // Retira os últimos `productionLength` nós da pilha
+        $children = [];
+        for ($i = 0; $i < $productionLength; $i++) {
+            $children[] = array_pop($this->stack);
         }
-        $this->stack[] = $newNode;
+
+        // Inverte os filhos para manter a ordem correta
+        $children = array_reverse($children);
+
+        // Cria um novo nó não terminal
+        $this->stack[] = [
+            'type' => 'nonTerminal',
+            'value' => $nonTerminal,
+            'children' => $children
+        ];
     }
 
-    public function getStack() {
+    public function getTree(): array {
         return $this->stack;
     }
 }

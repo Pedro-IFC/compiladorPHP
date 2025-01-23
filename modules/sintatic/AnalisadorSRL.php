@@ -102,10 +102,11 @@ class AnalisadorSRL {
 
     public function parse(array $tokens): bool {
         $stack = [0];
-        $inputPointer = 0;
+        $index = 0;
+        $stacked=1;
         while (true) {
             $state = end($stack);
-            $token = $tokens[$inputPointer] ?? new Token('$', '$', 0, 0);
+            $token = $tokens[$index] ?? new Token('$', '$', 0, 0);
             $tokenName = $token->getName();
 
             if (!isset($this->actionTable[$state][$tokenName])) {
@@ -117,10 +118,10 @@ class AnalisadorSRL {
 
             if ($action['type'] === 'SHIFT') {
                 $stack[] = $action['state'];
-                
+                $stacked++;
                 $this->derivationTree->pushTerminal($token);
 
-                $inputPointer++;
+                $index++;
             } elseif ($action['type'] === 'REDUCE') {
                 $rule = $this->productions[$action['rule']];
                 $nonTerminal = $rule[0];
@@ -137,11 +138,10 @@ class AnalisadorSRL {
                     return false;
                 }
 
+
                 $stack[] = $gotoState;
-
-                $this->derivationTree->reduce(str_replace(">","", str_replace("<","", $nonTerminal)), $productionLength);
-
                 
+                $this->derivationTree->reduce(str_replace(">","", str_replace("<","", $nonTerminal)), $productionLength);
             } elseif ($action['type'] === 'ACCEPT') {
                 return true;
             }

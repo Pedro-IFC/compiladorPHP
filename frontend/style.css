@@ -638,7 +638,8 @@ div#diagrama {
   gap: 32px;
 }
 .home .al-container > .row .w-4 {
-  width: calc(25% - 24px);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .home .al-container > .row.dif .left, .home .al-container > .row.dif .right {
   width: calc(50% - 32px);
@@ -834,19 +835,423 @@ form .flex button.red:hover svg *, form .flex a.red:hover svg * {
 }
 
 .indent-0 {
-  margin-left: 0;
+  margin-left: calc(0 * 2px);
 }
 
 .indent-1 {
-  margin-left: 20px;
+  margin-left: calc(1 * 2px);
 }
 
 .indent-2 {
-  margin-left: 40px;
+  margin-left: calc(2 * 2px);
+}
+
+.indent-3 {
+  margin-left: calc(3 * 2px);
+}
+
+.indent-4 {
+  margin-left: calc(4 * 2px);
+}
+
+.indent-5 {
+  margin-left: calc(5 * 2px);
+}
+
+.indent-6 {
+  margin-left: calc(6 * 2px);
+}
+
+.indent-7 {
+  margin-left: calc(7 * 2px);
+}
+
+.indent-8 {
+  margin-left: calc(8 * 2px);
+}
+
+.indent-9 {
+  margin-left: calc(9 * 2px);
+}
+
+.indent-10 {
+  margin-left: calc(10 * 2px);
+}
+
+.indent-11 {
+  margin-left: calc(11 * 2px);
+}
+
+.indent-12 {
+  margin-left: calc(12 * 2px);
+}
+
+.indent-13 {
+  margin-left: calc(13 * 2px);
+}
+
+.indent-14 {
+  margin-left: calc(14 * 2px);
+}
+
+.indent-15 {
+  margin-left: calc(15 * 2px);
+}
+
+.indent-16 {
+  margin-left: calc(16 * 2px);
+}
+
+.indent-17 {
+  margin-left: calc(17 * 2px);
+}
+
+.indent-18 {
+  margin-left: calc(18 * 2px);
+}
+
+.indent-19 {
+  margin-left: calc(19 * 2px);
+}
+
+.indent-20 {
+  margin-left: calc(20 * 2px);
+}
+
+.indent-21 {
+  margin-left: calc(21 * 2px);
+}
+
+.indent-22 {
+  margin-left: calc(22 * 2px);
+}
+
+.indent-23 {
+  margin-left: calc(23 * 2px);
+}
+
+.indent-24 {
+  margin-left: calc(24 * 2px);
+}
+
+.indent-25 {
+  margin-left: calc(25 * 2px);
+}
+
+.indent-26 {
+  margin-left: calc(26 * 2px);
+}
+
+.indent-27 {
+  margin-left: calc(27 * 2px);
+}
+
+.indent-28 {
+  margin-left: calc(28 * 2px);
+}
+
+.indent-29 {
+  margin-left: calc(29 * 2px);
+}
+
+.indent-30 {
+  margin-left: calc(30 * 2px);
+}
+
+.indent-31 {
+  margin-left: calc(31 * 2px);
+}
+
+.indent-32 {
+  margin-left: calc(32 * 2px);
+}
+
+.indent-33 {
+  margin-left: calc(33 * 2px);
+}
+
+.indent-34 {
+  margin-left: calc(34 * 2px);
+}
+
+.indent-35 {
+  margin-left: calc(35 * 2px);
+}
+
+.indent-36 {
+  margin-left: calc(36 * 2px);
+}
+
+.indent-37 {
+  margin-left: calc(37 * 2px);
+}
+
+.indent-38 {
+  margin-left: calc(38 * 2px);
+}
+
+.indent-39 {
+  margin-left: calc(39 * 2px);
+}
+
+.indent-40 {
+  margin-left: calc(40 * 2px);
+}
+
+.indent-41 {
+  margin-left: calc(41 * 2px);
+}
+
+.indent-42 {
+  margin-left: calc(42 * 2px);
+}
+
+.indent-43 {
+  margin-left: calc(43 * 2px);
+}
+
+.indent-44 {
+  margin-left: calc(44 * 2px);
+}
+
+.indent-45 {
+  margin-left: calc(45 * 2px);
+}
+
+.indent-46 {
+  margin-left: calc(46 * 2px);
+}
+
+.indent-47 {
+  margin-left: calc(47 * 2px);
+}
+
+.indent-48 {
+  margin-left: calc(48 * 2px);
+}
+
+.indent-49 {
+  margin-left: calc(49 * 2px);
+}
+
+.indent-50 {
+  margin-left: calc(50 * 2px);
+}
+
+.indent-51 {
+  margin-left: calc(51 * 2px);
+}
+
+.indent-52 {
+  margin-left: calc(52 * 2px);
+}
+
+.indent-53 {
+  margin-left: calc(53 * 2px);
+}
+
+.indent-54 {
+  margin-left: calc(54 * 2px);
+}
+
+.indent-55 {
+  margin-left: calc(55 * 2px);
+}
+
+.indent-56 {
+  margin-left: calc(56 * 2px);
+}
+
+.indent-57 {
+  margin-left: calc(57 * 2px);
+}
+
+.indent-58 {
+  margin-left: calc(58 * 2px);
+}
+
+.indent-59 {
+  margin-left: calc(59 * 2px);
+}
+
+.indent-60 {
+  margin-left: calc(60 * 2px);
+}
+
+.indent-61 {
+  margin-left: calc(61 * 2px);
+}
+
+.indent-62 {
+  margin-left: calc(62 * 2px);
+}
+
+.indent-63 {
+  margin-left: calc(63 * 2px);
+}
+
+.indent-64 {
+  margin-left: calc(64 * 2px);
+}
+
+.indent-65 {
+  margin-left: calc(65 * 2px);
+}
+
+.indent-66 {
+  margin-left: calc(66 * 2px);
+}
+
+.indent-67 {
+  margin-left: calc(67 * 2px);
+}
+
+.indent-68 {
+  margin-left: calc(68 * 2px);
+}
+
+.indent-69 {
+  margin-left: calc(69 * 2px);
+}
+
+.indent-70 {
+  margin-left: calc(70 * 2px);
+}
+
+.indent-71 {
+  margin-left: calc(71 * 2px);
+}
+
+.indent-72 {
+  margin-left: calc(72 * 2px);
+}
+
+.indent-73 {
+  margin-left: calc(73 * 2px);
+}
+
+.indent-74 {
+  margin-left: calc(74 * 2px);
+}
+
+.indent-75 {
+  margin-left: calc(75 * 2px);
+}
+
+.indent-76 {
+  margin-left: calc(76 * 2px);
+}
+
+.indent-77 {
+  margin-left: calc(77 * 2px);
+}
+
+.indent-78 {
+  margin-left: calc(78 * 2px);
+}
+
+.indent-79 {
+  margin-left: calc(79 * 2px);
+}
+
+.indent-80 {
+  margin-left: calc(80 * 2px);
+}
+
+.indent-81 {
+  margin-left: calc(81 * 2px);
+}
+
+.indent-82 {
+  margin-left: calc(82 * 2px);
+}
+
+.indent-83 {
+  margin-left: calc(83 * 2px);
+}
+
+.indent-84 {
+  margin-left: calc(84 * 2px);
+}
+
+.indent-85 {
+  margin-left: calc(85 * 2px);
+}
+
+.indent-86 {
+  margin-left: calc(86 * 2px);
+}
+
+.indent-87 {
+  margin-left: calc(87 * 2px);
+}
+
+.indent-88 {
+  margin-left: calc(88 * 2px);
+}
+
+.indent-89 {
+  margin-left: calc(89 * 2px);
+}
+
+.indent-90 {
+  margin-left: calc(90 * 2px);
+}
+
+.indent-91 {
+  margin-left: calc(91 * 2px);
+}
+
+.indent-92 {
+  margin-left: calc(92 * 2px);
+}
+
+.indent-93 {
+  margin-left: calc(93 * 2px);
+}
+
+.indent-94 {
+  margin-left: calc(94 * 2px);
+}
+
+.indent-95 {
+  margin-left: calc(95 * 2px);
+}
+
+.indent-96 {
+  margin-left: calc(96 * 2px);
+}
+
+.indent-97 {
+  margin-left: calc(97 * 2px);
+}
+
+.indent-98 {
+  margin-left: calc(98 * 2px);
+}
+
+.indent-99 {
+  margin-left: calc(99 * 2px);
+}
+
+.indent-100 {
+  margin-left: calc(100 * 2px);
 }
 
 .token-name, .node-symbol, .token-literal {
   text-decoration: underline;
+}
+
+.non-terminal {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-left: 20px;
+}
+
+.terminal {
+  font-style: italic;
+  color: #8e44ad;
+  margin-left: 20px;
 }
 
 .token-lexeme {

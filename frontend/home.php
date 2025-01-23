@@ -53,7 +53,13 @@
                             $SLR = new AnalisadorSRL("./data/sintatic/tabelagoto.json");
                             $analise = $SLR->parse($lexicalC->getTokenList());
                             if($analise){
-                                printNode($SLR->getDerivationTree()->getStack()[0]);
+                                ?>
+                                    <div id="tabelasintatica">
+                                        <pre>
+                                            <?php printTree($SLR->getDerivationTree()->getTree()); ?>
+                                        </pre>
+                                    </div>
+                                <?php 
                             }else{
                                 ?>
                                     <h3 style="color: red">Análise sintática com erros</h3>

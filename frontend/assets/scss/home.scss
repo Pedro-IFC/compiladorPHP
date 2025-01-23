@@ -9,7 +9,7 @@
             align-items: baseline;
             gap: 32px;
             .w-4{
-                width: calc(25% - 32px*3/4);
+                width: fit-content;
             }
             &.dif{
                 .left, .right{
@@ -204,20 +204,31 @@ form{
     color: #FFC107;
     font-style: italic;
 }
+@for $i from 0 through 100{
+    .indent-#{$i} {
+        margin-left: calc(#{$i}*2px);
+    }
 
-.indent-0 {
-    margin-left: 0;
-}
-
-.indent-1 {
-    margin-left: 20px;
-}
-
-.indent-2 {
-    margin-left: 40px;
 }
 .token-name, .node-symbol, .token-literal {
     text-decoration: underline;
+}
+.non-terminal {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-left: 20px;
+}
+.terminal {
+    font-style: italic;
+    color: #8e44ad;
+    margin-left: 20px;
+}
+#tabelasintatica{
+    .non-terminal{
+        &.show_children{
+
+        }
+    }
 }
 
 .token-lexeme {

@@ -8,10 +8,6 @@
                 </div>
                 <div class="right">
                     <div class="row">
-                        <h2>Instalação/Atualização</h2>
-                        <?php include "./frontend/componentes/lexical/installLexical.php" ?>
-                    </div>
-                    <div class="row">
                         <?php include "./frontend/componentes/lexical/documents.php" ?>
                     </div>
                 </div>

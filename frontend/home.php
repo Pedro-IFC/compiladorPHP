@@ -5,7 +5,16 @@
             <div class="form">
                 <form method="GET">
                     <textarea name="string" id="string_txt"><?php if(isset($_GET['string'])){echo $_GET['string']; }else{ ?>main(){
-
+  int dobro(int a){
+    retorno a*2;
+  }
+  int a = 1;
+  se(a != 1){
+    int c = dobro(a);
+    imprima(c);
+  }senao{
+    imprima("a e invalido");
+  }
 }<?php } ?></textarea>
                     <div class="flex">
                         <button type="submit">Compilar</button>
@@ -44,7 +53,7 @@
                             $SLR = new AnalisadorSRL("./data/sintatic/tabelagoto.json");
                             $analise = $SLR->parse($lexicalC->getTokenList());
                             if($analise){
-                                    printNode($SLR->getDerivationTree()->getStack()[0]);
+                                printNode($SLR->getDerivationTree()->getStack()[0]);
                             }else{
                                 ?>
                                     <h3 style="color: red">Análise sintática com erros</h3>
@@ -60,6 +69,19 @@
                         if($analise){ ?>
                         <div class="w-4">
                             <h3>Análise Semântica</h3>
+                            <?php 
+                                $semantic = new SemanticAnalyser();
+                                $analise = $semantic->analyse($SLR->getDerivationTree());
+                                if($analise){
+                                }else{
+                                    ?>
+                                        <h3 style="color: red">Análise Semântica com erros</h3>
+                                    <?php
+                                    foreach($semantic->getErrors() as $erro){
+                                        echo "<strong>$erro</strong>";
+                                    }
+                                }
+                            ?>
                         </div>
                         <?php
                             /* geração de código*/ 

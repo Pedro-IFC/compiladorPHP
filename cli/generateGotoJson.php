@@ -1,24 +1,20 @@
 <?php
-// Carrega o arquivo HTML
 $dom = new DOMDocument();
 @$dom->loadHTMLFile('data/sintatic/tabelaslr.html');
 
-// Obtém todas as tabelas
 $tabelas = $dom->getElementsByTagName('table');
 if ($tabelas->length == 0) {
     throw new Exception("Nenhuma tabela encontrada no arquivo HTML.");
 }
 
-// Extrai cabeçalhos e dados das tabelas
 $jsonArray = [];
-$tabela = $tabelas[0]; // Assume que a primeira tabela é a relevante
+$tabela = $tabelas[0];
 $linhas = $tabela->getElementsByTagName('tr');
 
-// Obtém os cabeçalhos (primeiras linhas)
 $colunasHeader = [];
 foreach ($linhas as $index => $linha) {
     $colunas = $linha->getElementsByTagName('td');
-    if ($index == 0) { // Pulando as linhas de títulos
+    if ($index == 0) {
         continue;
     }
 
@@ -32,7 +28,7 @@ foreach ($linhas as $index => $linha) {
     $estado = null;
     $dadosLinha = [];
     foreach ($colunas as $colIndex => $col) {
-        if ($colIndex == 0) { // Primeira coluna é o estado
+        if ($colIndex == 0) {
             $estado = trim($col->textContent);
         } else {
             $token = $colunasHeader[$colIndex-1];

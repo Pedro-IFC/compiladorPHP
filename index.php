@@ -11,6 +11,8 @@ require './modules/lexical/AnalisadorLexico.php';
 require './modules/sintatic/AnalisadorSRL.php';
 require './modules/tree/Node.php';
 require './modules/tree/DerivationTree.php';
+require './modules/tables/SymbolTable.php';
+require './modules/semantic/SemanticAnalyzer.php';
 
 $app = AppFactory::create();
 

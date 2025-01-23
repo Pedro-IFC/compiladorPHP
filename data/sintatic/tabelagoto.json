@@ -4,221 +4,315 @@
             "<Programa>": 1
         },
         "5": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
             "<ListaComandos>": 6,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
             "<Imprime>": 12
         },
         "7": {
-            "<ListaComandosRest>": 23,
-            "<Comando>": 24,
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandosRest>": 26,
+            "<Comando>": 27,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
             "<Imprime>": 12
-        },
-        "24": {
-            "<ListaComandosRest>": 32,
-            "<Comando>": 24,
-            "<Declaracao>": 8,
-            "<Atribuicao>": 9,
-            "<ChamadaFuncao>": 10,
-            "<ControleFluxo>": 11,
-            "<Tipo>": 13,
-            "<Imprime>": 12
-        },
-        "26": {
-            "<Expressao>": 34,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
         },
         "27": {
-            "<Expressao>": 43,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ListaArgumentos>": 42,
-            "<ExpressaoLogica>": 36
-        },
-        "28": {
-            "<Expressao>": 44,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "29": {
-            "<Expressao>": 45,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "31": {
-            "<ArgumentoImpressao>": 47
-        },
-        "35": {
-            "<ExpressaoRest>": 52
-        },
-        "37": {
-            "<TermoRest>": 55,
-            "<ExpressaoLogicaRest>": 56
-        },
-        "41": {
-            "<Expressao>": 67,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "43": {
-            "<ListaArgumentosRest>": 69
-        },
-        "53": {
-            "<Termo>": 76,
-            "<Fator>": 77
-        },
-        "54": {
-            "<Termo>": 78,
-            "<Fator>": 77
-        },
-        "57": {
-            "<Fator>": 79
-        },
-        "58": {
-            "<Fator>": 80
-        },
-        "59": {
-            "<Fator>": 81
-        },
-        "60": {
-            "<Fator>": 82
-        },
-        "61": {
-            "<Fator>": 83
-        },
-        "62": {
-            "<Fator>": 84
-        },
-        "63": {
-            "<Fator>": 85
-        },
-        "64": {
-            "<Fator>": 86
-        },
-        "65": {
-            "<Fator>": 87
-        },
-        "66": {
-            "<Fator>": 88
-        },
-        "70": {
-            "<Expressao>": 91,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "73": {
-            "<Expressao>": 94,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "76": {
-            "<ExpressaoRest>": 97
-        },
-        "77": {
-            "<TermoRest>": 55
-        },
-        "78": {
-            "<ExpressaoRest>": 98
-        },
-        "79": {
-            "<TermoRest>": 99
-        },
-        "80": {
-            "<TermoRest>": 100
-        },
-        "81": {
-            "<TermoRest>": 101
-        },
-        "82": {
-            "<ExpressaoLogicaRest>": 102
-        },
-        "83": {
-            "<ExpressaoLogicaRest>": 103
-        },
-        "84": {
-            "<ExpressaoLogicaRest>": 104
-        },
-        "85": {
-            "<ExpressaoLogicaRest>": 105
-        },
-        "86": {
-            "<ExpressaoLogicaRest>": 106
-        },
-        "87": {
-            "<ExpressaoLogicaRest>": 107
-        },
-        "88": {
-            "<ExpressaoLogicaRest>": 108
-        },
-        "91": {
-            "<ListaArgumentosRest>": 109
-        },
-        "92": {
-            "<ListaComandos>": 110,
-            "<Comando>": 7,
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandosRest>": 37,
+            "<Comando>": 27,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
             "<Imprime>": 12
         },
+        "30": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 41,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "31": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 51,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ListaArgumentos>": 50,
+            "<ExpressaoLogica>": 43
+        },
+        "32": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 52,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "33": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 53,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "35": {
+            "<ArgumentoImpressao>": 55
+        },
+        "36": {
+            "<ArgumentoImpressao>": 59
+        },
+        "39": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 60,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "40": {
+            "<ListaParametros>": 61,
+            "<Tipo>": 62
+        },
+        "42": {
+            "<ExpressaoRest>": 64
+        },
+        "44": {
+            "<TermoRest>": 67,
+            "<ExpressaoLogicaRest>": 68
+        },
+        "48": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 81,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "51": {
+            "<ListaArgumentosRest>": 83
+        },
+        "65": {
+            "<ChamadaFuncao>": 49,
+            "<Termo>": 94,
+            "<Fator>": 95
+        },
+        "66": {
+            "<ChamadaFuncao>": 49,
+            "<Termo>": 96,
+            "<Fator>": 95
+        },
+        "69": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 97
+        },
+        "70": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 98
+        },
+        "71": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 99
+        },
+        "72": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 100
+        },
+        "73": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 101
+        },
+        "74": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 102
+        },
+        "75": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 103
+        },
+        "76": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 104
+        },
+        "77": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 105
+        },
+        "78": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 106
+        },
+        "79": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 107
+        },
+        "80": {
+            "<ChamadaFuncao>": 49,
+            "<Fator>": 108
+        },
+        "84": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 110,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "87": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 113,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
         "93": {
-            "<ListaComandos>": 111,
+            "<ListaParametrosRest>": 118
+        },
+        "94": {
+            "<ExpressaoRest>": 120
+        },
+        "95": {
+            "<TermoRest>": 67
+        },
+        "96": {
+            "<ExpressaoRest>": 121
+        },
+        "97": {
+            "<TermoRest>": 122
+        },
+        "98": {
+            "<TermoRest>": 123
+        },
+        "99": {
+            "<TermoRest>": 124
+        },
+        "100": {
+            "<ExpressaoLogicaRest>": 125
+        },
+        "101": {
+            "<ExpressaoLogicaRest>": 126
+        },
+        "102": {
+            "<ExpressaoLogicaRest>": 127
+        },
+        "103": {
+            "<ExpressaoLogicaRest>": 128
+        },
+        "104": {
+            "<ExpressaoLogicaRest>": 129
+        },
+        "105": {
+            "<ExpressaoLogicaRest>": 130
+        },
+        "106": {
+            "<ExpressaoLogicaRest>": 131
+        },
+        "107": {
+            "<ExpressaoLogicaRest>": 132
+        },
+        "108": {
+            "<ExpressaoLogicaRest>": 133
+        },
+        "110": {
+            "<ListaArgumentosRest>": 134
+        },
+        "111": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 135,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
             "<Imprime>": 12
         },
         "112": {
-            "<Expressao>": 115,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "117": {
-            "<Expressao>": 119,
-            "<Termo>": 35,
-            "<Fator>": 37,
-            "<ExpressaoLogica>": 36
-        },
-        "118": {
-            "<ListaComandos>": 120,
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 136,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
             "<Imprime>": 12
         },
-        "123": {
-            "<ListaComandos>": 124,
+        "117": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 138,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
             "<ChamadaFuncao>": 10,
             "<ControleFluxo>": 11,
-            "<Tipo>": 13,
+            "<Tipo>": 15,
+            "<Imprime>": 12
+        },
+        "119": {
+            "<Tipo>": 139
+        },
+        "137": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 142,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "138": {
+            "<Retorno>": 143
+        },
+        "144": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 149,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "145": {
+            "<ListaParametrosRest>": 150
+        },
+        "147": {
+            "<ChamadaFuncao>": 49,
+            "<Expressao>": 152,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "151": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 154,
+            "<Comando>": 7,
+            "<Declaracao>": 8,
+            "<Atribuicao>": 9,
+            "<ChamadaFuncao>": 10,
+            "<ControleFluxo>": 11,
+            "<Tipo>": 15,
+            "<Imprime>": 12
+        },
+        "157": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 158,
+            "<Comando>": 7,
+            "<Declaracao>": 8,
+            "<Atribuicao>": 9,
+            "<ChamadaFuncao>": 10,
+            "<ControleFluxo>": 11,
+            "<Tipo>": 15,
             "<Imprime>": 12
         }
     },
@@ -259,299 +353,385 @@
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 7
+                "rule": 8
             },
-            "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
-            },
-            "SE": {
-                "type": "SHIFT",
-                "state": 15
-            },
-            "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
-            },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
-            },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
-            },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
-            },
-            "FLOAT": {
+            "LEIA": {
                 "type": "SHIFT",
                 "state": 21
             },
-            "ID": {
+            "IMPRIMA": {
                 "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "FC": {
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
                 "type": "SHIFT",
                 "state": 22
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 9
             },
-            "IMPRIMA": {
+            "CHAR": {
                 "type": "SHIFT",
-                "state": 18
+                "state": 23
             },
-            "SE": {
+            "FLOAT": {
                 "type": "SHIFT",
-                "state": 15
+                "state": 24
             },
-            "ENQUANTO": {
+            "ID": {
                 "type": "SHIFT",
                 "state": 16
-            },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
-            },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
-            },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
-            },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 21
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 14
             }
         },
         {
             "FC": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 10
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 10
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 11
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 11
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 12
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 12
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 13
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 13
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 14
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 14
-            }
-        },
-        {
-            "ID": {
                 "type": "SHIFT",
                 "state": 25
             }
         },
         {
-            "AP": {
-                "type": "SHIFT",
-                "state": 27
+            "FC": {
+                "type": "REDUCE",
+                "rule": 10
             },
-            "EQ": {
+            "LEIA": {
                 "type": "SHIFT",
-                "state": 26
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
             }
         },
         {
-            "AP": {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 11
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 11
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 12
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 12
+            }
+        },
+        {
+            "PV": {
                 "type": "SHIFT",
                 "state": 28
             }
         },
         {
-            "AP": {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 14
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 14
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 15
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 15
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 16
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 16
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 17
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 17
+            }
+        },
+        {
+            "ID": {
                 "type": "SHIFT",
                 "state": 29
             }
@@ -559,31 +739,59 @@
         {
             "AP": {
                 "type": "SHIFT",
+                "state": 31
+            },
+            "EQ": {
+                "type": "SHIFT",
                 "state": 30
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 31
+                "state": 32
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 33
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 34
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 35
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 36
             }
         },
         {
             "ID": {
                 "type": "REDUCE",
-                "rule": 49
+                "rule": 57
             }
         },
         {
             "ID": {
                 "type": "REDUCE",
-                "rule": 50
+                "rule": 58
             }
         },
         {
             "ID": {
                 "type": "REDUCE",
-                "rule": 51
+                "rule": 59
             }
         },
         {
@@ -595,7 +803,227 @@
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 6
+                "rule": 7
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 7
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "LEIA": {
+                "type": "SHIFT",
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 10
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 13
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 13
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 40
+            },
+            "EQ": {
+                "type": "SHIFT",
+                "state": 39
+            },
+            "PV": {
+                "type": "SHIFT",
+                "state": 38
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "FP": {
+                "type": "REDUCE",
+                "rule": 63
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 54
+            }
+        },
+        {
+            "AS": {
+                "type": "SHIFT",
+                "state": 58
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 56
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 57
+            }
+        },
+        {
+            "AS": {
+                "type": "SHIFT",
+                "state": 58
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 56
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 57
             }
         },
         {
@@ -603,285 +1031,117 @@
                 "type": "REDUCE",
                 "rule": 9
             },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 9
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 18
+            },
             "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
+                "type": "REDUCE",
+                "rule": 18
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 18
             },
             "SE": {
-                "type": "SHIFT",
-                "state": 15
+                "type": "REDUCE",
+                "rule": 18
             },
             "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
+                "type": "REDUCE",
+                "rule": 18
             },
             "PARA": {
-                "type": "SHIFT",
-                "state": 17
+                "type": "REDUCE",
+                "rule": 18
             },
             "INT": {
-                "type": "SHIFT",
-                "state": 19
+                "type": "REDUCE",
+                "rule": 18
             },
             "CHAR": {
-                "type": "SHIFT",
-                "state": 20
+                "type": "REDUCE",
+                "rule": 18
             },
             "FLOAT": {
-                "type": "SHIFT",
-                "state": 21
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 33
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "FP": {
                 "type": "REDUCE",
-                "rule": 53
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
+                "rule": 18
             },
             "ID": {
-                "type": "SHIFT",
-                "state": 38
+                "type": "REDUCE",
+                "rule": 18
             }
         },
         {
             "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "ID": {
-                "type": "SHIFT",
-                "state": 46
-            }
-        },
-        {
-            "AS": {
-                "type": "SHIFT",
-                "state": 50
-            },
-            "ID": {
                 "type": "SHIFT",
                 "state": 48
             },
-            "StrLiteral": {
+            "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
-                "state": 49
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 8
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 15
+                "state": 46
             },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 15
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 15
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
             },
             "ID": {
-                "type": "REDUCE",
-                "rule": 15
-            }
-        },
-        {
-            "PV": {
                 "type": "SHIFT",
-                "state": 51
+                "state": 45
             }
         },
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 30
+                "rule": 4
             },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 30
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 30
-            },
-            "MAI": {
+            "INT": {
                 "type": "SHIFT",
-                "state": 53
+                "state": 22
             },
-            "MEN": {
+            "CHAR": {
                 "type": "SHIFT",
-                "state": 54
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
             }
         },
         {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 27
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 27
-            },
             "PV": {
-                "type": "REDUCE",
-                "rule": 27
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MUL": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "DIV": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 59
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
                 "type": "SHIFT",
                 "state": 63
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 35
             },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 35
             },
-            "MENORI": {
+            "PV": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "MAI": {
                 "type": "SHIFT",
                 "state": 65
             },
-            "MAIORI": {
+            "MEN": {
                 "type": "SHIFT",
                 "state": 66
             }
@@ -889,63 +1149,15 @@
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 45
+                "rule": 32
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 45
+                "rule": 32
             },
             "PV": {
                 "type": "REDUCE",
-                "rule": 45
-            },
-            "MUL": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "DIV": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MOD": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "DEQ": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "AND": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MENORQ": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MAIORQ": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MENORI": {
-                "type": "REDUCE",
-                "rule": 45
-            },
-            "MAIORI": {
-                "type": "REDUCE",
-                "rule": 45
+                "rule": 32
             }
         },
         {
@@ -955,1803 +1167,2685 @@
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 46
+                "rule": 51
             },
             "PV": {
                 "type": "REDUCE",
                 "rule": 46
             },
-            "MUL": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "DIV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MOD": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "DEQ": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "AND": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MENORQ": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MAIORQ": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MENORI": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "MAIORI": {
-                "type": "REDUCE",
-                "rule": 46
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MUL": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "DIV": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MOD": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "DEQ": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "AND": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MENORQ": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MAIORQ": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MENORI": {
-                "type": "REDUCE",
-                "rule": 47
-            },
-            "MAIORI": {
-                "type": "REDUCE",
-                "rule": 47
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "FP": {
-                "type": "SHIFT",
-                "state": 68
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "VIR": {
-                "type": "SHIFT",
-                "state": 70
-            }
-        },
-        {
-            "FP": {
-                "type": "SHIFT",
-                "state": 71
-            }
-        },
-        {
-            "FP": {
-                "type": "SHIFT",
-                "state": 72
-            }
-        },
-        {
-            "EQ": {
-                "type": "SHIFT",
-                "state": 73
-            }
-        },
-        {
-            "FP": {
+            "NOT": {
                 "type": "SHIFT",
                 "state": 74
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 23
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 24
-            }
-        },
-        {
-            "ID": {
+            },
+            "MUL": {
                 "type": "SHIFT",
-                "state": 75
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 16
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 16
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 26
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 26
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 26
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 40
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 40
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 40
+                "state": 69
             },
             "MAI": {
                 "type": "REDUCE",
-                "rule": 40
+                "rule": 51
             },
             "MEN": {
                 "type": "REDUCE",
-                "rule": 40
+                "rule": 51
+            },
+            "DIV": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 71
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
             }
         },
         {
+            "AP": {
+                "type": "SHIFT",
+                "state": 31
+            },
             "FP": {
                 "type": "REDUCE",
-                "rule": 31
+                "rule": 52
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 31
+                "rule": 52
             },
             "PV": {
                 "type": "REDUCE",
-                "rule": 31
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
+                "rule": 52
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
+            "AND": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
+            "OR": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 52
             },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "FP": {
-                "type": "SHIFT",
-                "state": 89
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 90
-            }
-        },
-        {
-            "FP": {
+            "MAIORI": {
                 "type": "REDUCE",
                 "rule": 52
             }
         },
         {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "AC": {
-                "type": "SHIFT",
-                "state": 92
-            }
-        },
-        {
-            "AC": {
-                "type": "SHIFT",
-                "state": 93
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
-            },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 95
-            }
-        },
-        {
-            "AS": {
-                "type": "SHIFT",
-                "state": 96
-            }
-        },
-        {
             "FP": {
                 "type": "REDUCE",
-                "rule": 30
+                "rule": 53
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 30
+                "rule": 53
             },
             "PV": {
                 "type": "REDUCE",
-                "rule": 30
+                "rule": 53
             },
-            "MAI": {
-                "type": "SHIFT",
-                "state": 53
-            },
-            "MEN": {
-                "type": "SHIFT",
-                "state": 54
-            }
-        },
-        {
-            "FP": {
+            "NOT": {
                 "type": "REDUCE",
-                "rule": 44
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MUL": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "DIV": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 59
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 30
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 30
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 30
-            },
-            "MAI": {
-                "type": "SHIFT",
-                "state": 53
-            },
-            "MEN": {
-                "type": "SHIFT",
-                "state": 54
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MUL": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "DIV": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 59
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MUL": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "DIV": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 59
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MUL": {
-                "type": "SHIFT",
-                "state": 57
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 44
-            },
-            "DIV": {
-                "type": "SHIFT",
-                "state": 58
-            },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 59
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 39
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 62
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 60
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 61
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 63
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 64
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 66
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 48
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 48
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MUL": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MAI": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MEN": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "DIV": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MOD": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "DEQ": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "AND": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 53
             },
             "DIF": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MENORQ": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MAIORQ": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MENORI": {
                 "type": "REDUCE",
-                "rule": 48
+                "rule": 53
             },
             "MAIORI": {
                 "type": "REDUCE",
-                "rule": 48
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 17
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 17
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "VIR": {
-                "type": "SHIFT",
-                "state": 70
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 7
-            },
-            "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
-            },
-            "SE": {
-                "type": "SHIFT",
-                "state": 15
-            },
-            "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
-            },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
-            },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
-            },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
-            },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 21
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 7
-            },
-            "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
-            },
-            "SE": {
-                "type": "SHIFT",
-                "state": 15
-            },
-            "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
-            },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
-            },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
-            },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
-            },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 21
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "PV": {
-                "type": "SHIFT",
-                "state": 112
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 22
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 22
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 25
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 28
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 28
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 28
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 29
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 29
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 29
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 41
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 41
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 42
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 42
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 43
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 43
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 32
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 32
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 32
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 33
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 33
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 33
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 34
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 34
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 34
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 35
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 35
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 35
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 36
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 36
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 36
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 37
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 37
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 37
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 38
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 38
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 38
+                "rule": 53
             }
         },
         {
             "FP": {
                 "type": "REDUCE",
                 "rule": 54
-            }
-        },
-        {
-            "FC": {
-                "type": "SHIFT",
-                "state": 113
-            }
-        },
-        {
-            "FC": {
-                "type": "SHIFT",
-                "state": 114
-            }
-        },
-        {
-            "AP": {
-                "type": "SHIFT",
-                "state": 41
             },
-            "CONSTANTESINTEIRAS": {
-                "type": "SHIFT",
-                "state": 39
-            },
-            "CONSTANTESPONTOFLUTUANTE": {
-                "type": "SHIFT",
-                "state": 40
-            },
-            "ID": {
-                "type": "SHIFT",
-                "state": 38
-            }
-        },
-        {
-            "FC": {
+            "VIR": {
                 "type": "REDUCE",
-                "rule": 21
+                "rule": 54
             },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "SENAO": {
-                "type": "SHIFT",
-                "state": 116
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 21
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 21
-            }
-        },
-        {
-            "FC": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "IMPRIMA": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "SE": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "ENQUANTO": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "PARA": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "INT": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "CHAR": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "FLOAT": {
-                "type": "REDUCE",
-                "rule": 19
-            },
-            "ID": {
-                "type": "REDUCE",
-                "rule": 19
-            }
-        },
-        {
             "PV": {
-                "type": "SHIFT",
-                "state": 117
-            }
-        },
-        {
-            "AC": {
-                "type": "SHIFT",
-                "state": 118
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 54
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 54
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 41
+                "state": 48
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
-                "state": 39
+                "state": 46
             },
             "CONSTANTESPONTOFLUTUANTE": {
                 "type": "SHIFT",
-                "state": 40
+                "state": 47
             },
             "ID": {
                 "type": "SHIFT",
-                "state": 38
+                "state": 45
             }
         },
         {
-            "FC": {
+            "FP": {
                 "type": "REDUCE",
-                "rule": 7
+                "rule": 56
             },
-            "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "SE": {
-                "type": "SHIFT",
-                "state": 15
+            "PV": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "FLOAT": {
-                "type": "SHIFT",
-                "state": 21
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 56
             },
-            "ID": {
-                "type": "SHIFT",
-                "state": 14
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 56
             }
         },
         {
             "FP": {
                 "type": "SHIFT",
-                "state": 121
+                "state": 82
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 65
+            },
+            "VIR": {
+                "type": "SHIFT",
+                "state": 84
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 85
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 86
+            }
+        },
+        {
+            "EQ": {
+                "type": "SHIFT",
+                "state": 87
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 88
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 28
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 29
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 89
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 90
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 91
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 92
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 93
             }
         },
         {
             "FC": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 20
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 20
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 31
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 31
+            }
+        },
+        {
+            "AP": {
                 "type": "SHIFT",
-                "state": 122
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 47
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 47
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 47
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 47
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 47
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 36
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 36
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 36
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 109
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 21
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 21
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 62
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
             }
         },
         {
             "AC": {
                 "type": "SHIFT",
-                "state": 123
+                "state": 111
+            }
+        },
+        {
+            "AC": {
+                "type": "SHIFT",
+                "state": 112
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 114
+            }
+        },
+        {
+            "AS": {
+                "type": "SHIFT",
+                "state": 115
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 116
             }
         },
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 19
             },
             "IMPRIMA": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 19
             },
             "SE": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "ENQUANTO": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "PARA": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "INT": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "CHAR": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "FLOAT": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
             },
             "ID": {
                 "type": "REDUCE",
-                "rule": 18
+                "rule": 19
+            }
+        },
+        {
+            "AC": {
+                "type": "SHIFT",
+                "state": 117
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 6
+            },
+            "VIR": {
+                "type": "SHIFT",
+                "state": 119
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "MAI": {
+                "type": "SHIFT",
+                "state": 65
+            },
+            "MEN": {
+                "type": "SHIFT",
+                "state": 66
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MUL": {
+                "type": "SHIFT",
+                "state": 69
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 71
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 35
+            },
+            "MAI": {
+                "type": "SHIFT",
+                "state": 65
+            },
+            "MEN": {
+                "type": "SHIFT",
+                "state": 66
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MUL": {
+                "type": "SHIFT",
+                "state": 69
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 71
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MUL": {
+                "type": "SHIFT",
+                "state": 69
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 71
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MUL": {
+                "type": "SHIFT",
+                "state": 69
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
+                "type": "SHIFT",
+                "state": 70
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 71
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 72
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 80
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 55
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 65
+            },
+            "VIR": {
+                "type": "SHIFT",
+                "state": 84
             }
         },
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 7
+                "rule": 8
             },
-            "IMPRIMA": {
-                "type": "SHIFT",
-                "state": 18
-            },
-            "SE": {
-                "type": "SHIFT",
-                "state": 15
-            },
-            "ENQUANTO": {
-                "type": "SHIFT",
-                "state": 16
-            },
-            "PARA": {
-                "type": "SHIFT",
-                "state": 17
-            },
-            "INT": {
-                "type": "SHIFT",
-                "state": 19
-            },
-            "CHAR": {
-                "type": "SHIFT",
-                "state": 20
-            },
-            "FLOAT": {
+            "LEIA": {
                 "type": "SHIFT",
                 "state": 21
             },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
             "ID": {
                 "type": "SHIFT",
-                "state": 14
-            }
-        },
-        {
-            "FC": {
-                "type": "SHIFT",
-                "state": 125
+                "state": 16
             }
         },
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 8
+            },
+            "LEIA": {
+                "type": "SHIFT",
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 137
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 26
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 26
             },
             "IMPRIMA": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 26
             },
             "SE": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "ENQUANTO": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "PARA": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "INT": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "CHAR": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "FLOAT": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
             },
             "ID": {
                 "type": "REDUCE",
-                "rule": 20
+                "rule": 26
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 30
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 27
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 27
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "LEIA": {
+                "type": "SHIFT",
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 3
+            }
+        },
+        {
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 33
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 33
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 33
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 34
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 34
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 34
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 48
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 48
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 48
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 48
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 48
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 49
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 49
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 50
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 50
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 37
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 37
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 37
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 38
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 38
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 39
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 39
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 40
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 40
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 41
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 41
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 42
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 42
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 43
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 43
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 44
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 44
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 45
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 45
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 64
+            }
+        },
+        {
+            "FC": {
+                "type": "SHIFT",
+                "state": 140
+            }
+        },
+        {
+            "FC": {
+                "type": "SHIFT",
+                "state": 141
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 61
+            },
+            "RETORNO": {
+                "type": "SHIFT",
+                "state": 144
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 145
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "SENAO": {
+                "type": "SHIFT",
+                "state": 146
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 25
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 25
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 23
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 23
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 147
+            }
+        },
+        {
+            "FC": {
+                "type": "SHIFT",
+                "state": 148
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 6
+            },
+            "VIR": {
+                "type": "SHIFT",
+                "state": 119
+            }
+        },
+        {
+            "AC": {
+                "type": "SHIFT",
+                "state": 151
+            }
+        },
+        {
+            "AP": {
+                "type": "SHIFT",
+                "state": 48
+            },
+            "CONSTANTESINTEIRAS": {
+                "type": "SHIFT",
+                "state": 46
+            },
+            "CONSTANTESPONTOFLUTUANTE": {
+                "type": "SHIFT",
+                "state": 47
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 45
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 2
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 2
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 153
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 5
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "LEIA": {
+                "type": "SHIFT",
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 155
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 60
+            }
+        },
+        {
+            "FC": {
+                "type": "SHIFT",
+                "state": 156
+            }
+        },
+        {
+            "AC": {
+                "type": "SHIFT",
+                "state": 157
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 22
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 22
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "LEIA": {
+                "type": "SHIFT",
+                "state": 21
+            },
+            "IMPRIMA": {
+                "type": "SHIFT",
+                "state": 20
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 8
+            },
+            "SE": {
+                "type": "SHIFT",
+                "state": 17
+            },
+            "ENQUANTO": {
+                "type": "SHIFT",
+                "state": 18
+            },
+            "PARA": {
+                "type": "SHIFT",
+                "state": 19
+            },
+            "INT": {
+                "type": "SHIFT",
+                "state": 22
+            },
+            "CHAR": {
+                "type": "SHIFT",
+                "state": 23
+            },
+            "FLOAT": {
+                "type": "SHIFT",
+                "state": 24
+            },
+            "ID": {
+                "type": "SHIFT",
+                "state": 16
+            }
+        },
+        {
+            "FC": {
+                "type": "SHIFT",
+                "state": 159
+            }
+        },
+        {
+            "FC": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "LEIA": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "IMPRIMA": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "RETORNO": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "SE": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "ENQUANTO": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "PARA": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "INT": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "CHAR": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "FLOAT": {
+                "type": "REDUCE",
+                "rule": 24
+            },
+            "ID": {
+                "type": "REDUCE",
+                "rule": 24
             }
         }
     ]

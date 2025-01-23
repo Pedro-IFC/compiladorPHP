@@ -153,6 +153,8 @@ StrLiteral: {stringLiteral}&#13;
 &#13;
 &lt;Imprime&gt; ::= IMPRIMA AP &lt;ArgumentoImpressao&gt; FP PV;&#13;
 &#13;
+&lt;LEIA&gt;::= LEIA AP &lt;ArgumentoImpressao&gt; FP PV;&#13;
+&#13;
 &lt;ArgumentoImpressao&gt; ::= ID | StrLiteral | AS ID AS;&#13;
 &#13;
 &lt;Expressao&gt; ::= &lt;Termo&gt; &lt;ExpressaoRest&gt; | &lt;ExpressaoLogica&gt;;&#13;

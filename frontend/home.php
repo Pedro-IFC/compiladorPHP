@@ -52,13 +52,33 @@
                         <?php 
                             $SLR = new AnalisadorSRL("./data/sintatic/tabelagoto.json");
                             $analise = $SLR->parse($lexicalC->getTokenList());
-                            if($analise){
+                            if($analise){  
                                 ?>
-                                    <div id="tabelasintatica">
-                                        <pre>
-                                            <?php printTree($SLR->getDerivationTree()->getTree()); ?>
-                                        </pre>
-                                    </div>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Tipo</th>
+                                        <th>Função</th>
+                                        <th>Escopo</th>
+                                        <th>Linha</th>
+                                        <th>Posição</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php 
+                                        foreach ($SLR->getDerivationTree()->getSymbolTable() as $item): ?>
+                                        <tr>
+                                        <td><?php echo $item['name']; ?></td>
+                                        <td><?php echo $item['type']; ?></td>
+                                        <td><?php echo $item['function'] ? 'Sim' : 'Não'; ?></td>
+                                        <td><?php echo $item['scope']; ?></td>
+                                        <td><?php echo $item['line']; ?></td>
+                                        <td><?php echo $item['position']; ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    </tbody>
+                                </table>
                                 <?php 
                             }else{
                                 ?>
@@ -78,7 +98,11 @@
                             <?php 
                                 $semantic = new SemanticAnalyser();
                                 $analise = $semantic->analyse($SLR->getDerivationTree());
-                                if($analise){
+                                if(true){ ?>
+                                    <div id="tabelasintatica">
+                                        <?php printTree($SLR->getDerivationTree()->getTree()); ?>
+                                    </div>
+                                <?php
                                 }else{
                                     ?>
                                         <h3 style="color: red">Análise Semântica com erros</h3>

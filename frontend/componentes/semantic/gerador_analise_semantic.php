@@ -25,10 +25,10 @@
                     if($SLR->parse($lexicalC->getTokenList())){
                         ?>
                             <h3 style="color: green">Análise Sintática gerada com sucesso</h3>
-                            <div id="tabelasintatica">
-                                <?php printTree($SLR->getDerivationTree()->getTree()); ?>
-                            </div>
                         <?php 
+                            if(true){
+
+                            }
                     }else{
                         ?>
                             <h3 style="color: red">Análise sintática com erros</h3>

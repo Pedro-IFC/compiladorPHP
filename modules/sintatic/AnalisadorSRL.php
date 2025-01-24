@@ -119,8 +119,15 @@ class AnalisadorSRL {
             if ($action['type'] === 'SHIFT') {
                 $stack[] = $action['state'];
                 $stacked++;
-                $this->derivationTree->pushTerminal($token);
-
+                if ($token->getName() === 'ID' && in_array($tokens[$index - 1]->getName(), ['INT', 'CHAR', 'FLOAT'] )) {
+                    if($tokens[$index + 1]->getName() == "AP"){
+                        $this->derivationTree->pushTerminal($token, $tokens[$index - 1]->getName(), true);
+                    }else{
+                        $this->derivationTree->pushTerminal($token, $tokens[$index - 1]->getName());
+                    }
+                }else{
+                    $this->derivationTree->pushTerminal($token);
+                }
                 $index++;
             } elseif ($action['type'] === 'REDUCE') {
                 $rule = $this->productions[$action['rule']];
@@ -140,7 +147,6 @@ class AnalisadorSRL {
 
 
                 $stack[] = $gotoState;
-                
                 $this->derivationTree->reduce(str_replace(">","", str_replace("<","", $nonTerminal)), $productionLength);
             } elseif ($action['type'] === 'ACCEPT') {
                 return true;

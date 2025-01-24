@@ -63,5 +63,11 @@ $app->get('/sintatic/grammar', function (Request $request, Response $response, $
     return $response;
 });
 
+// Analizador Semântica
+$app->get('/semantic/home', function (Request $request, Response $response, $args) {
+    $_SERVER['title'] = "Analisador Semântico";
+    include './frontend/componentes/semantic/index.php';
+    return $response;
+});
 
 $app->run();

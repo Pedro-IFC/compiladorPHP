@@ -28,6 +28,12 @@
                         <li><a href="/sintatic/grammar">Gramática</a></li>
                     </ul>
                 </li>
+                <li>
+                    <strong>Semântica</strong>
+                    <ul class="submenu">
+                        <li><a href="/semantic/home">Analizador Semântica</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </header>

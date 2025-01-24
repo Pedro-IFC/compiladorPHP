@@ -3,12 +3,16 @@ function printTree(array $stack, int $level = 0): void {
     foreach ($stack as $node) {
         $indent = str_repeat("-", $level); // Indentação com 4 espaços por nível
         if ($node['type'] === 'nonTerminal') {
-            echo "<div class='non-terminal'>{$indent}{$node['value']}</div>";
+            ?>
+                <div class='non-terminal'><?= $indent . $node['value'] ?></div>
+            <?php 
             if (isset($node['children'])) {
                 printTree($node['children'], $level + 1); // Recursão para filhos
             }
         } elseif ($node['type'] === 'terminal') {
-            echo "<div class='terminal'>{$indent}{$node['value']}</div>";
+            ?>
+                <div class='terminal'><?= $indent.$node['value']->getName().'("'.$node['value']->getLexeme().'")' ?></div>
+            <?php 
         }
     }
 }

@@ -1,37 +1,61 @@
-<Programa>::= MAIN AP <ListaParametros> FP AC <ListaComandos> FC | î;
+<Programa> ::= MAIN AP FP AC <ListaComandos> FC | î;
 
-<ListaParametros>::= ID <ListaParametrosRest> | î;
+<Funcao> ::= <Tipo> ID AP <ListaParametros> FP AC <ListaComandos> <Retorno> FC;
 
-<ListaParametrosRest> ::= VIR ID <ListaParametrosRest> | î;
+<ListaParametros> ::= <Tipo> ID <ListaParametrosRest> | î;
+
+<ListaParametrosRest> ::= VIR <Tipo> ID <ListaParametrosRest> | î;
 
 <ListaComandos> ::= <Comando> <ListaComandosRest> | î;
 
 <ListaComandosRest> ::= <Comando> <ListaComandosRest> | î;
 
-<Comando> ::= <Declaracao> | <Atribuicao> | <ChamadaFuncao> | <ControleFluxo>;
+<Comando> ::= <Declaracao> | <Atribuicao> | <ChamadaFuncao>  PV| <ControleFluxo> | <Imprime> | <LEIA> | <Funcao> ;
 
-<Declaracao> ::= <Tipo> ID PV;
+<Declaracao> ::= <Tipo> ID PV | <Tipo> ID EQ <Expressao> PV;
 
 <Atribuicao> ::= ID EQ <Expressao> PV;
 
-<ChamadaFuncao> ::= ID AP <ListaArgumentos> FP PV;
+<ChamadaFuncao> ::= ID AP <ListaArgumentos> FP;
 
 <ControleFluxo> ::= SE AP <Expressao> FP AC <ListaComandos> FC SENAO AC <ListaComandos> FC
                | ENQUANTO AP <Expressao> FP AC <ListaComandos> FC
-               | PARA AP ID EQ <Expressao> PV <Expressao> PV <Expressao> FP AC <ListaComandos> FC;
+               | PARA AP ID EQ <Expressao> PV <Expressao> PV <Expressao> FP AC <ListaComandos> FC
+               | SE AP <Expressao> FP AC <ListaComandos> FC;  // Opção com "SENAO" removida
 
-<Expressao> ::= <Termo> <ExpressaoRest>;
+<Imprime> ::= IMPRIMA AP <ArgumentoImpressao> FP PV;
+
+<LEIA>::= LEIA AP <ArgumentoImpressao> FP PV;
+
+<ArgumentoImpressao> ::= ID | StrLiteral | AS ID AS;
+
+<Expressao> ::= <Termo> <ExpressaoRest> | <ExpressaoLogica>;
 
 <ExpressaoRest> ::= MAI <Termo> <ExpressaoRest> | MEN <Termo> <ExpressaoRest> | î;
 
+<ExpressaoLogica> ::= <Fator> <ExpressaoLogicaRest>;
+
+<ExpressaoLogicaRest> ::= AND <Fator> <ExpressaoLogicaRest> 
+                       | OR <Fator> <ExpressaoLogicaRest> 
+                       | NOT <Fator> <ExpressaoLogicaRest>
+                       | DIF <Fator> <ExpressaoLogicaRest> 
+                       | DEQ <Fator> <ExpressaoLogicaRest>
+                       | MENORQ <Fator> <ExpressaoLogicaRest> 
+                       | MAIORQ <Fator> <ExpressaoLogicaRest>
+                       | MENORI <Fator> <ExpressaoLogicaRest> 
+                       | MAIORI <Fator> <ExpressaoLogicaRest> 
+                       | î;
+
 <Termo> ::= <Fator> <TermoRest>;
 
-<TermoRest> ::= MUL<Fator> <TermoRest> | DIV <Fator> <TermoRest> | MOD <Fator> <TermoRest> | î;
+<TermoRest> ::= MUL <Fator> <TermoRest> | DIV <Fator> <TermoRest> | MOD <Fator> <TermoRest> | î;
 
-<Fator> ::= ID | CONSTANTESINTEIRAS | CONSTANTESPONTOFLUTUANTE | AP <Expressao> FP;
-
+<Fator> ::= ID | CONSTANTESINTEIRAS | CONSTANTESPONTOFLUTUANTE | AP <Expressao> FP | <ChamadaFuncao> ;
+ 
 <Tipo> ::= INT | CHAR | FLOAT ;
+
+<Retorno> ::= RETORNO <Expressao> PV | î;
 
 <ListaArgumentos> ::= <Expressao> <ListaArgumentosRest> | î;
 
-<ListaArgumentosRest> ::= VIR <Expressao> <ListaArgumentosRest> | î ;
+<ListaArgumentosRest> ::= VIR <Expressao> <ListaArgumentosRest> | î;

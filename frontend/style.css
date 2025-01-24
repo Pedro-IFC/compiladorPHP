@@ -657,14 +657,14 @@ div#diagrama {
   width: 60%;
 }
 .home .al-container > .row .left {
-  width: calc(33% - 16px);
+  width: calc(50% - 16px);
   max-height: calc(100vh - 120px);
   overflow: scroll;
 }
 .home .al-container > .row .right {
+  width: calc(50% - 16px);
   max-height: calc(100vh - 120px);
   overflow: scroll;
-  width: calc(66% - 16px);
 }
 .home .al-container > .row .right > div:not(:last-child) {
   border-bottom: 1px solid #333333;

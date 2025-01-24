@@ -5,6 +5,8 @@ class AnalisadorSRL {
     private array $actionTable;
     private DerivationTree $derivationTree;
     private array $errors = [];
+    private array $symbolTable = [];
+    private array $scopeStack = [];
 
     private $productions = [
         [ "<Programa>", 6 ],
@@ -77,6 +79,7 @@ class AnalisadorSRL {
         [ 68, 1 ]
     ];
 
+
     public function __construct(string $jsonFilePath) {
         $this->loadParsingTable($jsonFilePath);
         $this->derivationTree = new DerivationTree();
@@ -88,6 +91,10 @@ class AnalisadorSRL {
 
     public function getErrors(){
         return $this->errors;
+    }
+
+    public function getSymbolTable(){
+        return $this->symbolTable;
     }
 
     private function loadParsingTable(string $filePath): void {
@@ -103,7 +110,7 @@ class AnalisadorSRL {
     public function parse(array $tokens): bool {
         $stack = [0];
         $index = 0;
-        $stacked=1;
+        $lastScope = "global";
         while (true) {
             $state = end($stack);
             $token = $tokens[$index] ?? new Token('$', '$', 0, 0);
@@ -118,21 +125,40 @@ class AnalisadorSRL {
 
             if ($action['type'] === 'SHIFT') {
                 $stack[] = $action['state'];
-                $stacked++;
-                if ($token->getName() === 'ID' && in_array($tokens[$index - 1]->getName(), ['INT', 'CHAR', 'FLOAT'] )) {
-                    if($tokens[$index + 1]->getName() == "AP"){
-                        $this->derivationTree->pushTerminal($token, $tokens[$index - 1]->getName(), true);
-                    }else{
-                        $this->derivationTree->pushTerminal($token, $tokens[$index - 1]->getName());
+
+                if ($token->getName() === 'SE') {
+                    $lastScope = "SE";
+                }elseif($token->getName() === 'PARA'){
+                    $lastScope = "PARA";
+                }elseif($token->getName() === 'ENQUANTO'){
+                    $lastScope = "ENQUANTO";
+                }elseif ($token->getName() === 'ID') {
+                    if (in_array($tokens[$index - 1]->getName(), ['INT', 'CHAR', 'FLOAT'])) {
+                        $this->addToSymbolTable($token, $tokens[$index - 1]->getName(), $tokens[$index + 1]->getName() == "AP" ? 'function' : 'variable');
+                        if ($tokens[$index + 1]->getName() == "AP") {
+                            $this->enterScope($token->getLexeme());
+                        }
                     }
-                }else{
-                    $this->derivationTree->pushTerminal($token);
                 }
+
+                if ($token->getName() === 'AC') {
+                    $this->enterScope($lastScope);
+                }
+
+                if ($token->getName() === 'FC') {
+                    $this->exitScope();
+                }
+
+                $this->derivationTree->pushTerminal($token);
                 $index++;
             } elseif ($action['type'] === 'REDUCE') {
+                if ($token->getName() === 'FC') {
+                    $this->exitScope();
+                }
                 $rule = $this->productions[$action['rule']];
                 $nonTerminal = $rule[0];
                 $productionLength = $rule[1];
+
                 for ($i = 0; $i < $productionLength; $i++) {
                     array_pop($stack);
                 }
@@ -145,12 +171,36 @@ class AnalisadorSRL {
                     return false;
                 }
 
-
                 $stack[] = $gotoState;
-                $this->derivationTree->reduce(str_replace(">","", str_replace("<","", $nonTerminal)), $productionLength);
+                $this->derivationTree->reduce(str_replace(">", "", str_replace("<", "", $nonTerminal)), $productionLength);
             } elseif ($action['type'] === 'ACCEPT') {
                 return true;
             }
+        }
+    }
+
+    private function addToSymbolTable(Token $token, string $type, string $category): void {
+        $currentScope = end($this->scopeStack);
+        $this->symbolTable[] = [
+            'name' => $token->getLexeme(),
+            'lexeme' => $token->getLexeme(),
+            'type' => $type,
+            'scope' => $currentScope,
+            'category' => $category
+        ];
+    }
+
+    private function enterScope(string $scopeName = null): void {
+        if ($scopeName) {
+            $this->scopeStack[] = $scopeName . count($this->scopeStack);
+        } else {
+            $this->scopeStack[] = 'block_' . count($this->scopeStack);
+        }
+    }
+
+    private function exitScope(): void {
+        if (count($this->scopeStack) > 1) {
+            array_pop($this->scopeStack);
         }
     }
 }

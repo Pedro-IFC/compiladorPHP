@@ -59,22 +59,20 @@
                                     <tr>
                                         <th>Nome</th>
                                         <th>Tipo</th>
-                                        <th>Função</th>
+                                        <th>Lexema</th>
                                         <th>Escopo</th>
-                                        <th>Linha</th>
-                                        <th>Posição</th>
+                                        <th>Categoria</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php 
-                                        foreach ($SLR->getDerivationTree()->getSymbolTable() as $item): ?>
-                                        <tr>
-                                        <td><?php echo $item['name']; ?></td>
-                                        <td><?php echo $item['type']; ?></td>
-                                        <td><?php echo $item['function'] ? 'Sim' : 'Não'; ?></td>
-                                        <td><?php echo $item['scope']; ?></td>
-                                        <td><?php echo $item['line']; ?></td>
-                                        <td><?php echo $item['position']; ?></td>
+                                        foreach ($SLR->getSymbolTable() as $item): ?>
+                                            <tr>
+                                            <td><?php echo $item['name']; ?></td>
+                                            <td><?php echo $item['type']; ?></td>
+                                            <td><?php echo $item['lexeme']; ?></td>
+                                            <td><?php echo $item['scope']; ?></td>
+                                            <td><?php echo $item['category']; ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                     </tbody>
@@ -96,9 +94,8 @@
                         <div class="w-4">
                             <h3>Análise Semântica</h3>
                             <?php 
-                                $semantic = new SemanticAnalyser();
-                                $analise = $semantic->analyse($SLR->getDerivationTree());
-                                if(true){ ?>
+                                $semantic = new SemanticAnalyzer($SLR->getSymbolTable(), $lexicalC->getTokenList());
+                                if($semantic->analyze()){ ?>
                                     <div id="tabelasintatica">
                                         <?php printTree($SLR->getDerivationTree()->getTree()); ?>
                                     </div>

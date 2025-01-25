@@ -64,6 +64,7 @@ class AnalisadorSRL {
         [ "<Fator>", 1 ],
         [ "<Fator>", 1 ],
         [ "<Fator>", 1 ],
+        [ "<Fator>", 1 ],
         [ "<Fator>", 3 ],
         [ "<Fator>", 1 ],
         [ "<Tipo>", 1 ],
@@ -75,6 +76,7 @@ class AnalisadorSRL {
         [ "<ListaArgumentos>", 0 ],
         [ "<ListaArgumentosRest>", 3 ],
         [ "<ListaArgumentosRest>", 0 ],
+        [ 68, 1 ],
         [ 68, 1 ],
         [ 68, 1 ]
     ];
@@ -117,6 +119,8 @@ class AnalisadorSRL {
             $tokenName = $token->getName();
 
             if (!isset($this->actionTable[$state][$tokenName])) {
+                echo "<pre>";
+                var_dump($this->actionTable[$state]);
                 $this->errors[] = "Erro de sintaxe na linha " . $token->getLine() . ", token inesperado: " . $token->getLexeme();
                 return false;
             }

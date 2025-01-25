@@ -40,154 +40,151 @@
             "<Imprime>": 12
         },
         "30": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Expressao>": 41,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
         "31": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 51,
-            "<Termo>": 42,
-            "<Fator>": 44,
-            "<ListaArgumentos>": 50,
-            "<ExpressaoLogica>": 43
-        },
-        "32": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Expressao>": 52,
             "<Termo>": 42,
             "<Fator>": 44,
+            "<ListaArgumentos>": 51,
             "<ExpressaoLogica>": 43
         },
-        "33": {
-            "<ChamadaFuncao>": 49,
+        "32": {
+            "<ChamadaFuncao>": 50,
             "<Expressao>": 53,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
+        "33": {
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 54,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
         "35": {
-            "<ArgumentoImpressao>": 55
+            "<ArgumentoImpressao>": 56
         },
         "36": {
-            "<ArgumentoImpressao>": 59
+            "<ArgumentoImpressao>": 60
         },
         "39": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 60,
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 61,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
         "40": {
-            "<ListaParametros>": 61,
-            "<Tipo>": 62
+            "<ListaParametros>": 62,
+            "<Tipo>": 63
         },
         "42": {
-            "<ExpressaoRest>": 64
+            "<ExpressaoRest>": 65
         },
         "44": {
-            "<TermoRest>": 67,
-            "<ExpressaoLogicaRest>": 68
+            "<TermoRest>": 68,
+            "<ExpressaoLogicaRest>": 69
         },
-        "48": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 81,
+        "49": {
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 82,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
-        "51": {
-            "<ListaArgumentosRest>": 83
-        },
-        "65": {
-            "<ChamadaFuncao>": 49,
-            "<Termo>": 94,
-            "<Fator>": 95
+        "52": {
+            "<ListaArgumentosRest>": 84
         },
         "66": {
-            "<ChamadaFuncao>": 49,
-            "<Termo>": 96,
-            "<Fator>": 95
+            "<ChamadaFuncao>": 50,
+            "<Termo>": 95,
+            "<Fator>": 96
         },
-        "69": {
-            "<ChamadaFuncao>": 49,
-            "<Fator>": 97
+        "67": {
+            "<ChamadaFuncao>": 50,
+            "<Termo>": 97,
+            "<Fator>": 96
         },
         "70": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 98
         },
         "71": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 99
         },
         "72": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 100
         },
         "73": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 101
         },
         "74": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 102
         },
         "75": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 103
         },
         "76": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 104
         },
         "77": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 105
         },
         "78": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 106
         },
         "79": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 107
         },
         "80": {
-            "<ChamadaFuncao>": 49,
+            "<ChamadaFuncao>": 50,
             "<Fator>": 108
         },
-        "84": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 110,
+        "81": {
+            "<ChamadaFuncao>": 50,
+            "<Fator>": 109
+        },
+        "85": {
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 111,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
-        "87": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 113,
+        "88": {
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 114,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
-        },
-        "93": {
-            "<ListaParametrosRest>": 118
         },
         "94": {
-            "<ExpressaoRest>": 120
+            "<ListaParametrosRest>": 119
         },
         "95": {
-            "<TermoRest>": 67
-        },
-        "96": {
             "<ExpressaoRest>": 121
         },
+        "96": {
+            "<TermoRest>": 68
+        },
         "97": {
-            "<TermoRest>": 122
+            "<ExpressaoRest>": 122
         },
         "98": {
             "<TermoRest>": 123
@@ -196,7 +193,7 @@
             "<TermoRest>": 124
         },
         "100": {
-            "<ExpressaoLogicaRest>": 125
+            "<TermoRest>": 125
         },
         "101": {
             "<ExpressaoLogicaRest>": 126
@@ -222,20 +219,11 @@
         "108": {
             "<ExpressaoLogicaRest>": 133
         },
-        "110": {
-            "<ListaArgumentosRest>": 134
+        "109": {
+            "<ExpressaoLogicaRest>": 134
         },
         "111": {
-            "<Funcao>": 14,
-            "<LEIA>": 13,
-            "<ListaComandos>": 135,
-            "<Comando>": 7,
-            "<Declaracao>": 8,
-            "<Atribuicao>": 9,
-            "<ChamadaFuncao>": 10,
-            "<ControleFluxo>": 11,
-            "<Tipo>": 15,
-            "<Imprime>": 12
+            "<ListaArgumentosRest>": 135
         },
         "112": {
             "<Funcao>": 14,
@@ -249,10 +237,10 @@
             "<Tipo>": 15,
             "<Imprime>": 12
         },
-        "117": {
+        "113": {
             "<Funcao>": 14,
             "<LEIA>": 13,
-            "<ListaComandos>": 138,
+            "<ListaComandos>": 137,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
@@ -261,40 +249,52 @@
             "<Tipo>": 15,
             "<Imprime>": 12
         },
-        "119": {
-            "<Tipo>": 139
+        "118": {
+            "<Funcao>": 14,
+            "<LEIA>": 13,
+            "<ListaComandos>": 139,
+            "<Comando>": 7,
+            "<Declaracao>": 8,
+            "<Atribuicao>": 9,
+            "<ChamadaFuncao>": 10,
+            "<ControleFluxo>": 11,
+            "<Tipo>": 15,
+            "<Imprime>": 12
         },
-        "137": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 142,
-            "<Termo>": 42,
-            "<Fator>": 44,
-            "<ExpressaoLogica>": 43
+        "120": {
+            "<Tipo>": 140
         },
         "138": {
-            "<Retorno>": 143
-        },
-        "144": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 149,
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 143,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
+        },
+        "139": {
+            "<Retorno>": 144
         },
         "145": {
-            "<ListaParametrosRest>": 150
-        },
-        "147": {
-            "<ChamadaFuncao>": 49,
-            "<Expressao>": 152,
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 150,
             "<Termo>": 42,
             "<Fator>": 44,
             "<ExpressaoLogica>": 43
         },
-        "151": {
+        "146": {
+            "<ListaParametrosRest>": 151
+        },
+        "148": {
+            "<ChamadaFuncao>": 50,
+            "<Expressao>": 153,
+            "<Termo>": 42,
+            "<Fator>": 44,
+            "<ExpressaoLogica>": 43
+        },
+        "152": {
             "<Funcao>": 14,
             "<LEIA>": 13,
-            "<ListaComandos>": 154,
+            "<ListaComandos>": 155,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
@@ -303,10 +303,10 @@
             "<Tipo>": 15,
             "<Imprime>": 12
         },
-        "157": {
+        "158": {
             "<Funcao>": 14,
             "<LEIA>": 13,
-            "<ListaComandos>": 158,
+            "<ListaComandos>": 159,
             "<Comando>": 7,
             "<Declaracao>": 8,
             "<Atribuicao>": 9,
@@ -779,12 +779,6 @@
         {
             "ID": {
                 "type": "REDUCE",
-                "rule": 57
-            }
-        },
-        {
-            "ID": {
-                "type": "REDUCE",
                 "rule": 58
             }
         },
@@ -792,6 +786,12 @@
             "ID": {
                 "type": "REDUCE",
                 "rule": 59
+            }
+        },
+        {
+            "ID": {
+                "type": "REDUCE",
+                "rule": 60
             }
         },
         {
@@ -919,7 +919,7 @@
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -932,16 +932,20 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "FP": {
                 "type": "REDUCE",
-                "rule": 63
+                "rule": 64
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -954,12 +958,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -972,12 +980,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -990,40 +1002,44 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "ID": {
                 "type": "SHIFT",
-                "state": 54
+                "state": 55
             }
         },
         {
             "AS": {
                 "type": "SHIFT",
-                "state": 58
+                "state": 59
             },
             "ID": {
                 "type": "SHIFT",
-                "state": 56
+                "state": 57
             },
             "StrLiteral": {
                 "type": "SHIFT",
-                "state": 57
+                "state": 58
             }
         },
         {
             "AS": {
                 "type": "SHIFT",
-                "state": 58
+                "state": 59
             },
             "ID": {
                 "type": "SHIFT",
-                "state": 56
+                "state": 57
             },
             "StrLiteral": {
                 "type": "SHIFT",
-                "state": 57
+                "state": 58
             }
         },
         {
@@ -1085,7 +1101,7 @@
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1098,6 +1114,10 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
@@ -1121,7 +1141,7 @@
         {
             "PV": {
                 "type": "SHIFT",
-                "state": 63
+                "state": 64
             }
         },
         {
@@ -1139,11 +1159,11 @@
             },
             "MAI": {
                 "type": "SHIFT",
-                "state": 65
+                "state": 66
             },
             "MEN": {
                 "type": "SHIFT",
-                "state": 66
+                "state": 67
             }
         },
         {
@@ -1163,7 +1183,7 @@
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 46
+                "rule": 51
             },
             "VIR": {
                 "type": "REDUCE",
@@ -1175,11 +1195,11 @@
             },
             "NOT": {
                 "type": "SHIFT",
-                "state": 74
+                "state": 75
             },
             "MUL": {
                 "type": "SHIFT",
-                "state": 69
+                "state": 70
             },
             "MAI": {
                 "type": "REDUCE",
@@ -1191,43 +1211,43 @@
             },
             "DIV": {
                 "type": "SHIFT",
-                "state": 70
+                "state": 71
             },
             "MOD": {
                 "type": "SHIFT",
-                "state": 71
+                "state": 72
             },
             "DEQ": {
                 "type": "SHIFT",
-                "state": 76
+                "state": 77
             },
             "AND": {
                 "type": "SHIFT",
-                "state": 72
+                "state": 73
             },
             "OR": {
                 "type": "SHIFT",
-                "state": 73
+                "state": 74
             },
             "DIF": {
                 "type": "SHIFT",
-                "state": 75
+                "state": 76
             },
             "MENORQ": {
                 "type": "SHIFT",
-                "state": 77
+                "state": 78
             },
             "MAIORQ": {
                 "type": "SHIFT",
-                "state": 78
+                "state": 79
             },
             "MENORI": {
                 "type": "SHIFT",
-                "state": 79
+                "state": 80
             },
             "MAIORI": {
                 "type": "SHIFT",
-                "state": 80
+                "state": 81
             }
         },
         {
@@ -1445,9 +1465,79 @@
             }
         },
         {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 55
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 55
+            }
+        },
+        {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1460,96 +1550,94 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "VIR": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "PV": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "NOT": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MUL": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MAI": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MEN": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "DIV": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MOD": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "DEQ": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "AND": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "OR": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "DIF": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MENORQ": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MAIORQ": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MENORI": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             },
             "MAIORI": {
                 "type": "REDUCE",
-                "rule": 56
+                "rule": 57
             }
         },
         {
             "FP": {
                 "type": "SHIFT",
-                "state": 82
+                "state": 83
             }
         },
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 65
+                "rule": 66
             },
             "VIR": {
-                "type": "SHIFT",
-                "state": 84
-            }
-        },
-        {
-            "FP": {
                 "type": "SHIFT",
                 "state": 85
             }
@@ -1561,15 +1649,21 @@
             }
         },
         {
-            "EQ": {
+            "FP": {
                 "type": "SHIFT",
                 "state": 87
             }
         },
         {
-            "FP": {
+            "EQ": {
                 "type": "SHIFT",
                 "state": 88
+            }
+        },
+        {
+            "FP": {
+                "type": "SHIFT",
+                "state": 89
             }
         },
         {
@@ -1587,31 +1681,31 @@
         {
             "ID": {
                 "type": "SHIFT",
-                "state": 89
-            }
-        },
-        {
-            "FP": {
-                "type": "SHIFT",
                 "state": 90
             }
         },
         {
-            "PV": {
+            "FP": {
                 "type": "SHIFT",
                 "state": 91
             }
         },
         {
-            "FP": {
+            "PV": {
                 "type": "SHIFT",
                 "state": 92
             }
         },
         {
-            "ID": {
+            "FP": {
                 "type": "SHIFT",
                 "state": 93
+            }
+        },
+        {
+            "ID": {
+                "type": "SHIFT",
+                "state": 94
             }
         },
         {
@@ -1677,7 +1771,7 @@
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1690,12 +1784,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1708,6 +1806,10 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
@@ -1749,7 +1851,7 @@
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1762,12 +1864,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1780,12 +1886,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1798,12 +1908,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1816,12 +1930,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1834,12 +1952,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1852,12 +1974,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1870,12 +1996,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1888,12 +2018,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1906,12 +2040,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1924,12 +2062,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1942,12 +2084,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -1960,12 +2106,16 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "FP": {
                 "type": "SHIFT",
-                "state": 109
+                "state": 110
             }
         },
         {
@@ -2041,13 +2191,13 @@
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 62
+                "rule": 63
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -2060,12 +2210,10 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
-            }
-        },
-        {
-            "AC": {
+            },
+            "StrLiteral": {
                 "type": "SHIFT",
-                "state": 111
+                "state": 48
             }
         },
         {
@@ -2075,9 +2223,15 @@
             }
         },
         {
+            "AC": {
+                "type": "SHIFT",
+                "state": 113
+            }
+        },
+        {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -2090,24 +2244,28 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "PV": {
-                "type": "SHIFT",
-                "state": 114
-            }
-        },
-        {
-            "AS": {
                 "type": "SHIFT",
                 "state": 115
             }
         },
         {
-            "PV": {
+            "AS": {
                 "type": "SHIFT",
                 "state": 116
+            }
+        },
+        {
+            "PV": {
+                "type": "SHIFT",
+                "state": 117
             }
         },
         {
@@ -2159,7 +2317,7 @@
         {
             "AC": {
                 "type": "SHIFT",
-                "state": 117
+                "state": 118
             }
         },
         {
@@ -2169,7 +2327,7 @@
             },
             "VIR": {
                 "type": "SHIFT",
-                "state": 119
+                "state": 120
             }
         },
         {
@@ -2186,12 +2344,12 @@
                 "rule": 35
             },
             "MAI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MEN": {
                 "type": "SHIFT",
                 "state": 66
+            },
+            "MEN": {
+                "type": "SHIFT",
+                "state": 67
             }
         },
         {
@@ -2209,7 +2367,7 @@
             },
             "MUL": {
                 "type": "SHIFT",
-                "state": 69
+                "state": 70
             },
             "MAI": {
                 "type": "REDUCE",
@@ -2221,11 +2379,11 @@
             },
             "DIV": {
                 "type": "SHIFT",
-                "state": 70
+                "state": 71
             },
             "MOD": {
                 "type": "SHIFT",
-                "state": 71
+                "state": 72
             }
         },
         {
@@ -2242,12 +2400,12 @@
                 "rule": 35
             },
             "MAI": {
-                "type": "SHIFT",
-                "state": 65
-            },
-            "MEN": {
                 "type": "SHIFT",
                 "state": 66
+            },
+            "MEN": {
+                "type": "SHIFT",
+                "state": 67
             }
         },
         {
@@ -2264,24 +2422,24 @@
                 "rule": 51
             },
             "MUL": {
-                "type": "SHIFT",
-                "state": 69
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "DIV": {
                 "type": "SHIFT",
                 "state": 70
             },
-            "MOD": {
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
                 "type": "SHIFT",
                 "state": 71
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 72
             }
         },
         {
@@ -2298,24 +2456,24 @@
                 "rule": 51
             },
             "MUL": {
-                "type": "SHIFT",
-                "state": 69
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "DIV": {
                 "type": "SHIFT",
                 "state": 70
             },
-            "MOD": {
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 51
+            },
+            "DIV": {
                 "type": "SHIFT",
                 "state": 71
+            },
+            "MOD": {
+                "type": "SHIFT",
+                "state": 72
             }
         },
         {
@@ -2332,554 +2490,554 @@
                 "rule": 51
             },
             "MUL": {
-                "type": "SHIFT",
-                "state": 69
-            },
-            "MAI": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "MEN": {
-                "type": "REDUCE",
-                "rule": 51
-            },
-            "DIV": {
                 "type": "SHIFT",
                 "state": 70
             },
-            "MOD": {
-                "type": "SHIFT",
-                "state": 71
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 46
-            },
-            "NOT": {
-                "type": "SHIFT",
-                "state": 74
-            },
-            "DEQ": {
-                "type": "SHIFT",
-                "state": 76
-            },
-            "AND": {
-                "type": "SHIFT",
-                "state": 72
-            },
-            "OR": {
-                "type": "SHIFT",
-                "state": 73
-            },
-            "DIF": {
-                "type": "SHIFT",
-                "state": 75
-            },
-            "MENORQ": {
-                "type": "SHIFT",
-                "state": 77
-            },
-            "MAIORQ": {
-                "type": "SHIFT",
-                "state": 78
-            },
-            "MENORI": {
-                "type": "SHIFT",
-                "state": 79
-            },
-            "MAIORI": {
-                "type": "SHIFT",
-                "state": 80
-            }
-        },
-        {
-            "FP": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "VIR": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "PV": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "NOT": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "MUL": {
-                "type": "REDUCE",
-                "rule": 55
-            },
             "MAI": {
                 "type": "REDUCE",
-                "rule": 55
+                "rule": 51
             },
             "MEN": {
                 "type": "REDUCE",
-                "rule": 55
+                "rule": 51
             },
             "DIV": {
-                "type": "REDUCE",
-                "rule": 55
+                "type": "SHIFT",
+                "state": 71
             },
             "MOD": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "DEQ": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "AND": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "OR": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "DIF": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "MENORQ": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "MAIORQ": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "MENORI": {
-                "type": "REDUCE",
-                "rule": 55
-            },
-            "MAIORI": {
-                "type": "REDUCE",
-                "rule": 55
+                "type": "SHIFT",
+                "state": 72
             }
         },
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 65
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 46
+            },
+            "NOT": {
+                "type": "SHIFT",
+                "state": 75
+            },
+            "DEQ": {
+                "type": "SHIFT",
+                "state": 77
+            },
+            "AND": {
+                "type": "SHIFT",
+                "state": 73
+            },
+            "OR": {
+                "type": "SHIFT",
+                "state": 74
+            },
+            "DIF": {
+                "type": "SHIFT",
+                "state": 76
+            },
+            "MENORQ": {
+                "type": "SHIFT",
+                "state": 78
+            },
+            "MAIORQ": {
+                "type": "SHIFT",
+                "state": 79
+            },
+            "MENORI": {
+                "type": "SHIFT",
+                "state": 80
+            },
+            "MAIORI": {
+                "type": "SHIFT",
+                "state": 81
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "VIR": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "PV": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "NOT": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MUL": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MAI": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MEN": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "DIV": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MOD": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "DEQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "AND": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "OR": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "DIF": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MENORQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MAIORQ": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MENORI": {
+                "type": "REDUCE",
+                "rule": 56
+            },
+            "MAIORI": {
+                "type": "REDUCE",
+                "rule": 56
+            }
+        },
+        {
+            "FP": {
+                "type": "REDUCE",
+                "rule": 66
             },
             "VIR": {
                 "type": "SHIFT",
-                "state": 84
+                "state": 85
             }
         },
         {
@@ -2977,7 +3135,7 @@
         {
             "PV": {
                 "type": "SHIFT",
-                "state": 137
+                "state": 138
             }
         },
         {
@@ -3367,13 +3525,7 @@
         {
             "FP": {
                 "type": "REDUCE",
-                "rule": 64
-            }
-        },
-        {
-            "FC": {
-                "type": "SHIFT",
-                "state": 140
+                "rule": 65
             }
         },
         {
@@ -3383,9 +3535,15 @@
             }
         },
         {
+            "FC": {
+                "type": "SHIFT",
+                "state": 142
+            }
+        },
+        {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -3398,22 +3556,26 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 61
+                "rule": 62
             },
             "RETORNO": {
                 "type": "SHIFT",
-                "state": 144
+                "state": 145
             }
         },
         {
             "ID": {
                 "type": "SHIFT",
-                "state": 145
+                "state": 146
             }
         },
         {
@@ -3439,7 +3601,7 @@
             },
             "SENAO": {
                 "type": "SHIFT",
-                "state": 146
+                "state": 147
             },
             "ENQUANTO": {
                 "type": "REDUCE",
@@ -3515,19 +3677,19 @@
         {
             "PV": {
                 "type": "SHIFT",
-                "state": 147
+                "state": 148
             }
         },
         {
             "FC": {
                 "type": "SHIFT",
-                "state": 148
+                "state": 149
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -3540,6 +3702,10 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
@@ -3549,19 +3715,19 @@
             },
             "VIR": {
                 "type": "SHIFT",
-                "state": 119
+                "state": 120
             }
         },
         {
             "AC": {
                 "type": "SHIFT",
-                "state": 151
+                "state": 152
             }
         },
         {
             "AP": {
                 "type": "SHIFT",
-                "state": 48
+                "state": 49
             },
             "CONSTANTESINTEIRAS": {
                 "type": "SHIFT",
@@ -3574,6 +3740,10 @@
             "ID": {
                 "type": "SHIFT",
                 "state": 45
+            },
+            "StrLiteral": {
+                "type": "SHIFT",
+                "state": 48
             }
         },
         {
@@ -3625,7 +3795,7 @@
         {
             "PV": {
                 "type": "SHIFT",
-                "state": 153
+                "state": 154
             }
         },
         {
@@ -3683,25 +3853,25 @@
         {
             "FP": {
                 "type": "SHIFT",
-                "state": 155
+                "state": 156
             }
         },
         {
             "FC": {
                 "type": "REDUCE",
-                "rule": 60
+                "rule": 61
             }
         },
         {
             "FC": {
                 "type": "SHIFT",
-                "state": 156
+                "state": 157
             }
         },
         {
             "AC": {
                 "type": "SHIFT",
-                "state": 157
+                "state": 158
             }
         },
         {
@@ -3799,7 +3969,7 @@
         {
             "FC": {
                 "type": "SHIFT",
-                "state": 159
+                "state": 160
             }
         },
         {

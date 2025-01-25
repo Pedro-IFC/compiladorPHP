@@ -32,7 +32,7 @@ class SemanticAnalyzer
                     $globalVariables[$symbol['name']] = $symbol['scope'];
                 } else {
                     if (isset($globalVariables[$symbol['name']])) {
-                        $this->errors[] = "Variable '{$symbol['name']}' declared in global scope and in scope '{$symbol['scope']}', which is not allowed.";
+                        $this->errors[] = "Variável '{$symbol['name']}' declarada no escopo global e no escopo '{$symbol['scope']}', o que não é permitido.";
                     }
                 }
             }
@@ -43,7 +43,7 @@ class SemanticAnalyzer
     {
         foreach ($this->symbolTable as $symbol) {
             if ($symbol['category'] === 'variable' && !in_array($symbol['type'], ['INT', 'FLOAT', 'STRING', 'CHAR'])) {
-                $this->errors[] = "Invalid type '{$symbol['type']}' for variable '{$symbol['name']}'.";
+                $this->errors[] = "Tipo inválido '{$symbol['type']}' para a variável '{$symbol['name']}'.";
             }
         }
     }
@@ -59,7 +59,7 @@ class SemanticAnalyzer
             if ($token->getName() === 'ID') {
                 $varName = $token->getLexeme();
                 if (!isset($declaredVariables[$varName])) {
-                    $this->errors[] = "Variable '{$varName}' used but not declared at line {$token->getLine()}.";
+                    $this->errors[] = "Variável '{$varName}' utilizada, mas não declarada, na linha {$token->getLine()}.";
                 }
             }
         }
@@ -69,14 +69,24 @@ class SemanticAnalyzer
     {
         foreach ($this->tokens as $index => $token) {
             if ($token->getName() === 'ID' && $this->tokens[$index + 1]->getName()=="EQ") {
+                foreach($this->symbolTable as $symbol){
+                    if($symbol['name']==$token->getLexeme()){
+                        $this->currentScope = $symbol['scope'];
+                    }
+                }
                 $varName = $token->getLexeme();
                 $assignmentValue = $this->tokens[$index + 2]->getLexeme();                
                 if($this->tokens[$index + 3]->getName()=="AP"){
                     $assignmentValue = $this->getVariableType($assignmentValue, $this->currentScope);
                 }
+                foreach($this->symbolTable as $symbol){
+                    if($symbol['name']==$assignmentValue){
+                        $assignmentValue = $symbol['type'];
+                    }
+                }
                 $varType = $this->getVariableType($varName, $this->currentScope);
-                if ($varType && !$this->isValidAssignment($varType, $assignmentValue)) {
-                    $this->errors[] = "Invalid assignment of value '{$assignmentValue}' to variable '{$varName}' of type '{$varType}' at line {$token->getLine()}.";
+                if (!empty($varType) && !$this->isValidAssignment($varType, $assignmentValue)) {
+                    $this->errors[] = "Atribuição inválida do valor '{$assignmentValue}' à variável '{$varName}' do tipo '{$varType}' na linha {$token->getLine()}.";
                 }
             }
         }
@@ -97,9 +107,11 @@ class SemanticAnalyzer
         $typePatterns = [
             'INT' => '/^\d+$/',
             'FLOAT' => '/^\d+\.\d+$/',
-            'STRING' => '/^".*"$/',
-            'CHAR' => "/^'.'$/",
+            'CHAR' => '/^".*"$/',
         ];
+        if(isset($typePatterns[$value])){
+            return $type==$value;
+        }
         return isset($typePatterns[$type]) && preg_match($typePatterns[$type], $value);
     }
 

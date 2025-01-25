@@ -100,7 +100,7 @@ se(a != 1){
                                     <h3 style="color: red">Análise sintática com erros</h3>
                                 <?php
                                 foreach($SLR->getErrors() as $erro){
-                                    echo "<strong>$erro</strong>";
+                                    echo "<strong>$erro</strong><br>";
                                 }
                             }
                         ?>
@@ -121,7 +121,7 @@ se(a != 1){
                                         <h3 style="color: red">Análise Semântica com erros</h3>
                                     <?php
                                     foreach($semantic->getErrors() as $erro){
-                                        echo "<strong>$erro</strong>";
+                                        echo "<strong>$erro</strong><br>";
                                     }
                                 }
                             ?>

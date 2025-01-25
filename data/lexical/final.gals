@@ -178,7 +178,7 @@ StrLiteral: {stringLiteral}&#13;
 &#13;
 &lt;TermoRest&gt; ::= MUL &lt;Fator&gt; &lt;TermoRest&gt; | DIV &lt;Fator&gt; &lt;TermoRest&gt; | MOD &lt;Fator&gt; &lt;TermoRest&gt; | î;&#13;
 &#13;
-&lt;Fator&gt; ::= ID | CONSTANTESINTEIRAS | CONSTANTESPONTOFLUTUANTE | AP &lt;Expressao&gt; FP | &lt;ChamadaFuncao&gt; | StrLiteral;&#13;
+&lt;Fator&gt; ::= ID | CONSTANTESINTEIRAS | CONSTANTESPONTOFLUTUANTE | StrLiteral | AP &lt;Expressao&gt; FP | &lt;ChamadaFuncao&gt;;&#13;
  &#13;
 &lt;Tipo&gt; ::= INT | CHAR | FLOAT ;&#13;
 &#13;

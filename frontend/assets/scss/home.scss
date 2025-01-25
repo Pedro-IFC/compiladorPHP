@@ -8,8 +8,8 @@
             justify-content: left;
             align-items: baseline;
             gap: 32px;
-            .w-4{
-                width: fit-content;
+            .w-3{
+                width: calc(100%/3 - 32px*2/3);
             }
             &.dif{
                 .left, .right{
@@ -61,23 +61,70 @@
         }
     }
 }
+#tabelasintatica{
+    #tabelasintatica {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+    }
+    .non-terminal {
+        font-weight: bold;
+        color: #2e8b57;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .terminal {
+        color: #555;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    .terminal:hover {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+    .non-terminal::before {
+        content: "⊛ ";
+        color: #2e8b57;
+    }
+    .terminal::before {
+        content: "→ ";
+        color: #555;
+    }
+    .terminal {
+        padding: 2px 5px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    .terminal:hover {
+        background-color: #e0e0e0;
+    }
+    .non-terminal {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #tabelasintatica > div {
+        margin-bottom: 5px;
+    }
+}
 .pd0{
     padding: 0;
 }
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    background: #AAA;
+    font-family: monospace;
+    outline: none!important;
+    border: none!important;
+    color: #333;
+    min-height: 86px;
+    font-size: 12px;
+}
 form{
-    textarea{
-        min-width: 100%;
-        max-width: 100%;
-        border-radius: 8px;
-        padding: 12px;
-        background: #AAA;
-        font-family: monospace;
-        outline: none!important;
-        border: none!important;
-        color: #333;
-        min-height: 86px;
-        font-size: 12px;
-    }
     .flex{
         display: flex;
         gap: 16px;
@@ -151,6 +198,7 @@ form{
         }
         font-family: monospace;
         text-transform: uppercase;
+        color: #FFF;
         .name{
             background-color: $primary-color;
             &.OPERADORES{
@@ -223,14 +271,42 @@ form{
     color: #8e44ad;
     margin-left: 20px;
 }
-#tabelasintatica{
-    .non-terminal{
-        &.show_children{
 
-        }
+.w-3.second{
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
     }
-}
+    th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+        border: 1px solid #ddd;
+    }
+    td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tbody tr:hover {
+        background-color: #ddd;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
 
+}
 .token-lexeme {
     color: #6C757D;
 }
@@ -243,7 +319,6 @@ form{
         padding: 0;
         color: #333;
     }
-
 
     h1 {
         text-align: center;

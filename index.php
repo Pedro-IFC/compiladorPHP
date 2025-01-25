@@ -11,8 +11,13 @@ require './modules/lexical/AnalisadorLexico.php';
 require './modules/sintatic/AnalisadorSRL.php';
 require './modules/tree/Node.php';
 require './modules/tree/DerivationTree.php';
-require './modules/tables/SymbolTable.php';
 require './modules/semantic/SemanticAnalyzer.php';
+require './modules/CodeParser/CodeParser.php';
+require './modules/CodeParser/assembly/CodeParserA.php';
+require './modules/CodeParser/c/CodeParserC.php';
+require './modules/CodeParser/CodeGenerator.php';
+
+
 
 $app = AppFactory::create();
 

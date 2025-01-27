@@ -14,7 +14,7 @@ class CodeGenerator{
         return self::$instance;
     } 
 
-    public static function generate($derivationTree, $symbolTable){
-        return self::$codeParser->generateCode($derivationTree, $symbolTable);
+    public static function generate($tokenList){
+        return self::$codeParser->generateCode($tokenList);
     } 
 }

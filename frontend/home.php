@@ -7,7 +7,7 @@ if(isset($_GET['string'])){
     $SLR = new AnalisadorSRL("./data/sintatic/tabelagoto.json");
     $analise = $SLR->parse($lexicalC->getTokenList());
     $semantic = new SemanticAnalyzer($SLR->getSymbolTable(), $lexicalC->getTokenList());
-    $code = CodeGenerator::getInstance()::generate($SLR->getDerivationTree()->getTree(), $SLR->getSymbolTable());
+    $code = CodeGenerator::getInstance()::generate($lexicalC->getTokenList());
 }
 ?>
     <div class="home">

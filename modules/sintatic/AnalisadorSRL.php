@@ -119,8 +119,6 @@ class AnalisadorSRL {
             $tokenName = $token->getName();
 
             if (!isset($this->actionTable[$state][$tokenName])) {
-                echo "<pre>";
-                var_dump($this->actionTable[$state]);
                 $this->errors[] = "Erro de sintaxe na linha " . $token->getLine() . ", token inesperado: " . $token->getLexeme();
                 return false;
             }

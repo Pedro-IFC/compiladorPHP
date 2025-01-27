@@ -20,9 +20,59 @@ class SemanticAnalyzer
         $this->checkTypeConsistency();
         $this->checkVariableUsage();
         $this->checkInvalidAssignments();
+        $this->checkReturnValues();
         return empty($this->errors);
     }
-
+    private function checkReturnValues()
+    {
+        $pilhafuncoes =[];
+        foreach ($this->tokens as $index => $token) {
+            if ($token->getName() === 'RETORNO') {
+                $returnValue = $this->tokens[$index + 1]->getLexeme();
+                $function = array_pop($pilhafuncoes);    
+                foreach($this->symbolTable as $symbol){
+                    if($symbol['name']==$returnValue){
+                        $returnValue = $symbol['type'];
+                    }
+                }
+                if ($function) {
+                    if (!$this->isValidAssignment($function['type'], $returnValue)) {
+                        $this->errors[] = "Retorno inválido '{$returnValue}' na função '{$function['name']}' do tipo '{$function['type']}' na linha {$token->getLine()}.";
+                    }
+                } else {
+                    $this->errors[] = "Retorno fora de um escopo de função na linha {$token->getLine()}.";
+                }
+            }else if($token->getName() === 'ID'){
+                foreach ($this->symbolTable as $symbol) {
+                    if ($symbol['category'] === 'function' && $symbol['name'] === $token->getLexeme()) {
+                        $pilhafuncoes[] = $symbol;
+                    }
+                }
+            }
+        }
+    }
+    
+    private function getCurrentFunctionScope()
+    {
+        foreach ($this->symbolTable as $symbol) {
+            if ($symbol['category'] === 'function' && $symbol['scope'] === $this->currentScope) {
+                return $symbol['name'];
+            }
+        }
+        return null;
+    }
+    
+    private function getFunctionReturnType($functionName)
+    {
+        // Encontre o tipo de retorno da função na tabela de símbolos
+        foreach ($this->symbolTable as $symbol) {
+            if ($symbol['category'] === 'function' && $symbol['name'] === $functionName) {
+                return $symbol['type'];
+            }
+        }
+        return null;
+    }
+    
     private function checkVariableScope()
     {
         $globalVariables = [];
@@ -75,10 +125,7 @@ class SemanticAnalyzer
                     }
                 }
                 $varName = $token->getLexeme();
-                $assignmentValue = $this->tokens[$index + 2]->getLexeme();                
-                if($this->tokens[$index + 3]->getName()=="AP"){
-                    $assignmentValue = $this->getVariableType($assignmentValue, $this->currentScope);
-                }
+                $assignmentValue = $this->tokens[$index + 2]->getLexeme();         
                 foreach($this->symbolTable as $symbol){
                     if($symbol['name']==$assignmentValue){
                         $assignmentValue = $symbol['type'];

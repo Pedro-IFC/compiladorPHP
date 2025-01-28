@@ -41,7 +41,7 @@ se(a != 1){
                     </div>
                 </div>
                 <div class="right">
-                    <textarea name="result" id="result" disabled><?= isset($code)?$code:"" ?></textarea>
+                    <textarea name="result" id="result" disabled style="min-height: 192px;"><?= isset($code)?$code:"" ?></textarea>
                     <div class="flex">
                         <button id="copy-result">Copiar</button>
                     </div>

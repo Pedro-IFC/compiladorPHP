@@ -367,3 +367,46 @@ form{
         font-style: italic;
     }
 }
+#copy-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    padding: 9px 19px;
+    appearance: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        background-color: #FFF;
+        color: $primary-color;
+    }
+    transition: all .3s;
+    &.red{
+        border: 1px solid $danger;
+        background-color: $danger;
+        svg{
+            fill: $danger!important;
+            transition: all .3s;
+            *{
+                transition: all .3s;
+                fill: $danger!important;
+            }
+        }
+        &:hover{
+            background-color: #FFF;
+            svg{
+                fill: #FFF!important;
+                stroke: $danger!important;
+                *{
+                    fill: #FFF!important;
+                    stroke: $danger!important;
+                }
+            }
+        }
+    }
+}

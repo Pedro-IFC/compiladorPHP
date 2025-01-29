@@ -6,11 +6,8 @@
             padding: 40px 0px;
             display: flex;
             justify-content: left;
-            align-items: baseline;
+            align-items: flex-start;
             gap: 32px;
-            .w-3{
-                width: calc(100%/3 - 32px*2/3);
-            }
             &.dif{
                 .left, .right{
                     width: calc(50% - 32px);
@@ -32,13 +29,9 @@
             }
             .left{
                 width: calc(50% - 16px);
-                max-height: calc(100vh - 120px);
-                overflow: scroll;
             }
             .right{
                 width: calc(50% - 16px);
-                max-height: calc(100vh - 120px);
-                overflow: scroll;
                 >div:not(:last-child){
                     border-bottom: 1px solid #333333;
                     padding-bottom: 20px;
@@ -408,5 +401,59 @@ form{
                 }
             }
         }
+    }
+}
+.line-numbers {
+  padding: 8px;
+  background-color: #eee;
+  color: #555;
+  text-align: right;
+  border-right: 1px solid #ccc;
+  user-select: none;
+  line-height: 1.5;
+  font-size: 14px;
+}
+textarea#string_txt {
+flex: 1;
+padding: 8px;
+margin: 0;
+border: none;
+outline: none;
+resize: none;
+line-height: 1.5;
+font-size: 14px;
+font-family: monospace;
+}
+
+textarea#string_txt:focus {
+outline: none;
+}
+
+.editor-container {
+height: 300px; /* Altura desejada */
+}
+
+.line-numbers, textarea#string_txt {
+height: 100%;
+overflow: auto;
+}
+.editor-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0px!important;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    font-family: monospace;
+    textarea{
+        border-radius: 0!important;
+        width: calc(100% - 31px)!important;
+        min-width: calc(100% - 31px)!important;
+    }
+    .line-numbers{
+        overflow: visible;
     }
 }

@@ -33,3 +33,32 @@ function generateTokenTable($tokens){
     </table>
     <?php 
 }
+function generateSymbolTable($table){
+    ?>
+        <table>
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Lexema</th>
+            <th>Escopo</th>
+            <th>Categoria</th>
+            <th>Linha</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php 
+            foreach ($table as $item): ?>
+                <tr>
+                <td><?php echo $item['name']; ?></td>
+                <td><?php echo $item['type']; ?></td>
+                <td><?php echo $item['lexeme']; ?></td>
+                <td><?php echo $item['scope']; ?></td>
+                <td><?php echo $item['category']; ?></td>
+                <td><?php echo $item['line']; ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?php
+}

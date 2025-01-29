@@ -17,18 +17,21 @@ if(isset($_GET['string'])){
                 <div class="left">
                     <div class="form">
                         <form method="GET">
-                            <textarea name="string" id="string_txt"><?php if(isset($_GET['string'])){echo $_GET['string']; }else{ ?>main(){
-int dobro(int a){
-    retorno a*2;
-}
-int a = 1;
-se(a != 1){
-    int c = dobro(a);
-    imprima(c);
-}senao{
-    imprima("a e invalido");
-}
+                            <div class="editor-container">
+                                <div class="line-numbers"></div>
+                                <textarea name="string" id="string_txt"><?php if(isset($_GET['string'])){echo $_GET['string']; }else{ ?>main(){
+    int dobro(int a){
+        retorno a*2;
+    }
+    int a = 1;
+    se(a != 1){
+        int c = dobro(a);
+        imprima(c);
+    }senao{
+        imprima("a e invalido");
+    }
 }<?php } ?></textarea>
+                            </div>
                             <div class="flex">
                                 <button type="submit">Compilar</button>
                                 <a href="./" class="red">
@@ -70,31 +73,7 @@ se(a != 1){
                         <h3>Análise Sintática</h3>
                         <?php 
                             if($analise){  
-                                ?>
-                                <table>
-                                    <thead>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>Tipo</th>
-                                        <th>Lexema</th>
-                                        <th>Escopo</th>
-                                        <th>Categoria</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php 
-                                        foreach ($SLR->getSymbolTable() as $item): ?>
-                                            <tr>
-                                            <td><?php echo $item['name']; ?></td>
-                                            <td><?php echo $item['type']; ?></td>
-                                            <td><?php echo $item['lexeme']; ?></td>
-                                            <td><?php echo $item['scope']; ?></td>
-                                            <td><?php echo $item['category']; ?></td>
-                                        </tr>
-                                    <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-                                <?php 
+                                generateSymbolTable($SLR->getSymbolTable()); 
                             }else{
                                 ?>
                                     <h3 style="color: red">Análise sintática com erros</h3>

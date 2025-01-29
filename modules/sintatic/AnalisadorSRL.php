@@ -136,7 +136,7 @@ class AnalisadorSRL {
                     $lastScope = "ENQUANTO";
                 }elseif ($token->getName() === 'ID') {
                     if (in_array($tokens[$index - 1]->getName(), ['INT', 'CHAR', 'FLOAT'])) {
-                        $this->addToSymbolTable($token, $tokens[$index - 1]->getName(), $tokens[$index + 1]->getName() == "AP" ? 'function' : 'variable');
+                        $this->addToSymbolTable($token, $tokens[$index - 1]->getName(), $tokens[$index + 1]->getName() == "AP" ? 'function' : 'variable', $token->getLine());
                         if ($tokens[$index + 1]->getName() == "AP") {
                             $this->enterScope($token->getLexeme());
                         }
@@ -181,14 +181,15 @@ class AnalisadorSRL {
         }
     }
 
-    private function addToSymbolTable(Token $token, string $type, string $category): void {
+    private function addToSymbolTable(Token $token, string $type, string $category, int $line): void {
         $currentScope = end($this->scopeStack);
         $this->symbolTable[] = [
             'name' => $token->getLexeme(),
             'lexeme' => $token->getLexeme(),
             'type' => $type,
             'scope' => $currentScope,
-            'category' => $category
+            'category' => $category,
+            'line' => $line
         ];
     }
 

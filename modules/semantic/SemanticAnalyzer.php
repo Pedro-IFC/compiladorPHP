@@ -52,38 +52,24 @@ class SemanticAnalyzer
         }
     }
     
-    private function getCurrentFunctionScope()
-    {
-        foreach ($this->symbolTable as $symbol) {
-            if ($symbol['category'] === 'function' && $symbol['scope'] === $this->currentScope) {
-                return $symbol['name'];
-            }
-        }
-        return null;
-    }
-    
-    private function getFunctionReturnType($functionName)
-    {
-        // Encontre o tipo de retorno da função na tabela de símbolos
-        foreach ($this->symbolTable as $symbol) {
-            if ($symbol['category'] === 'function' && $symbol['name'] === $functionName) {
-                return $symbol['type'];
-            }
-        }
-        return null;
-    }
-    
     private function checkVariableScope()
     {
-        $globalVariables = [];
+        $scopedVariables = [];
+
         foreach ($this->symbolTable as $symbol) {
             if ($symbol['category'] === 'variable') {
-                if (strpos($symbol['scope'], 'global') !== false) {
-                    $globalVariables[$symbol['name']] = $symbol['scope'];
+                $scope = $symbol['scope'];
+                $name = $symbol['name'];
+
+                // Verifica se a variável já foi declarada no mesmo escopo
+                if (!isset($scopedVariables[$scope])) {
+                    $scopedVariables[$scope] = [];
+                }
+
+                if (in_array($name, $scopedVariables[$scope])) {
+                    $this->errors[] = "Variável '{$name}' declarada mais de uma vez no escopo '{$scope}' na linha {$symbol['line']}.";
                 } else {
-                    if (isset($globalVariables[$symbol['name']])) {
-                        $this->errors[] = "Variável '{$symbol['name']}' declarada no escopo global e no escopo '{$symbol['scope']}', o que não é permitido.";
-                    }
+                    $scopedVariables[$scope][] = $name;
                 }
             }
         }

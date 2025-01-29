@@ -26,4 +26,20 @@ window.addEventListener("load", (event) => {
         // Restaura o estado desabilitado do textarea
         textarea.setAttribute('disabled', true);
     });
+    
+    const textarea = document.getElementById("string_txt");
+    const lineNumbers = document.querySelector(".line-numbers");
+
+    textarea.addEventListener("input", updateLineNumbers);
+    textarea.addEventListener("scroll", syncScroll);
+
+    function updateLineNumbers() {
+        const lines = textarea.value.split("\n").length;
+        lineNumbers.innerHTML = Array.from({ length: lines }, (_, i) => i + 1).join("<br>");
+    }
+
+    function syncScroll() {
+        lineNumbers.scrollTop = textarea.scrollTop;
+    }
+    updateLineNumbers();
 });

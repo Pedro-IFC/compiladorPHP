@@ -634,11 +634,8 @@ div#diagrama {
   padding: 40px 0px;
   display: flex;
   justify-content: left;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 32px;
-}
-.home .al-container > .row .w-3 {
-  width: calc(33.3333333333% - 21.3333333333px);
 }
 .home .al-container > .row.dif .left, .home .al-container > .row.dif .right {
   width: calc(50% - 32px);
@@ -657,13 +654,9 @@ div#diagrama {
 }
 .home .al-container > .row .left {
   width: calc(50% - 16px);
-  max-height: calc(100vh - 120px);
-  overflow: scroll;
 }
 .home .al-container > .row .right {
   width: calc(50% - 16px);
-  max-height: calc(100vh - 120px);
-  overflow: scroll;
 }
 .home .al-container > .row .right > div:not(:last-child) {
   border-bottom: 1px solid #333333;
@@ -1386,4 +1379,109 @@ form .flex button.red:hover svg *, form .flex a.red:hover svg * {
 #grammar .optional {
   color: #9E9E9E;
   font-style: italic;
+}
+
+#copy-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #164777;
+  background-color: #164777;
+  padding: 9px 19px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#copy-result:hover {
+  background-color: #FFF;
+  color: #164777;
+}
+#copy-result.red {
+  border: 1px solid #dc3545;
+  background-color: #dc3545;
+}
+#copy-result.red svg {
+  fill: #dc3545 !important;
+  transition: all 0.3s;
+}
+#copy-result.red svg * {
+  transition: all 0.3s;
+  fill: #dc3545 !important;
+}
+#copy-result.red:hover {
+  background-color: #FFF;
+}
+#copy-result.red:hover svg {
+  fill: #FFF !important;
+  stroke: #dc3545 !important;
+}
+#copy-result.red:hover svg * {
+  fill: #FFF !important;
+  stroke: #dc3545 !important;
+}
+
+.line-numbers {
+  padding: 8px;
+  background-color: #eee;
+  color: #555;
+  text-align: right;
+  border-right: 1px solid #ccc;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+textarea#string_txt {
+  flex: 1;
+  padding: 8px;
+  margin: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+textarea#string_txt:focus {
+  outline: none;
+}
+
+.editor-container {
+  height: 300px; /* Altura desejada */
+}
+
+.line-numbers, textarea#string_txt {
+  height: 100%;
+  overflow: auto;
+}
+
+.editor-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0px !important;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  font-family: monospace;
+}
+.editor-container textarea {
+  border-radius: 0 !important;
+  width: calc(100% - 31px) !important;
+  min-width: calc(100% - 31px) !important;
+}
+.editor-container .line-numbers {
+  overflow: visible;
 }

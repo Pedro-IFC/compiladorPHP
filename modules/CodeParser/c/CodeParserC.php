@@ -17,9 +17,7 @@ class CodeParserC implements CodeParser {
                 $code .= $this->tokenTable[$name];
             } elseif (in_array($name, ['id', 'constantesinteiras', 'constantespontoflutuante', 'strliteral', 'int', 'char', 'float'])) {
                 $code .= " $lexeme ";
-            } else {
-                throw new Exception("Token desconhecido: {$name}");
-            }
+            } 
         }
 
         return $code;
